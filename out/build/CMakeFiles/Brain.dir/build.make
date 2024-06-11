@@ -94,6 +94,7 @@ Brain: CMakeFiles/Brain.dir/BrainEngine/main.cpp.o
 Brain: CMakeFiles/Brain.dir/build.make
 Brain: BrainEngine/Dependencies/glfw/src/libglfw3.a
 Brain: BrainEngine/Dependencies/glm/glm/libglm.a
+Brain: /usr/local/lib/libvulkan.dylib
 Brain: CMakeFiles/Brain.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/c2/Documents/BrainEngine/BrainEngine/out/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Brain"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Brain.dir/link.txt --verbose=$(VERBOSE)
