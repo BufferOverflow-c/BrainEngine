@@ -12,12 +12,25 @@
 #include <vector>
 
 namespace lve {
-    struct PiplineConfigInfo {};
+    struct PiplineConfigInfo {
+        VkViewport viewport;
+        VkRect2D scissor;
+        VkPipelineViewportStateCreateInfo viewportInfo;
+        VkPipelineInputAssemblyStateCreateInfo inputAssemblyInfo;
+        VkPipelineRasterizationStateCreateInfo rasterizationInfo;
+        VkPipelineMultisampleStateCreateInfo multisampleInfo;
+        VkPipelineColorBlendAttachmentState colorBlendAttachment;
+        VkPipelineColorBlendStateCreateInfo colorBlendInfo;
+        VkPipelineDepthStencilStateCreateInfo depthStencilInfo;
+        VkPipelineLayout pipelineLayout = nullptr;
+        VkRenderPass renderPass = nullptr;
+        uint32_t subpass = 0;
+    };
 
 class LvePipeline {
 public:
     LvePipeline(LveDevice& device, const std::string& vertFilePath, const std::string& fragFilePath, const PiplineConfigInfo& configInfo);
-    ~LvePipeline() {}
+    ~LvePipeline();
 
     //~ Delete Copy Constructors
     LvePipeline(const LvePipeline&) = delete;
