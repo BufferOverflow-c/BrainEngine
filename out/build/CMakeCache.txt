@@ -394,6 +394,9 @@ glm_IS_TOP_LEVEL:STATIC=OFF
 //Value Computed by CMake
 glm_SOURCE_DIR:STATIC=/Users/c2/Documents/BrainEngine/BrainEngine/Dependencies/glm
 
+//The directory containing a CMake configuration file for imgui.
+imgui_DIR:PATH=imgui_DIR-NOTFOUND
+
 
 ########################
 # INTERNAL cache entries

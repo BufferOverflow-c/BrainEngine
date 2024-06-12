@@ -4,7 +4,7 @@
 # compile CXX with /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/c2/Documents/BrainEngine/BrainEngine/Dependencies/glfw/include -I/Users/c2/Documents/BrainEngine/BrainEngine/Dependencies/imgui -I/Users/c2/Documents/BrainEngine/BrainEngine/Dependencies/glfw/deps -I/Users/c2/Documents/BrainEngine/BrainEngine/Dependencies/glm/glm -I/Users/c2/Documents/BrainEngine/BrainEngine/Dependencies/glm -isystem /usr/local/include
+CXX_INCLUDES = -I/Users/c2/Documents/BrainEngine/BrainEngine/Dependencies/glfw/include -I/Users/c2/Documents/BrainEngine/BrainEngine/Dependencies/imgui -I/Users/c2/Documents/BrainEngine/BrainEngine/Dependencies/glfw/deps -I/Users/c2/Documents/BrainEngine/BrainEngine/Dependencies/glm -isystem /usr/local/include
 
 CXX_FLAGSarm64 = -Wall -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk
 
