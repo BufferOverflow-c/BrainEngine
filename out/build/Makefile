@@ -428,6 +428,102 @@ BrainEngine/Dependencies/imgui/imgui_widgets.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_widgets.cpp.s
 .PHONY : BrainEngine/Dependencies/imgui/imgui_widgets.cpp.s
 
+BrainEngine/first_app.o: BrainEngine/first_app.cpp.o
+.PHONY : BrainEngine/first_app.o
+
+# target to build an object file
+BrainEngine/first_app.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/first_app.cpp.o
+.PHONY : BrainEngine/first_app.cpp.o
+
+BrainEngine/first_app.i: BrainEngine/first_app.cpp.i
+.PHONY : BrainEngine/first_app.i
+
+# target to preprocess a source file
+BrainEngine/first_app.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/first_app.cpp.i
+.PHONY : BrainEngine/first_app.cpp.i
+
+BrainEngine/first_app.s: BrainEngine/first_app.cpp.s
+.PHONY : BrainEngine/first_app.s
+
+# target to generate assembly for a file
+BrainEngine/first_app.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/first_app.cpp.s
+.PHONY : BrainEngine/first_app.cpp.s
+
+BrainEngine/lve_device.o: BrainEngine/lve_device.cpp.o
+.PHONY : BrainEngine/lve_device.o
+
+# target to build an object file
+BrainEngine/lve_device.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/lve_device.cpp.o
+.PHONY : BrainEngine/lve_device.cpp.o
+
+BrainEngine/lve_device.i: BrainEngine/lve_device.cpp.i
+.PHONY : BrainEngine/lve_device.i
+
+# target to preprocess a source file
+BrainEngine/lve_device.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/lve_device.cpp.i
+.PHONY : BrainEngine/lve_device.cpp.i
+
+BrainEngine/lve_device.s: BrainEngine/lve_device.cpp.s
+.PHONY : BrainEngine/lve_device.s
+
+# target to generate assembly for a file
+BrainEngine/lve_device.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/lve_device.cpp.s
+.PHONY : BrainEngine/lve_device.cpp.s
+
+BrainEngine/lve_pipeline.o: BrainEngine/lve_pipeline.cpp.o
+.PHONY : BrainEngine/lve_pipeline.o
+
+# target to build an object file
+BrainEngine/lve_pipeline.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/lve_pipeline.cpp.o
+.PHONY : BrainEngine/lve_pipeline.cpp.o
+
+BrainEngine/lve_pipeline.i: BrainEngine/lve_pipeline.cpp.i
+.PHONY : BrainEngine/lve_pipeline.i
+
+# target to preprocess a source file
+BrainEngine/lve_pipeline.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/lve_pipeline.cpp.i
+.PHONY : BrainEngine/lve_pipeline.cpp.i
+
+BrainEngine/lve_pipeline.s: BrainEngine/lve_pipeline.cpp.s
+.PHONY : BrainEngine/lve_pipeline.s
+
+# target to generate assembly for a file
+BrainEngine/lve_pipeline.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/lve_pipeline.cpp.s
+.PHONY : BrainEngine/lve_pipeline.cpp.s
+
+BrainEngine/lve_window.o: BrainEngine/lve_window.cpp.o
+.PHONY : BrainEngine/lve_window.o
+
+# target to build an object file
+BrainEngine/lve_window.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/lve_window.cpp.o
+.PHONY : BrainEngine/lve_window.cpp.o
+
+BrainEngine/lve_window.i: BrainEngine/lve_window.cpp.i
+.PHONY : BrainEngine/lve_window.i
+
+# target to preprocess a source file
+BrainEngine/lve_window.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/lve_window.cpp.i
+.PHONY : BrainEngine/lve_window.cpp.i
+
+BrainEngine/lve_window.s: BrainEngine/lve_window.cpp.s
+.PHONY : BrainEngine/lve_window.s
+
+# target to generate assembly for a file
+BrainEngine/lve_window.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/lve_window.cpp.s
+.PHONY : BrainEngine/lve_window.cpp.s
+
 BrainEngine/main.o: BrainEngine/main.cpp.o
 .PHONY : BrainEngine/main.o
 
@@ -491,6 +587,18 @@ help:
 	@echo "... BrainEngine/Dependencies/imgui/imgui_widgets.o"
 	@echo "... BrainEngine/Dependencies/imgui/imgui_widgets.i"
 	@echo "... BrainEngine/Dependencies/imgui/imgui_widgets.s"
+	@echo "... BrainEngine/first_app.o"
+	@echo "... BrainEngine/first_app.i"
+	@echo "... BrainEngine/first_app.s"
+	@echo "... BrainEngine/lve_device.o"
+	@echo "... BrainEngine/lve_device.i"
+	@echo "... BrainEngine/lve_device.s"
+	@echo "... BrainEngine/lve_pipeline.o"
+	@echo "... BrainEngine/lve_pipeline.i"
+	@echo "... BrainEngine/lve_pipeline.s"
+	@echo "... BrainEngine/lve_window.o"
+	@echo "... BrainEngine/lve_window.i"
+	@echo "... BrainEngine/lve_window.s"
 	@echo "... BrainEngine/main.o"
 	@echo "... BrainEngine/main.i"
 	@echo "... BrainEngine/main.s"

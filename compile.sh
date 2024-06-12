@@ -1,0 +1,2 @@
+/Users/c2/VulkanSDK/1.3.283.0/macOS/bin/glslc shaders/simple_shader.vert -o shaders/simple_shader.vert.spv
+/Users/c2/VulkanSDK/1.3.283.0/macOS/bin/glslc shaders/simple_shader.frag -o shaders/simple_shader.frag.spv
