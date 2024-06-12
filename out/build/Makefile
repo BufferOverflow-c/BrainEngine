@@ -226,6 +226,174 @@ glm/fast:
 	$(MAKE) $(MAKESILENT) -f BrainEngine/Dependencies/glm/glm/CMakeFiles/glm.dir/build.make BrainEngine/Dependencies/glm/glm/CMakeFiles/glm.dir/build
 .PHONY : glm/fast
 
+BrainEngine/Dependencies/imgui/backends/imgui_impl_glfw.o: BrainEngine/Dependencies/imgui/backends/imgui_impl_glfw.cpp.o
+.PHONY : BrainEngine/Dependencies/imgui/backends/imgui_impl_glfw.o
+
+# target to build an object file
+BrainEngine/Dependencies/imgui/backends/imgui_impl_glfw.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/backends/imgui_impl_glfw.cpp.o
+.PHONY : BrainEngine/Dependencies/imgui/backends/imgui_impl_glfw.cpp.o
+
+BrainEngine/Dependencies/imgui/backends/imgui_impl_glfw.i: BrainEngine/Dependencies/imgui/backends/imgui_impl_glfw.cpp.i
+.PHONY : BrainEngine/Dependencies/imgui/backends/imgui_impl_glfw.i
+
+# target to preprocess a source file
+BrainEngine/Dependencies/imgui/backends/imgui_impl_glfw.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/backends/imgui_impl_glfw.cpp.i
+.PHONY : BrainEngine/Dependencies/imgui/backends/imgui_impl_glfw.cpp.i
+
+BrainEngine/Dependencies/imgui/backends/imgui_impl_glfw.s: BrainEngine/Dependencies/imgui/backends/imgui_impl_glfw.cpp.s
+.PHONY : BrainEngine/Dependencies/imgui/backends/imgui_impl_glfw.s
+
+# target to generate assembly for a file
+BrainEngine/Dependencies/imgui/backends/imgui_impl_glfw.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/backends/imgui_impl_glfw.cpp.s
+.PHONY : BrainEngine/Dependencies/imgui/backends/imgui_impl_glfw.cpp.s
+
+BrainEngine/Dependencies/imgui/backends/imgui_impl_vulkan.o: BrainEngine/Dependencies/imgui/backends/imgui_impl_vulkan.cpp.o
+.PHONY : BrainEngine/Dependencies/imgui/backends/imgui_impl_vulkan.o
+
+# target to build an object file
+BrainEngine/Dependencies/imgui/backends/imgui_impl_vulkan.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/backends/imgui_impl_vulkan.cpp.o
+.PHONY : BrainEngine/Dependencies/imgui/backends/imgui_impl_vulkan.cpp.o
+
+BrainEngine/Dependencies/imgui/backends/imgui_impl_vulkan.i: BrainEngine/Dependencies/imgui/backends/imgui_impl_vulkan.cpp.i
+.PHONY : BrainEngine/Dependencies/imgui/backends/imgui_impl_vulkan.i
+
+# target to preprocess a source file
+BrainEngine/Dependencies/imgui/backends/imgui_impl_vulkan.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/backends/imgui_impl_vulkan.cpp.i
+.PHONY : BrainEngine/Dependencies/imgui/backends/imgui_impl_vulkan.cpp.i
+
+BrainEngine/Dependencies/imgui/backends/imgui_impl_vulkan.s: BrainEngine/Dependencies/imgui/backends/imgui_impl_vulkan.cpp.s
+.PHONY : BrainEngine/Dependencies/imgui/backends/imgui_impl_vulkan.s
+
+# target to generate assembly for a file
+BrainEngine/Dependencies/imgui/backends/imgui_impl_vulkan.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/backends/imgui_impl_vulkan.cpp.s
+.PHONY : BrainEngine/Dependencies/imgui/backends/imgui_impl_vulkan.cpp.s
+
+BrainEngine/Dependencies/imgui/imgui.o: BrainEngine/Dependencies/imgui/imgui.cpp.o
+.PHONY : BrainEngine/Dependencies/imgui/imgui.o
+
+# target to build an object file
+BrainEngine/Dependencies/imgui/imgui.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui.cpp.o
+.PHONY : BrainEngine/Dependencies/imgui/imgui.cpp.o
+
+BrainEngine/Dependencies/imgui/imgui.i: BrainEngine/Dependencies/imgui/imgui.cpp.i
+.PHONY : BrainEngine/Dependencies/imgui/imgui.i
+
+# target to preprocess a source file
+BrainEngine/Dependencies/imgui/imgui.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui.cpp.i
+.PHONY : BrainEngine/Dependencies/imgui/imgui.cpp.i
+
+BrainEngine/Dependencies/imgui/imgui.s: BrainEngine/Dependencies/imgui/imgui.cpp.s
+.PHONY : BrainEngine/Dependencies/imgui/imgui.s
+
+# target to generate assembly for a file
+BrainEngine/Dependencies/imgui/imgui.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui.cpp.s
+.PHONY : BrainEngine/Dependencies/imgui/imgui.cpp.s
+
+BrainEngine/Dependencies/imgui/imgui_demo.o: BrainEngine/Dependencies/imgui/imgui_demo.cpp.o
+.PHONY : BrainEngine/Dependencies/imgui/imgui_demo.o
+
+# target to build an object file
+BrainEngine/Dependencies/imgui/imgui_demo.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_demo.cpp.o
+.PHONY : BrainEngine/Dependencies/imgui/imgui_demo.cpp.o
+
+BrainEngine/Dependencies/imgui/imgui_demo.i: BrainEngine/Dependencies/imgui/imgui_demo.cpp.i
+.PHONY : BrainEngine/Dependencies/imgui/imgui_demo.i
+
+# target to preprocess a source file
+BrainEngine/Dependencies/imgui/imgui_demo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_demo.cpp.i
+.PHONY : BrainEngine/Dependencies/imgui/imgui_demo.cpp.i
+
+BrainEngine/Dependencies/imgui/imgui_demo.s: BrainEngine/Dependencies/imgui/imgui_demo.cpp.s
+.PHONY : BrainEngine/Dependencies/imgui/imgui_demo.s
+
+# target to generate assembly for a file
+BrainEngine/Dependencies/imgui/imgui_demo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_demo.cpp.s
+.PHONY : BrainEngine/Dependencies/imgui/imgui_demo.cpp.s
+
+BrainEngine/Dependencies/imgui/imgui_draw.o: BrainEngine/Dependencies/imgui/imgui_draw.cpp.o
+.PHONY : BrainEngine/Dependencies/imgui/imgui_draw.o
+
+# target to build an object file
+BrainEngine/Dependencies/imgui/imgui_draw.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_draw.cpp.o
+.PHONY : BrainEngine/Dependencies/imgui/imgui_draw.cpp.o
+
+BrainEngine/Dependencies/imgui/imgui_draw.i: BrainEngine/Dependencies/imgui/imgui_draw.cpp.i
+.PHONY : BrainEngine/Dependencies/imgui/imgui_draw.i
+
+# target to preprocess a source file
+BrainEngine/Dependencies/imgui/imgui_draw.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_draw.cpp.i
+.PHONY : BrainEngine/Dependencies/imgui/imgui_draw.cpp.i
+
+BrainEngine/Dependencies/imgui/imgui_draw.s: BrainEngine/Dependencies/imgui/imgui_draw.cpp.s
+.PHONY : BrainEngine/Dependencies/imgui/imgui_draw.s
+
+# target to generate assembly for a file
+BrainEngine/Dependencies/imgui/imgui_draw.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_draw.cpp.s
+.PHONY : BrainEngine/Dependencies/imgui/imgui_draw.cpp.s
+
+BrainEngine/Dependencies/imgui/imgui_tables.o: BrainEngine/Dependencies/imgui/imgui_tables.cpp.o
+.PHONY : BrainEngine/Dependencies/imgui/imgui_tables.o
+
+# target to build an object file
+BrainEngine/Dependencies/imgui/imgui_tables.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_tables.cpp.o
+.PHONY : BrainEngine/Dependencies/imgui/imgui_tables.cpp.o
+
+BrainEngine/Dependencies/imgui/imgui_tables.i: BrainEngine/Dependencies/imgui/imgui_tables.cpp.i
+.PHONY : BrainEngine/Dependencies/imgui/imgui_tables.i
+
+# target to preprocess a source file
+BrainEngine/Dependencies/imgui/imgui_tables.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_tables.cpp.i
+.PHONY : BrainEngine/Dependencies/imgui/imgui_tables.cpp.i
+
+BrainEngine/Dependencies/imgui/imgui_tables.s: BrainEngine/Dependencies/imgui/imgui_tables.cpp.s
+.PHONY : BrainEngine/Dependencies/imgui/imgui_tables.s
+
+# target to generate assembly for a file
+BrainEngine/Dependencies/imgui/imgui_tables.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_tables.cpp.s
+.PHONY : BrainEngine/Dependencies/imgui/imgui_tables.cpp.s
+
+BrainEngine/Dependencies/imgui/imgui_widgets.o: BrainEngine/Dependencies/imgui/imgui_widgets.cpp.o
+.PHONY : BrainEngine/Dependencies/imgui/imgui_widgets.o
+
+# target to build an object file
+BrainEngine/Dependencies/imgui/imgui_widgets.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_widgets.cpp.o
+.PHONY : BrainEngine/Dependencies/imgui/imgui_widgets.cpp.o
+
+BrainEngine/Dependencies/imgui/imgui_widgets.i: BrainEngine/Dependencies/imgui/imgui_widgets.cpp.i
+.PHONY : BrainEngine/Dependencies/imgui/imgui_widgets.i
+
+# target to preprocess a source file
+BrainEngine/Dependencies/imgui/imgui_widgets.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_widgets.cpp.i
+.PHONY : BrainEngine/Dependencies/imgui/imgui_widgets.cpp.i
+
+BrainEngine/Dependencies/imgui/imgui_widgets.s: BrainEngine/Dependencies/imgui/imgui_widgets.cpp.s
+.PHONY : BrainEngine/Dependencies/imgui/imgui_widgets.s
+
+# target to generate assembly for a file
+BrainEngine/Dependencies/imgui/imgui_widgets.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_widgets.cpp.s
+.PHONY : BrainEngine/Dependencies/imgui/imgui_widgets.cpp.s
+
 BrainEngine/main.o: BrainEngine/main.cpp.o
 .PHONY : BrainEngine/main.o
 
@@ -267,6 +435,27 @@ help:
 	@echo "... Brain"
 	@echo "... glfw"
 	@echo "... glm"
+	@echo "... BrainEngine/Dependencies/imgui/backends/imgui_impl_glfw.o"
+	@echo "... BrainEngine/Dependencies/imgui/backends/imgui_impl_glfw.i"
+	@echo "... BrainEngine/Dependencies/imgui/backends/imgui_impl_glfw.s"
+	@echo "... BrainEngine/Dependencies/imgui/backends/imgui_impl_vulkan.o"
+	@echo "... BrainEngine/Dependencies/imgui/backends/imgui_impl_vulkan.i"
+	@echo "... BrainEngine/Dependencies/imgui/backends/imgui_impl_vulkan.s"
+	@echo "... BrainEngine/Dependencies/imgui/imgui.o"
+	@echo "... BrainEngine/Dependencies/imgui/imgui.i"
+	@echo "... BrainEngine/Dependencies/imgui/imgui.s"
+	@echo "... BrainEngine/Dependencies/imgui/imgui_demo.o"
+	@echo "... BrainEngine/Dependencies/imgui/imgui_demo.i"
+	@echo "... BrainEngine/Dependencies/imgui/imgui_demo.s"
+	@echo "... BrainEngine/Dependencies/imgui/imgui_draw.o"
+	@echo "... BrainEngine/Dependencies/imgui/imgui_draw.i"
+	@echo "... BrainEngine/Dependencies/imgui/imgui_draw.s"
+	@echo "... BrainEngine/Dependencies/imgui/imgui_tables.o"
+	@echo "... BrainEngine/Dependencies/imgui/imgui_tables.i"
+	@echo "... BrainEngine/Dependencies/imgui/imgui_tables.s"
+	@echo "... BrainEngine/Dependencies/imgui/imgui_widgets.o"
+	@echo "... BrainEngine/Dependencies/imgui/imgui_widgets.i"
+	@echo "... BrainEngine/Dependencies/imgui/imgui_widgets.s"
 	@echo "... BrainEngine/main.o"
 	@echo "... BrainEngine/main.i"
 	@echo "... BrainEngine/main.s"

@@ -83,20 +83,132 @@ CMakeFiles/Brain.dir/BrainEngine/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Brain.dir/BrainEngine/main.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/c2/Documents/BrainEngine/BrainEngine/main.cpp -o CMakeFiles/Brain.dir/BrainEngine/main.cpp.s
 
+CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui.cpp.o: CMakeFiles/Brain.dir/flags.make
+CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui.cpp.o: /Users/c2/Documents/BrainEngine/BrainEngine/Dependencies/imgui/imgui.cpp
+CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui.cpp.o: CMakeFiles/Brain.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/c2/Documents/BrainEngine/BrainEngine/out/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui.cpp.o -MF CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui.cpp.o.d -o CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui.cpp.o -c /Users/c2/Documents/BrainEngine/BrainEngine/Dependencies/imgui/imgui.cpp
+
+CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/c2/Documents/BrainEngine/BrainEngine/Dependencies/imgui/imgui.cpp > CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui.cpp.i
+
+CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/c2/Documents/BrainEngine/BrainEngine/Dependencies/imgui/imgui.cpp -o CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui.cpp.s
+
+CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_demo.cpp.o: CMakeFiles/Brain.dir/flags.make
+CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_demo.cpp.o: /Users/c2/Documents/BrainEngine/BrainEngine/Dependencies/imgui/imgui_demo.cpp
+CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_demo.cpp.o: CMakeFiles/Brain.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/c2/Documents/BrainEngine/BrainEngine/out/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_demo.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_demo.cpp.o -MF CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_demo.cpp.o.d -o CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_demo.cpp.o -c /Users/c2/Documents/BrainEngine/BrainEngine/Dependencies/imgui/imgui_demo.cpp
+
+CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_demo.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_demo.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/c2/Documents/BrainEngine/BrainEngine/Dependencies/imgui/imgui_demo.cpp > CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_demo.cpp.i
+
+CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_demo.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_demo.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/c2/Documents/BrainEngine/BrainEngine/Dependencies/imgui/imgui_demo.cpp -o CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_demo.cpp.s
+
+CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_draw.cpp.o: CMakeFiles/Brain.dir/flags.make
+CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_draw.cpp.o: /Users/c2/Documents/BrainEngine/BrainEngine/Dependencies/imgui/imgui_draw.cpp
+CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_draw.cpp.o: CMakeFiles/Brain.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/c2/Documents/BrainEngine/BrainEngine/out/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_draw.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_draw.cpp.o -MF CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_draw.cpp.o.d -o CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_draw.cpp.o -c /Users/c2/Documents/BrainEngine/BrainEngine/Dependencies/imgui/imgui_draw.cpp
+
+CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_draw.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_draw.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/c2/Documents/BrainEngine/BrainEngine/Dependencies/imgui/imgui_draw.cpp > CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_draw.cpp.i
+
+CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_draw.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_draw.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/c2/Documents/BrainEngine/BrainEngine/Dependencies/imgui/imgui_draw.cpp -o CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_draw.cpp.s
+
+CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_tables.cpp.o: CMakeFiles/Brain.dir/flags.make
+CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_tables.cpp.o: /Users/c2/Documents/BrainEngine/BrainEngine/Dependencies/imgui/imgui_tables.cpp
+CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_tables.cpp.o: CMakeFiles/Brain.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/c2/Documents/BrainEngine/BrainEngine/out/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_tables.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_tables.cpp.o -MF CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_tables.cpp.o.d -o CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_tables.cpp.o -c /Users/c2/Documents/BrainEngine/BrainEngine/Dependencies/imgui/imgui_tables.cpp
+
+CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_tables.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_tables.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/c2/Documents/BrainEngine/BrainEngine/Dependencies/imgui/imgui_tables.cpp > CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_tables.cpp.i
+
+CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_tables.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_tables.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/c2/Documents/BrainEngine/BrainEngine/Dependencies/imgui/imgui_tables.cpp -o CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_tables.cpp.s
+
+CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_widgets.cpp.o: CMakeFiles/Brain.dir/flags.make
+CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_widgets.cpp.o: /Users/c2/Documents/BrainEngine/BrainEngine/Dependencies/imgui/imgui_widgets.cpp
+CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_widgets.cpp.o: CMakeFiles/Brain.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/c2/Documents/BrainEngine/BrainEngine/out/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_widgets.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_widgets.cpp.o -MF CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_widgets.cpp.o.d -o CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_widgets.cpp.o -c /Users/c2/Documents/BrainEngine/BrainEngine/Dependencies/imgui/imgui_widgets.cpp
+
+CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_widgets.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_widgets.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/c2/Documents/BrainEngine/BrainEngine/Dependencies/imgui/imgui_widgets.cpp > CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_widgets.cpp.i
+
+CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_widgets.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_widgets.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/c2/Documents/BrainEngine/BrainEngine/Dependencies/imgui/imgui_widgets.cpp -o CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_widgets.cpp.s
+
+CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/backends/imgui_impl_glfw.cpp.o: CMakeFiles/Brain.dir/flags.make
+CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/backends/imgui_impl_glfw.cpp.o: /Users/c2/Documents/BrainEngine/BrainEngine/Dependencies/imgui/backends/imgui_impl_glfw.cpp
+CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/backends/imgui_impl_glfw.cpp.o: CMakeFiles/Brain.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/c2/Documents/BrainEngine/BrainEngine/out/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/backends/imgui_impl_glfw.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/backends/imgui_impl_glfw.cpp.o -MF CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/backends/imgui_impl_glfw.cpp.o.d -o CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/backends/imgui_impl_glfw.cpp.o -c /Users/c2/Documents/BrainEngine/BrainEngine/Dependencies/imgui/backends/imgui_impl_glfw.cpp
+
+CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/backends/imgui_impl_glfw.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/backends/imgui_impl_glfw.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/c2/Documents/BrainEngine/BrainEngine/Dependencies/imgui/backends/imgui_impl_glfw.cpp > CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/backends/imgui_impl_glfw.cpp.i
+
+CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/backends/imgui_impl_glfw.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/backends/imgui_impl_glfw.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/c2/Documents/BrainEngine/BrainEngine/Dependencies/imgui/backends/imgui_impl_glfw.cpp -o CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/backends/imgui_impl_glfw.cpp.s
+
+CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/backends/imgui_impl_vulkan.cpp.o: CMakeFiles/Brain.dir/flags.make
+CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/backends/imgui_impl_vulkan.cpp.o: /Users/c2/Documents/BrainEngine/BrainEngine/Dependencies/imgui/backends/imgui_impl_vulkan.cpp
+CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/backends/imgui_impl_vulkan.cpp.o: CMakeFiles/Brain.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/c2/Documents/BrainEngine/BrainEngine/out/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/backends/imgui_impl_vulkan.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/backends/imgui_impl_vulkan.cpp.o -MF CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/backends/imgui_impl_vulkan.cpp.o.d -o CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/backends/imgui_impl_vulkan.cpp.o -c /Users/c2/Documents/BrainEngine/BrainEngine/Dependencies/imgui/backends/imgui_impl_vulkan.cpp
+
+CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/backends/imgui_impl_vulkan.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/backends/imgui_impl_vulkan.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/c2/Documents/BrainEngine/BrainEngine/Dependencies/imgui/backends/imgui_impl_vulkan.cpp > CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/backends/imgui_impl_vulkan.cpp.i
+
+CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/backends/imgui_impl_vulkan.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/backends/imgui_impl_vulkan.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/c2/Documents/BrainEngine/BrainEngine/Dependencies/imgui/backends/imgui_impl_vulkan.cpp -o CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/backends/imgui_impl_vulkan.cpp.s
+
 # Object files for target Brain
 Brain_OBJECTS = \
-"CMakeFiles/Brain.dir/BrainEngine/main.cpp.o"
+"CMakeFiles/Brain.dir/BrainEngine/main.cpp.o" \
+"CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui.cpp.o" \
+"CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_demo.cpp.o" \
+"CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_draw.cpp.o" \
+"CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_tables.cpp.o" \
+"CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_widgets.cpp.o" \
+"CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/backends/imgui_impl_glfw.cpp.o" \
+"CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/backends/imgui_impl_vulkan.cpp.o"
 
 # External object files for target Brain
 Brain_EXTERNAL_OBJECTS =
 
 Brain: CMakeFiles/Brain.dir/BrainEngine/main.cpp.o
+Brain: CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui.cpp.o
+Brain: CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_demo.cpp.o
+Brain: CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_draw.cpp.o
+Brain: CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_tables.cpp.o
+Brain: CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_widgets.cpp.o
+Brain: CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/backends/imgui_impl_glfw.cpp.o
+Brain: CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/backends/imgui_impl_vulkan.cpp.o
 Brain: CMakeFiles/Brain.dir/build.make
 Brain: BrainEngine/Dependencies/glfw/src/libglfw3.a
-Brain: BrainEngine/Dependencies/glm/glm/libglm.a
 Brain: /usr/local/lib/libvulkan.dylib
+Brain: BrainEngine/Dependencies/glm/glm/libglm.a
 Brain: CMakeFiles/Brain.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/c2/Documents/BrainEngine/BrainEngine/out/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Brain"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/c2/Documents/BrainEngine/BrainEngine/out/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable Brain"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Brain.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

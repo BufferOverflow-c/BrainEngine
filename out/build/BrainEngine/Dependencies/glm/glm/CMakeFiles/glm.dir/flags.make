@@ -4,7 +4,7 @@
 # compile CXX with /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/c2/Documents/BrainEngine/BrainEngine/Dependencies/glm
+CXX_INCLUDES = -I/Users/c2/Documents/BrainEngine/BrainEngine/Dependencies/glfw/include -I/Users/c2/Documents/BrainEngine/BrainEngine/Dependencies/glm
 
 CXX_FLAGSarm64 = -Wall -std=c++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -Wno-c++98-compat -Wno-c++98-compat-pedantic
 

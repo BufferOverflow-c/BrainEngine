@@ -8,6 +8,13 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/Users/c2/Documents/BrainEngine/BrainEngine/Dependencies/imgui/backends/imgui_impl_glfw.cpp" "CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/backends/imgui_impl_glfw.cpp.o" "gcc" "CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/backends/imgui_impl_glfw.cpp.o.d"
+  "/Users/c2/Documents/BrainEngine/BrainEngine/Dependencies/imgui/backends/imgui_impl_vulkan.cpp" "CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/backends/imgui_impl_vulkan.cpp.o" "gcc" "CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/backends/imgui_impl_vulkan.cpp.o.d"
+  "/Users/c2/Documents/BrainEngine/BrainEngine/Dependencies/imgui/imgui.cpp" "CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui.cpp.o" "gcc" "CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui.cpp.o.d"
+  "/Users/c2/Documents/BrainEngine/BrainEngine/Dependencies/imgui/imgui_demo.cpp" "CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_demo.cpp.o" "gcc" "CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_demo.cpp.o.d"
+  "/Users/c2/Documents/BrainEngine/BrainEngine/Dependencies/imgui/imgui_draw.cpp" "CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_draw.cpp.o" "gcc" "CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_draw.cpp.o.d"
+  "/Users/c2/Documents/BrainEngine/BrainEngine/Dependencies/imgui/imgui_tables.cpp" "CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_tables.cpp.o" "gcc" "CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_tables.cpp.o.d"
+  "/Users/c2/Documents/BrainEngine/BrainEngine/Dependencies/imgui/imgui_widgets.cpp" "CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_widgets.cpp.o" "gcc" "CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_widgets.cpp.o.d"
   "/Users/c2/Documents/BrainEngine/BrainEngine/main.cpp" "CMakeFiles/Brain.dir/BrainEngine/main.cpp.o" "gcc" "CMakeFiles/Brain.dir/BrainEngine/main.cpp.o.d"
   )
 

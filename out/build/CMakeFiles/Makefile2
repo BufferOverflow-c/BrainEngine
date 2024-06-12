@@ -149,12 +149,12 @@ CMakeFiles/Brain.dir/all: BrainEngine/Dependencies/glfw/src/CMakeFiles/glfw.dir/
 CMakeFiles/Brain.dir/all: BrainEngine/Dependencies/glm/glm/CMakeFiles/glm.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/c2/Documents/BrainEngine/BrainEngine/out/build/CMakeFiles --progress-num=1,2 "Built target Brain"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/c2/Documents/BrainEngine/BrainEngine/out/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Built target Brain"
 .PHONY : CMakeFiles/Brain.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Brain.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/c2/Documents/BrainEngine/BrainEngine/out/build/CMakeFiles 26
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/c2/Documents/BrainEngine/BrainEngine/out/build/CMakeFiles 33
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Brain.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/c2/Documents/BrainEngine/BrainEngine/out/build/CMakeFiles 0
 .PHONY : CMakeFiles/Brain.dir/rule
@@ -201,7 +201,7 @@ BrainEngine/Dependencies/glfw/CMakeFiles/uninstall.dir/clean:
 BrainEngine/Dependencies/glfw/src/CMakeFiles/glfw.dir/all:
 	$(MAKE) $(MAKESILENT) -f BrainEngine/Dependencies/glfw/src/CMakeFiles/glfw.dir/build.make BrainEngine/Dependencies/glfw/src/CMakeFiles/glfw.dir/depend
 	$(MAKE) $(MAKESILENT) -f BrainEngine/Dependencies/glfw/src/CMakeFiles/glfw.dir/build.make BrainEngine/Dependencies/glfw/src/CMakeFiles/glfw.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/c2/Documents/BrainEngine/BrainEngine/out/build/CMakeFiles --progress-num=3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24 "Built target glfw"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/c2/Documents/BrainEngine/BrainEngine/out/build/CMakeFiles --progress-num=10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31 "Built target glfw"
 .PHONY : BrainEngine/Dependencies/glfw/src/CMakeFiles/glfw.dir/all
 
 # Build rule for subdir invocation for target.
@@ -227,7 +227,7 @@ BrainEngine/Dependencies/glfw/src/CMakeFiles/glfw.dir/clean:
 BrainEngine/Dependencies/glfw/src/CMakeFiles/update_mappings.dir/all:
 	$(MAKE) $(MAKESILENT) -f BrainEngine/Dependencies/glfw/src/CMakeFiles/update_mappings.dir/build.make BrainEngine/Dependencies/glfw/src/CMakeFiles/update_mappings.dir/depend
 	$(MAKE) $(MAKESILENT) -f BrainEngine/Dependencies/glfw/src/CMakeFiles/update_mappings.dir/build.make BrainEngine/Dependencies/glfw/src/CMakeFiles/update_mappings.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/c2/Documents/BrainEngine/BrainEngine/out/build/CMakeFiles --progress-num=27 "Built target update_mappings"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/c2/Documents/BrainEngine/BrainEngine/out/build/CMakeFiles --progress-num=34 "Built target update_mappings"
 .PHONY : BrainEngine/Dependencies/glfw/src/CMakeFiles/update_mappings.dir/all
 
 # Build rule for subdir invocation for target.
@@ -253,7 +253,7 @@ BrainEngine/Dependencies/glfw/src/CMakeFiles/update_mappings.dir/clean:
 BrainEngine/Dependencies/glm/glm/CMakeFiles/glm.dir/all:
 	$(MAKE) $(MAKESILENT) -f BrainEngine/Dependencies/glm/glm/CMakeFiles/glm.dir/build.make BrainEngine/Dependencies/glm/glm/CMakeFiles/glm.dir/depend
 	$(MAKE) $(MAKESILENT) -f BrainEngine/Dependencies/glm/glm/CMakeFiles/glm.dir/build.make BrainEngine/Dependencies/glm/glm/CMakeFiles/glm.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/c2/Documents/BrainEngine/BrainEngine/out/build/CMakeFiles --progress-num=25,26 "Built target glm"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/c2/Documents/BrainEngine/BrainEngine/out/build/CMakeFiles --progress-num=32,33 "Built target glm"
 .PHONY : BrainEngine/Dependencies/glm/glm/CMakeFiles/glm.dir/all
 
 # Build rule for subdir invocation for target.
