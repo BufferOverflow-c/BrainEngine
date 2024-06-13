@@ -2,17 +2,20 @@
 // Created by - on 6/12/24.
 //
 
-#ifndef LVE_PIPELINE_H
-#define LVE_PIPELINE_H
+#ifndef brn_PIPELINE_H
+#define brn_PIPELINE_H
 
-#include "lve_device.h"
+#include "brain_device.h"
 
 //~ std
 #include <string>
 #include <vector>
 
-namespace lve {
-    struct PiplineConfigInfo {
+namespace brn {
+    struct PipelineConfigInfo {
+        PipelineConfigInfo() = default;
+        PipelineConfigInfo(const PipelineConfigInfo&) = delete;
+        PipelineConfigInfo& operator=(const PipelineConfigInfo&) = delete;
         VkViewport viewport;
         VkRect2D scissor;
         VkPipelineViewportStateCreateInfo viewportInfo;
@@ -27,29 +30,31 @@ namespace lve {
         uint32_t subpass = 0;
     };
 
-class LvePipeline {
+class BrnPipeline {
 public:
-    LvePipeline(LveDevice& device, const std::string& vertFilePath, const std::string& fragFilePath, const PiplineConfigInfo& configInfo);
-    ~LvePipeline();
+    BrnPipeline(BrnDevice& device, const std::string& vertFilePath, const std::string& fragFilePath, const PipelineConfigInfo& configInfo);
+    ~BrnPipeline();
 
     //~ Delete Copy Constructors
-    LvePipeline(const LvePipeline&) = delete;
-    void operator=(const LvePipeline&) = delete;
+    BrnPipeline(const BrnPipeline&) = delete;
+    void operator=(const BrnPipeline&) = delete;
 
-    static PiplineConfigInfo defaultPipelineConfigInfo(uint32_t width, uint32_t height);
+    void bind(VkCommandBuffer commandBuffer);
+
+    static void defaultPipelineConfigInfo(PipelineConfigInfo& configInfo, uint32_t width, uint32_t height);
 
 private:
     static std::vector<char> readFile(const std::string& filePath);
 
-    void createGraphicsPipeline(const std::string& vertFilePath, const std::string& fragFilePath, const PiplineConfigInfo& configInfo);
+    void createGraphicsPipeline(const std::string& vertFilePath, const std::string& fragFilePath, const PipelineConfigInfo& configInfo);
 
     void createShaderModule(const std::vector<char>& code, VkShaderModule* shaderModule);
 
-    LveDevice& lveDevice;
+    BrnDevice& brnDevice;
     VkPipeline graphicsPipeline;
     VkShaderModule vertShaderModule;
     VkShaderModule fragShaderModule;
 };
-} // lve
+} // brn
 
-#endif //LVE_PIPELINE_H
+#endif //brn_PIPELINE_H

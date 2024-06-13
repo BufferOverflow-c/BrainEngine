@@ -5,28 +5,44 @@
 #ifndef FIRST_APP_H
 #define FIRST_APP_H
 
-#include "lve_window.h"
-#include "lve_pipeline.h"
-#include "lve_device.h"
+#include "brain_window.h"
+#include "brain_pipeline.h"
+#include "brain_device.h"
+#include "brain_swap_chain.h"
 
-namespace lve {
+//~ std
+#include <memory>
+#include <vector>
+
+namespace brn {
 
 class FirstApp {
 public:
     static constexpr int WIDTH = 800;
     static constexpr int HEIGHT = 600;
 
+    FirstApp();
+    ~FirstApp();
+
+    //~ Delete copy constructors
+    FirstApp(const FirstApp &) = delete;
+    FirstApp &operator=(const FirstApp &) = delete;
+
     void run();
 private:
-    LveWindow lveWindow{WIDTH, HEIGHT, "Hello Vulkan"};
-    LveDevice lveDevice{lveWindow};
-    LvePipeline lvePipeline{
-        lveDevice,
-        "/Users/c2/Documents/BrainEngine/BrainEngine/shaders/simple_shader.vert.spv",
-        "/Users/c2/Documents/BrainEngine/BrainEngine/shaders/simple_shader.frag.spv",
-        LvePipeline::defaultPipelineConfigInfo(WIDTH, HEIGHT)};
+    void createPipelineLayout();
+    void createPipeline();
+    void createCommandBuffers();
+    void drawFrame();
+
+    BrnWindow brnWindow{WIDTH, HEIGHT, "Hello Vulkan"};
+    BrnDevice brnDevice{brnWindow};
+    BrnSwapChain brnSwapChain{brnDevice, brnWindow.getExtent()};
+    std::unique_ptr<BrnPipeline> brnPipeline;
+    VkPipelineLayout pipelineLayout;
+    std::vector<VkCommandBuffer> commandBuffers;
 };
 
-} // lve
+} // brn
 
 #endif //FIRST_APP_H

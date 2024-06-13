@@ -2,8 +2,8 @@
 // Created by - on 6/12/24.
 //
 
-#ifndef LVE_WINDOW_H
-#define LVE_WINDOW_H
+#ifndef Brn_WINDOW_H
+#define Brn_WINDOW_H
 
 #define GLFW_INCLUDE_VULKAN
 #include <GLFW/glfw3.h>
@@ -11,18 +11,19 @@
 //~ std
 #include <string>
 
-namespace lve {
-    class LveWindow {
+namespace brn {
+    class BrnWindow {
     public:
-        LveWindow(int w, int h, std::string name);
-        ~LveWindow();
+        BrnWindow(int w, int h, std::string name);
+        ~BrnWindow();
 
         //~ Deleting the copy constructors to prevent mem leak
-        LveWindow(const LveWindow &) = delete;
-        LveWindow &operator=(const LveWindow &) = delete;
+        BrnWindow(const BrnWindow &) = delete;
+        BrnWindow &operator=(const BrnWindow &) = delete;
 
         //~ Inline
         bool shouldClose() { return glfwWindowShouldClose(window); }
+        VkExtent2D getExtent() { return {static_cast<uint32_t>(width), static_cast<uint32_t>(height)}; }
 
         void createWindowSurface(VkInstance instance, VkSurfaceKHR* surface);
 
@@ -38,6 +39,6 @@ namespace lve {
         GLFWwindow *window;
     };
 }
-// lve
+// brn
 
-#endif //LVE_WINDOW_H
+#endif //brn_WINDOW_H

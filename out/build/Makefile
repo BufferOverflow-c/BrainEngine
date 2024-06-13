@@ -428,6 +428,102 @@ BrainEngine/Dependencies/imgui/imgui_widgets.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_widgets.cpp.s
 .PHONY : BrainEngine/Dependencies/imgui/imgui_widgets.cpp.s
 
+BrainEngine/brain_device.o: BrainEngine/brain_device.cpp.o
+.PHONY : BrainEngine/brain_device.o
+
+# target to build an object file
+BrainEngine/brain_device.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/brain_device.cpp.o
+.PHONY : BrainEngine/brain_device.cpp.o
+
+BrainEngine/brain_device.i: BrainEngine/brain_device.cpp.i
+.PHONY : BrainEngine/brain_device.i
+
+# target to preprocess a source file
+BrainEngine/brain_device.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/brain_device.cpp.i
+.PHONY : BrainEngine/brain_device.cpp.i
+
+BrainEngine/brain_device.s: BrainEngine/brain_device.cpp.s
+.PHONY : BrainEngine/brain_device.s
+
+# target to generate assembly for a file
+BrainEngine/brain_device.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/brain_device.cpp.s
+.PHONY : BrainEngine/brain_device.cpp.s
+
+BrainEngine/brain_pipeline.o: BrainEngine/brain_pipeline.cpp.o
+.PHONY : BrainEngine/brain_pipeline.o
+
+# target to build an object file
+BrainEngine/brain_pipeline.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/brain_pipeline.cpp.o
+.PHONY : BrainEngine/brain_pipeline.cpp.o
+
+BrainEngine/brain_pipeline.i: BrainEngine/brain_pipeline.cpp.i
+.PHONY : BrainEngine/brain_pipeline.i
+
+# target to preprocess a source file
+BrainEngine/brain_pipeline.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/brain_pipeline.cpp.i
+.PHONY : BrainEngine/brain_pipeline.cpp.i
+
+BrainEngine/brain_pipeline.s: BrainEngine/brain_pipeline.cpp.s
+.PHONY : BrainEngine/brain_pipeline.s
+
+# target to generate assembly for a file
+BrainEngine/brain_pipeline.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/brain_pipeline.cpp.s
+.PHONY : BrainEngine/brain_pipeline.cpp.s
+
+BrainEngine/brain_swap_chain.o: BrainEngine/brain_swap_chain.cpp.o
+.PHONY : BrainEngine/brain_swap_chain.o
+
+# target to build an object file
+BrainEngine/brain_swap_chain.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/brain_swap_chain.cpp.o
+.PHONY : BrainEngine/brain_swap_chain.cpp.o
+
+BrainEngine/brain_swap_chain.i: BrainEngine/brain_swap_chain.cpp.i
+.PHONY : BrainEngine/brain_swap_chain.i
+
+# target to preprocess a source file
+BrainEngine/brain_swap_chain.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/brain_swap_chain.cpp.i
+.PHONY : BrainEngine/brain_swap_chain.cpp.i
+
+BrainEngine/brain_swap_chain.s: BrainEngine/brain_swap_chain.cpp.s
+.PHONY : BrainEngine/brain_swap_chain.s
+
+# target to generate assembly for a file
+BrainEngine/brain_swap_chain.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/brain_swap_chain.cpp.s
+.PHONY : BrainEngine/brain_swap_chain.cpp.s
+
+BrainEngine/brain_window.o: BrainEngine/brain_window.cpp.o
+.PHONY : BrainEngine/brain_window.o
+
+# target to build an object file
+BrainEngine/brain_window.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/brain_window.cpp.o
+.PHONY : BrainEngine/brain_window.cpp.o
+
+BrainEngine/brain_window.i: BrainEngine/brain_window.cpp.i
+.PHONY : BrainEngine/brain_window.i
+
+# target to preprocess a source file
+BrainEngine/brain_window.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/brain_window.cpp.i
+.PHONY : BrainEngine/brain_window.cpp.i
+
+BrainEngine/brain_window.s: BrainEngine/brain_window.cpp.s
+.PHONY : BrainEngine/brain_window.s
+
+# target to generate assembly for a file
+BrainEngine/brain_window.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/brain_window.cpp.s
+.PHONY : BrainEngine/brain_window.cpp.s
+
 BrainEngine/first_app.o: BrainEngine/first_app.cpp.o
 .PHONY : BrainEngine/first_app.o
 
@@ -451,78 +547,6 @@ BrainEngine/first_app.s: BrainEngine/first_app.cpp.s
 BrainEngine/first_app.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/first_app.cpp.s
 .PHONY : BrainEngine/first_app.cpp.s
-
-BrainEngine/lve_device.o: BrainEngine/lve_device.cpp.o
-.PHONY : BrainEngine/lve_device.o
-
-# target to build an object file
-BrainEngine/lve_device.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/lve_device.cpp.o
-.PHONY : BrainEngine/lve_device.cpp.o
-
-BrainEngine/lve_device.i: BrainEngine/lve_device.cpp.i
-.PHONY : BrainEngine/lve_device.i
-
-# target to preprocess a source file
-BrainEngine/lve_device.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/lve_device.cpp.i
-.PHONY : BrainEngine/lve_device.cpp.i
-
-BrainEngine/lve_device.s: BrainEngine/lve_device.cpp.s
-.PHONY : BrainEngine/lve_device.s
-
-# target to generate assembly for a file
-BrainEngine/lve_device.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/lve_device.cpp.s
-.PHONY : BrainEngine/lve_device.cpp.s
-
-BrainEngine/lve_pipeline.o: BrainEngine/lve_pipeline.cpp.o
-.PHONY : BrainEngine/lve_pipeline.o
-
-# target to build an object file
-BrainEngine/lve_pipeline.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/lve_pipeline.cpp.o
-.PHONY : BrainEngine/lve_pipeline.cpp.o
-
-BrainEngine/lve_pipeline.i: BrainEngine/lve_pipeline.cpp.i
-.PHONY : BrainEngine/lve_pipeline.i
-
-# target to preprocess a source file
-BrainEngine/lve_pipeline.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/lve_pipeline.cpp.i
-.PHONY : BrainEngine/lve_pipeline.cpp.i
-
-BrainEngine/lve_pipeline.s: BrainEngine/lve_pipeline.cpp.s
-.PHONY : BrainEngine/lve_pipeline.s
-
-# target to generate assembly for a file
-BrainEngine/lve_pipeline.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/lve_pipeline.cpp.s
-.PHONY : BrainEngine/lve_pipeline.cpp.s
-
-BrainEngine/lve_window.o: BrainEngine/lve_window.cpp.o
-.PHONY : BrainEngine/lve_window.o
-
-# target to build an object file
-BrainEngine/lve_window.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/lve_window.cpp.o
-.PHONY : BrainEngine/lve_window.cpp.o
-
-BrainEngine/lve_window.i: BrainEngine/lve_window.cpp.i
-.PHONY : BrainEngine/lve_window.i
-
-# target to preprocess a source file
-BrainEngine/lve_window.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/lve_window.cpp.i
-.PHONY : BrainEngine/lve_window.cpp.i
-
-BrainEngine/lve_window.s: BrainEngine/lve_window.cpp.s
-.PHONY : BrainEngine/lve_window.s
-
-# target to generate assembly for a file
-BrainEngine/lve_window.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/lve_window.cpp.s
-.PHONY : BrainEngine/lve_window.cpp.s
 
 BrainEngine/main.o: BrainEngine/main.cpp.o
 .PHONY : BrainEngine/main.o
@@ -587,18 +611,21 @@ help:
 	@echo "... BrainEngine/Dependencies/imgui/imgui_widgets.o"
 	@echo "... BrainEngine/Dependencies/imgui/imgui_widgets.i"
 	@echo "... BrainEngine/Dependencies/imgui/imgui_widgets.s"
+	@echo "... BrainEngine/brain_device.o"
+	@echo "... BrainEngine/brain_device.i"
+	@echo "... BrainEngine/brain_device.s"
+	@echo "... BrainEngine/brain_pipeline.o"
+	@echo "... BrainEngine/brain_pipeline.i"
+	@echo "... BrainEngine/brain_pipeline.s"
+	@echo "... BrainEngine/brain_swap_chain.o"
+	@echo "... BrainEngine/brain_swap_chain.i"
+	@echo "... BrainEngine/brain_swap_chain.s"
+	@echo "... BrainEngine/brain_window.o"
+	@echo "... BrainEngine/brain_window.i"
+	@echo "... BrainEngine/brain_window.s"
 	@echo "... BrainEngine/first_app.o"
 	@echo "... BrainEngine/first_app.i"
 	@echo "... BrainEngine/first_app.s"
-	@echo "... BrainEngine/lve_device.o"
-	@echo "... BrainEngine/lve_device.i"
-	@echo "... BrainEngine/lve_device.s"
-	@echo "... BrainEngine/lve_pipeline.o"
-	@echo "... BrainEngine/lve_pipeline.i"
-	@echo "... BrainEngine/lve_pipeline.s"
-	@echo "... BrainEngine/lve_window.o"
-	@echo "... BrainEngine/lve_window.i"
-	@echo "... BrainEngine/lve_window.s"
 	@echo "... BrainEngine/main.o"
 	@echo "... BrainEngine/main.i"
 	@echo "... BrainEngine/main.s"

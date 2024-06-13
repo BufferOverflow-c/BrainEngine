@@ -181,19 +181,19 @@ CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/backends/imgui_impl_vulkan.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/backends/imgui_impl_vulkan.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/c2/Documents/BrainEngine/BrainEngine/Dependencies/imgui/backends/imgui_impl_vulkan.cpp -o CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/backends/imgui_impl_vulkan.cpp.s
 
-CMakeFiles/Brain.dir/BrainEngine/lve_window.cpp.o: CMakeFiles/Brain.dir/flags.make
-CMakeFiles/Brain.dir/BrainEngine/lve_window.cpp.o: /Users/c2/Documents/BrainEngine/BrainEngine/lve_window.cpp
-CMakeFiles/Brain.dir/BrainEngine/lve_window.cpp.o: CMakeFiles/Brain.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/c2/Documents/BrainEngine/BrainEngine/out/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Brain.dir/BrainEngine/lve_window.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Brain.dir/BrainEngine/lve_window.cpp.o -MF CMakeFiles/Brain.dir/BrainEngine/lve_window.cpp.o.d -o CMakeFiles/Brain.dir/BrainEngine/lve_window.cpp.o -c /Users/c2/Documents/BrainEngine/BrainEngine/lve_window.cpp
+CMakeFiles/Brain.dir/BrainEngine/brain_window.cpp.o: CMakeFiles/Brain.dir/flags.make
+CMakeFiles/Brain.dir/BrainEngine/brain_window.cpp.o: /Users/c2/Documents/BrainEngine/BrainEngine/brain_window.cpp
+CMakeFiles/Brain.dir/BrainEngine/brain_window.cpp.o: CMakeFiles/Brain.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/c2/Documents/BrainEngine/BrainEngine/out/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Brain.dir/BrainEngine/brain_window.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Brain.dir/BrainEngine/brain_window.cpp.o -MF CMakeFiles/Brain.dir/BrainEngine/brain_window.cpp.o.d -o CMakeFiles/Brain.dir/BrainEngine/brain_window.cpp.o -c /Users/c2/Documents/BrainEngine/BrainEngine/brain_window.cpp
 
-CMakeFiles/Brain.dir/BrainEngine/lve_window.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Brain.dir/BrainEngine/lve_window.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/c2/Documents/BrainEngine/BrainEngine/lve_window.cpp > CMakeFiles/Brain.dir/BrainEngine/lve_window.cpp.i
+CMakeFiles/Brain.dir/BrainEngine/brain_window.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Brain.dir/BrainEngine/brain_window.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/c2/Documents/BrainEngine/BrainEngine/brain_window.cpp > CMakeFiles/Brain.dir/BrainEngine/brain_window.cpp.i
 
-CMakeFiles/Brain.dir/BrainEngine/lve_window.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Brain.dir/BrainEngine/lve_window.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/c2/Documents/BrainEngine/BrainEngine/lve_window.cpp -o CMakeFiles/Brain.dir/BrainEngine/lve_window.cpp.s
+CMakeFiles/Brain.dir/BrainEngine/brain_window.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Brain.dir/BrainEngine/brain_window.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/c2/Documents/BrainEngine/BrainEngine/brain_window.cpp -o CMakeFiles/Brain.dir/BrainEngine/brain_window.cpp.s
 
 CMakeFiles/Brain.dir/BrainEngine/first_app.cpp.o: CMakeFiles/Brain.dir/flags.make
 CMakeFiles/Brain.dir/BrainEngine/first_app.cpp.o: /Users/c2/Documents/BrainEngine/BrainEngine/first_app.cpp
@@ -209,33 +209,47 @@ CMakeFiles/Brain.dir/BrainEngine/first_app.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Brain.dir/BrainEngine/first_app.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/c2/Documents/BrainEngine/BrainEngine/first_app.cpp -o CMakeFiles/Brain.dir/BrainEngine/first_app.cpp.s
 
-CMakeFiles/Brain.dir/BrainEngine/lve_pipeline.cpp.o: CMakeFiles/Brain.dir/flags.make
-CMakeFiles/Brain.dir/BrainEngine/lve_pipeline.cpp.o: /Users/c2/Documents/BrainEngine/BrainEngine/lve_pipeline.cpp
-CMakeFiles/Brain.dir/BrainEngine/lve_pipeline.cpp.o: CMakeFiles/Brain.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/c2/Documents/BrainEngine/BrainEngine/out/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Brain.dir/BrainEngine/lve_pipeline.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Brain.dir/BrainEngine/lve_pipeline.cpp.o -MF CMakeFiles/Brain.dir/BrainEngine/lve_pipeline.cpp.o.d -o CMakeFiles/Brain.dir/BrainEngine/lve_pipeline.cpp.o -c /Users/c2/Documents/BrainEngine/BrainEngine/lve_pipeline.cpp
+CMakeFiles/Brain.dir/BrainEngine/brain_pipeline.cpp.o: CMakeFiles/Brain.dir/flags.make
+CMakeFiles/Brain.dir/BrainEngine/brain_pipeline.cpp.o: /Users/c2/Documents/BrainEngine/BrainEngine/brain_pipeline.cpp
+CMakeFiles/Brain.dir/BrainEngine/brain_pipeline.cpp.o: CMakeFiles/Brain.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/c2/Documents/BrainEngine/BrainEngine/out/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Brain.dir/BrainEngine/brain_pipeline.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Brain.dir/BrainEngine/brain_pipeline.cpp.o -MF CMakeFiles/Brain.dir/BrainEngine/brain_pipeline.cpp.o.d -o CMakeFiles/Brain.dir/BrainEngine/brain_pipeline.cpp.o -c /Users/c2/Documents/BrainEngine/BrainEngine/brain_pipeline.cpp
 
-CMakeFiles/Brain.dir/BrainEngine/lve_pipeline.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Brain.dir/BrainEngine/lve_pipeline.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/c2/Documents/BrainEngine/BrainEngine/lve_pipeline.cpp > CMakeFiles/Brain.dir/BrainEngine/lve_pipeline.cpp.i
+CMakeFiles/Brain.dir/BrainEngine/brain_pipeline.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Brain.dir/BrainEngine/brain_pipeline.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/c2/Documents/BrainEngine/BrainEngine/brain_pipeline.cpp > CMakeFiles/Brain.dir/BrainEngine/brain_pipeline.cpp.i
 
-CMakeFiles/Brain.dir/BrainEngine/lve_pipeline.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Brain.dir/BrainEngine/lve_pipeline.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/c2/Documents/BrainEngine/BrainEngine/lve_pipeline.cpp -o CMakeFiles/Brain.dir/BrainEngine/lve_pipeline.cpp.s
+CMakeFiles/Brain.dir/BrainEngine/brain_pipeline.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Brain.dir/BrainEngine/brain_pipeline.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/c2/Documents/BrainEngine/BrainEngine/brain_pipeline.cpp -o CMakeFiles/Brain.dir/BrainEngine/brain_pipeline.cpp.s
 
-CMakeFiles/Brain.dir/BrainEngine/lve_device.cpp.o: CMakeFiles/Brain.dir/flags.make
-CMakeFiles/Brain.dir/BrainEngine/lve_device.cpp.o: /Users/c2/Documents/BrainEngine/BrainEngine/lve_device.cpp
-CMakeFiles/Brain.dir/BrainEngine/lve_device.cpp.o: CMakeFiles/Brain.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/c2/Documents/BrainEngine/BrainEngine/out/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Brain.dir/BrainEngine/lve_device.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Brain.dir/BrainEngine/lve_device.cpp.o -MF CMakeFiles/Brain.dir/BrainEngine/lve_device.cpp.o.d -o CMakeFiles/Brain.dir/BrainEngine/lve_device.cpp.o -c /Users/c2/Documents/BrainEngine/BrainEngine/lve_device.cpp
+CMakeFiles/Brain.dir/BrainEngine/brain_device.cpp.o: CMakeFiles/Brain.dir/flags.make
+CMakeFiles/Brain.dir/BrainEngine/brain_device.cpp.o: /Users/c2/Documents/BrainEngine/BrainEngine/brain_device.cpp
+CMakeFiles/Brain.dir/BrainEngine/brain_device.cpp.o: CMakeFiles/Brain.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/c2/Documents/BrainEngine/BrainEngine/out/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Brain.dir/BrainEngine/brain_device.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Brain.dir/BrainEngine/brain_device.cpp.o -MF CMakeFiles/Brain.dir/BrainEngine/brain_device.cpp.o.d -o CMakeFiles/Brain.dir/BrainEngine/brain_device.cpp.o -c /Users/c2/Documents/BrainEngine/BrainEngine/brain_device.cpp
 
-CMakeFiles/Brain.dir/BrainEngine/lve_device.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Brain.dir/BrainEngine/lve_device.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/c2/Documents/BrainEngine/BrainEngine/lve_device.cpp > CMakeFiles/Brain.dir/BrainEngine/lve_device.cpp.i
+CMakeFiles/Brain.dir/BrainEngine/brain_device.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Brain.dir/BrainEngine/brain_device.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/c2/Documents/BrainEngine/BrainEngine/brain_device.cpp > CMakeFiles/Brain.dir/BrainEngine/brain_device.cpp.i
 
-CMakeFiles/Brain.dir/BrainEngine/lve_device.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Brain.dir/BrainEngine/lve_device.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/c2/Documents/BrainEngine/BrainEngine/lve_device.cpp -o CMakeFiles/Brain.dir/BrainEngine/lve_device.cpp.s
+CMakeFiles/Brain.dir/BrainEngine/brain_device.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Brain.dir/BrainEngine/brain_device.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/c2/Documents/BrainEngine/BrainEngine/brain_device.cpp -o CMakeFiles/Brain.dir/BrainEngine/brain_device.cpp.s
+
+CMakeFiles/Brain.dir/BrainEngine/brain_swap_chain.cpp.o: CMakeFiles/Brain.dir/flags.make
+CMakeFiles/Brain.dir/BrainEngine/brain_swap_chain.cpp.o: /Users/c2/Documents/BrainEngine/BrainEngine/brain_swap_chain.cpp
+CMakeFiles/Brain.dir/BrainEngine/brain_swap_chain.cpp.o: CMakeFiles/Brain.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/c2/Documents/BrainEngine/BrainEngine/out/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Brain.dir/BrainEngine/brain_swap_chain.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Brain.dir/BrainEngine/brain_swap_chain.cpp.o -MF CMakeFiles/Brain.dir/BrainEngine/brain_swap_chain.cpp.o.d -o CMakeFiles/Brain.dir/BrainEngine/brain_swap_chain.cpp.o -c /Users/c2/Documents/BrainEngine/BrainEngine/brain_swap_chain.cpp
+
+CMakeFiles/Brain.dir/BrainEngine/brain_swap_chain.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Brain.dir/BrainEngine/brain_swap_chain.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/c2/Documents/BrainEngine/BrainEngine/brain_swap_chain.cpp > CMakeFiles/Brain.dir/BrainEngine/brain_swap_chain.cpp.i
+
+CMakeFiles/Brain.dir/BrainEngine/brain_swap_chain.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Brain.dir/BrainEngine/brain_swap_chain.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/c2/Documents/BrainEngine/BrainEngine/brain_swap_chain.cpp -o CMakeFiles/Brain.dir/BrainEngine/brain_swap_chain.cpp.s
 
 # Object files for target Brain
 Brain_OBJECTS = \
@@ -247,10 +261,11 @@ Brain_OBJECTS = \
 "CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_widgets.cpp.o" \
 "CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/backends/imgui_impl_glfw.cpp.o" \
 "CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/backends/imgui_impl_vulkan.cpp.o" \
-"CMakeFiles/Brain.dir/BrainEngine/lve_window.cpp.o" \
+"CMakeFiles/Brain.dir/BrainEngine/brain_window.cpp.o" \
 "CMakeFiles/Brain.dir/BrainEngine/first_app.cpp.o" \
-"CMakeFiles/Brain.dir/BrainEngine/lve_pipeline.cpp.o" \
-"CMakeFiles/Brain.dir/BrainEngine/lve_device.cpp.o"
+"CMakeFiles/Brain.dir/BrainEngine/brain_pipeline.cpp.o" \
+"CMakeFiles/Brain.dir/BrainEngine/brain_device.cpp.o" \
+"CMakeFiles/Brain.dir/BrainEngine/brain_swap_chain.cpp.o"
 
 # External object files for target Brain
 Brain_EXTERNAL_OBJECTS =
@@ -263,16 +278,17 @@ Brain: CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_tables.cpp.o
 Brain: CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_widgets.cpp.o
 Brain: CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/backends/imgui_impl_glfw.cpp.o
 Brain: CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/backends/imgui_impl_vulkan.cpp.o
-Brain: CMakeFiles/Brain.dir/BrainEngine/lve_window.cpp.o
+Brain: CMakeFiles/Brain.dir/BrainEngine/brain_window.cpp.o
 Brain: CMakeFiles/Brain.dir/BrainEngine/first_app.cpp.o
-Brain: CMakeFiles/Brain.dir/BrainEngine/lve_pipeline.cpp.o
-Brain: CMakeFiles/Brain.dir/BrainEngine/lve_device.cpp.o
+Brain: CMakeFiles/Brain.dir/BrainEngine/brain_pipeline.cpp.o
+Brain: CMakeFiles/Brain.dir/BrainEngine/brain_device.cpp.o
+Brain: CMakeFiles/Brain.dir/BrainEngine/brain_swap_chain.cpp.o
 Brain: CMakeFiles/Brain.dir/build.make
 Brain: BrainEngine/Dependencies/glfw/src/libglfw3.a
 Brain: /usr/local/lib/libvulkan.dylib
 Brain: BrainEngine/Dependencies/glm/glm/libglm.a
 Brain: CMakeFiles/Brain.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/c2/Documents/BrainEngine/BrainEngine/out/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable Brain"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/c2/Documents/BrainEngine/BrainEngine/out/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable Brain"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Brain.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -2,28 +2,28 @@
 // Created by - on 6/12/24.
 //
 
-#include "lve_window.h"
+#include "brain_window.h"
 
 //~ std
 #include <stdexcept>
 
-namespace lve {
-    LveWindow::LveWindow(int w, int h, std::string name) : width{w}, height{h}, windowName{name} {
+namespace brn {
+    BrnWindow::BrnWindow(int w, int h, std::string name) : width{w}, height{h}, windowName{name} {
         initWindow();
     }
 
-    LveWindow::~LveWindow() {
+    BrnWindow::~BrnWindow() {
         glfwDestroyWindow(window);
         glfwTerminate();
     }
 
-    void LveWindow::createWindowSurface(VkInstance instance, VkSurfaceKHR*surface) {
+    void BrnWindow::createWindowSurface(VkInstance instance, VkSurfaceKHR*surface) {
         if(glfwCreateWindowSurface(instance, window, nullptr, surface) != VK_SUCCESS) {
             throw std::runtime_error("Failed to create window surface");
         }
     }
 
-    void LveWindow::initWindow() {
+    void BrnWindow::initWindow() {
         glfwInit();
         //~ Prevents OpenGL Calls
         glfwWindowHint(GLFW_CLIENT_API, GLFW_NO_API);
@@ -32,4 +32,4 @@ namespace lve {
 
         window = glfwCreateWindow(width, height, windowName.c_str(), nullptr, nullptr);
     }
-} // lve
+} // brn
