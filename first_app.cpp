@@ -19,6 +19,14 @@ namespace brn {
         vkDestroyPipelineLayout(brnDevice.device(), pipelineLayout, nullptr);
     }
 
+    void FirstApp::run() {
+        while(!brnWindow.shouldClose()) {
+            glfwPollEvents();
+            drawFrame();
+        }
+        vkDeviceWaitIdle(brnDevice.device());
+    }
+
     void FirstApp::createPipelineLayout() {
         VkPipelineLayoutCreateInfo pipelineLayoutInfo{};
         pipelineLayoutInfo.sType = VK_STRUCTURE_TYPE_PIPELINE_LAYOUT_CREATE_INFO;
@@ -107,13 +115,5 @@ namespace brn {
         if(result != VK_SUCCESS) {
             throw std::runtime_error("Failed to acquire swap chain image");
         }
-    }
-
-    void FirstApp::run() {
-        while(!brnWindow.shouldClose()) {
-            glfwPollEvents();
-            drawFrame();
-        }
-        vkDeviceWaitIdle(brnDevice.device());
     }
 } // brn
