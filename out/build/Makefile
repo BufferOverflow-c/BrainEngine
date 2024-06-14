@@ -452,6 +452,30 @@ BrainEngine/brain_device.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/brain_device.cpp.s
 .PHONY : BrainEngine/brain_device.cpp.s
 
+BrainEngine/brain_model.o: BrainEngine/brain_model.cpp.o
+.PHONY : BrainEngine/brain_model.o
+
+# target to build an object file
+BrainEngine/brain_model.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/brain_model.cpp.o
+.PHONY : BrainEngine/brain_model.cpp.o
+
+BrainEngine/brain_model.i: BrainEngine/brain_model.cpp.i
+.PHONY : BrainEngine/brain_model.i
+
+# target to preprocess a source file
+BrainEngine/brain_model.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/brain_model.cpp.i
+.PHONY : BrainEngine/brain_model.cpp.i
+
+BrainEngine/brain_model.s: BrainEngine/brain_model.cpp.s
+.PHONY : BrainEngine/brain_model.s
+
+# target to generate assembly for a file
+BrainEngine/brain_model.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/brain_model.cpp.s
+.PHONY : BrainEngine/brain_model.cpp.s
+
 BrainEngine/brain_pipeline.o: BrainEngine/brain_pipeline.cpp.o
 .PHONY : BrainEngine/brain_pipeline.o
 
@@ -614,6 +638,9 @@ help:
 	@echo "... BrainEngine/brain_device.o"
 	@echo "... BrainEngine/brain_device.i"
 	@echo "... BrainEngine/brain_device.s"
+	@echo "... BrainEngine/brain_model.o"
+	@echo "... BrainEngine/brain_model.i"
+	@echo "... BrainEngine/brain_model.s"
 	@echo "... BrainEngine/brain_pipeline.o"
 	@echo "... BrainEngine/brain_pipeline.i"
 	@echo "... BrainEngine/brain_pipeline.s"

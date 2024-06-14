@@ -10,6 +10,7 @@
 
 namespace brn {
     FirstApp::FirstApp() {
+        loadModels();
         createPipelineLayout();
         createPipeline();
         createCommandBuffers();
@@ -25,6 +26,28 @@ namespace brn {
             drawFrame();
         }
         vkDeviceWaitIdle(brnDevice.device());
+    }
+
+    void FirstApp::sierpinski(std::vector<BrnModel::Vertex> &vertices, int depth, glm::vec2 left, glm::vec2 right,
+    glm::vec2 top) {
+        if(depth <= 0) {
+            vertices.push_back({top});
+            vertices.push_back({right});
+            vertices.push_back({left});
+        } else {
+            glm::vec<2, float> leftTop = 0.5f * (left + top);
+            glm::vec<2, float> rightTop = 0.5f * (right + top);
+            glm::vec<2, float> leftRight = 0.5f * (left + right);
+            sierpinski(vertices, depth - 1, left, leftRight, leftTop);
+            sierpinski(vertices, depth - 1, leftRight, right, rightTop);
+            sierpinski(vertices, depth - 1, leftTop, rightTop, top);
+        }
+    }
+
+    void FirstApp::loadModels() {
+        std::vector<BrnModel::Vertex>vertices {};
+        sierpinski(vertices, 7, {-0.5f, 0.5f}, {0.5f, 0.5f}, {0.f, -0.5f});
+        brnModel = std::make_unique<BrnModel>(brnDevice, vertices);
     }
 
     void FirstApp::createPipelineLayout() {
@@ -94,7 +117,8 @@ namespace brn {
             vkCmdBeginRenderPass(commandBuffers[i], &renderPassInfo, VK_SUBPASS_CONTENTS_INLINE);
 
             brnPipeline->bind(commandBuffers[i]);
-            vkCmdDraw(commandBuffers[i], 3, 1, 0, 0);
+            brnModel->bind(commandBuffers[i]);
+            brnModel->draw(commandBuffers[i]);
 
             vkCmdEndRenderPass(commandBuffers[i]);
             if(vkEndCommandBuffer(commandBuffers[i]) != VK_SUCCESS) {

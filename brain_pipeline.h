@@ -2,8 +2,8 @@
 // Created by - on 6/12/24.
 //
 
-#ifndef brn_PIPELINE_H
-#define brn_PIPELINE_H
+#ifndef BRAIN_PIPELINE_H
+#define BRAIN_PIPELINE_H
 
 #include "brain_device.h"
 

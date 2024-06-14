@@ -2,8 +2,8 @@
 // Created by - on 6/12/24.
 //
 
-#ifndef Brn_WINDOW_H
-#define Brn_WINDOW_H
+#ifndef BRAIN_WINDOW_H
+#define BRAIN_WINDOW_H
 
 #define GLFW_INCLUDE_VULKAN
 #include <GLFW/glfw3.h>

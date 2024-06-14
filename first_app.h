@@ -9,6 +9,7 @@
 #include "brain_pipeline.h"
 #include "brain_device.h"
 #include "brain_swap_chain.h"
+#include "brain_model.h"
 
 //~ std
 #include <memory>
@@ -30,10 +31,13 @@ public:
 
     void run();
 private:
+    void loadModels();
     void createPipelineLayout();
     void createPipeline();
     void createCommandBuffers();
     void drawFrame();
+
+    void sierpinski(std::vector<BrnModel::Vertex>& vertices, int depth, glm::vec2 left, glm::vec2 right, glm::vec2 top);
 
     BrnWindow brnWindow{WIDTH, HEIGHT, "Hello Vulkan"};
     BrnDevice brnDevice{brnWindow};
@@ -41,6 +45,7 @@ private:
     std::unique_ptr<BrnPipeline> brnPipeline;
     VkPipelineLayout pipelineLayout;
     std::vector<VkCommandBuffer> commandBuffers;
+    std::unique_ptr<BrnModel> brnModel;
 };
 
 } // brn

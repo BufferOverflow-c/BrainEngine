@@ -1,4 +1,5 @@
-#pragma once
+#ifndef BRAIN_DEVICE_H
+#define BRAIN_DEVICE_H
 
 #include "brain_window.h"
 
@@ -106,3 +107,4 @@ class BrnDevice {
 };
 
 }  // namespace brn
+#endif

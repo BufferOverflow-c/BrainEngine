@@ -17,6 +17,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_widgets.cpp.o.d"
   "CMakeFiles/Brain.dir/BrainEngine/brain_device.cpp.o"
   "CMakeFiles/Brain.dir/BrainEngine/brain_device.cpp.o.d"
+  "CMakeFiles/Brain.dir/BrainEngine/brain_model.cpp.o"
+  "CMakeFiles/Brain.dir/BrainEngine/brain_model.cpp.o.d"
   "CMakeFiles/Brain.dir/BrainEngine/brain_pipeline.cpp.o"
   "CMakeFiles/Brain.dir/BrainEngine/brain_pipeline.cpp.o.d"
   "CMakeFiles/Brain.dir/BrainEngine/brain_swap_chain.cpp.o"

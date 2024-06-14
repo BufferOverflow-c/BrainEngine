@@ -16,6 +16,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/c2/Documents/BrainEngine/BrainEngine/Dependencies/imgui/imgui_tables.cpp" "CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_tables.cpp.o" "gcc" "CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_tables.cpp.o.d"
   "/Users/c2/Documents/BrainEngine/BrainEngine/Dependencies/imgui/imgui_widgets.cpp" "CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_widgets.cpp.o" "gcc" "CMakeFiles/Brain.dir/BrainEngine/Dependencies/imgui/imgui_widgets.cpp.o.d"
   "/Users/c2/Documents/BrainEngine/BrainEngine/brain_device.cpp" "CMakeFiles/Brain.dir/BrainEngine/brain_device.cpp.o" "gcc" "CMakeFiles/Brain.dir/BrainEngine/brain_device.cpp.o.d"
+  "/Users/c2/Documents/BrainEngine/BrainEngine/brain_model.cpp" "CMakeFiles/Brain.dir/BrainEngine/brain_model.cpp.o" "gcc" "CMakeFiles/Brain.dir/BrainEngine/brain_model.cpp.o.d"
   "/Users/c2/Documents/BrainEngine/BrainEngine/brain_pipeline.cpp" "CMakeFiles/Brain.dir/BrainEngine/brain_pipeline.cpp.o" "gcc" "CMakeFiles/Brain.dir/BrainEngine/brain_pipeline.cpp.o.d"
   "/Users/c2/Documents/BrainEngine/BrainEngine/brain_swap_chain.cpp" "CMakeFiles/Brain.dir/BrainEngine/brain_swap_chain.cpp.o" "gcc" "CMakeFiles/Brain.dir/BrainEngine/brain_swap_chain.cpp.o.d"
   "/Users/c2/Documents/BrainEngine/BrainEngine/brain_window.cpp" "CMakeFiles/Brain.dir/BrainEngine/brain_window.cpp.o" "gcc" "CMakeFiles/Brain.dir/BrainEngine/brain_window.cpp.o.d"

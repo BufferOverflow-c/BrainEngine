@@ -1,4 +1,5 @@
-#pragma once
+#ifndef BRAIN_SWAP_CHAIN_H
+#define BRAIN_SWAP_CHAIN_H
 
 #include "brain_device.h"
 
@@ -78,3 +79,4 @@ class BrnSwapChain {
 };
 
 }  // namespace brn
+#endif
