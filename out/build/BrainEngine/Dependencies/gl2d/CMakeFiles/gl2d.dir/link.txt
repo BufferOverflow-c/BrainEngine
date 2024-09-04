@@ -1,0 +1,2 @@
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar qc libgl2d.a CMakeFiles/gl2d.dir/src/gl2d.cpp.o CMakeFiles/gl2d.dir/src/gl2dParticleSystem.cpp.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib libgl2d.a
