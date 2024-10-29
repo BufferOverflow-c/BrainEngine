@@ -18,32 +18,35 @@
 namespace brn {
 class BrnModel {
 public:
-    struct Vertex {
-        glm::vec2 position;
+  struct Vertex {
+    glm::vec2 position;
+    glm::vec3 color;
 
-        static std::vector<VkVertexInputBindingDescription> getBindingDescriptions();
-        static std::vector<VkVertexInputAttributeDescription> getAttributeDescriptions();
-    };
+    static std::vector<VkVertexInputBindingDescription>
+    getBindingDescriptions();
+    static std::vector<VkVertexInputAttributeDescription>
+    getAttributeDescriptions();
+  };
 
-    BrnModel(BrnDevice& device, const std::vector<Vertex> &verticies);
-    ~BrnModel();
+  BrnModel(BrnDevice &device, const std::vector<Vertex> &verticies);
+  ~BrnModel();
 
-    // Delete copy constructors
-    BrnModel(const BrnModel &) = delete;
-    BrnModel &operator=(const BrnModel &) = delete;
+  // Delete copy constructors
+  BrnModel(const BrnModel &) = delete;
+  BrnModel &operator=(const BrnModel &) = delete;
 
-    void bind(VkCommandBuffer commandBuffer);
-    void draw(VkCommandBuffer commandBuffer);
+  void bind(VkCommandBuffer commandBuffer);
+  void draw(VkCommandBuffer commandBuffer);
+
 private:
-    BrnDevice& brnDevice;
-    VkBuffer vertexBuffer;
-    VkDeviceMemory vertexBufferMemory;
-    uint32_t vertexCount;
+  BrnDevice &brnDevice;
+  VkBuffer vertexBuffer;
+  VkDeviceMemory vertexBufferMemory;
+  uint32_t vertexCount;
 
-    void createVertexBuffers(const std::vector<Vertex> &vertices);
-
+  void createVertexBuffers(const std::vector<Vertex> &vertices);
 };
 
-} // brn
+} // namespace brn
 
-#endif //BRN_MODEL_H
+#endif // BRN_MODEL_H

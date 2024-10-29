@@ -6,9 +6,9 @@ C_DEFINES = -D_GLFW_USE_CONFIG_H
 
 C_INCLUDES = -I/Users/c2/Documents/BrainEngine/BrainEngine/Dependencies/glfw-3.3.2/include -I/Users/c2/Documents/BrainEngine/BrainEngine/Dependencies/glfw-3.3.2/src -I/Users/c2/Documents/BrainEngine/BrainEngine/out/build/BrainEngine/Dependencies/glfw-3.3.2/src
 
-C_FLAGSarm64 = -std=gnu99 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -fPIC -Wall
+C_FLAGSarm64 = -std=gnu99 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk -mmacosx-version-min=15.0 -fPIC -Wall
 
-C_FLAGS = -std=gnu99 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -fPIC -Wall
+C_FLAGS = -std=gnu99 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk -mmacosx-version-min=15.0 -fPIC -Wall
 
 # Custom flags: BrainEngine/Dependencies/glfw-3.3.2/src/CMakeFiles/glfw.dir/context.c.o_FLAGS = -Wdeclaration-after-statement
 

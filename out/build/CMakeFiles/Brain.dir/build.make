@@ -44,10 +44,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /opt/homebrew/Cellar/cmake/3.30.2/bin/cmake
+CMAKE_COMMAND = /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake
 
 # The command to remove a file.
-RM = /opt/homebrew/Cellar/cmake/3.30.2/bin/cmake -E rm -f
+RM = /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -83,52 +83,66 @@ CMakeFiles/Brain.dir/BrainEngine/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Brain.dir/BrainEngine/src/main.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/c2/Documents/BrainEngine/BrainEngine/src/main.cpp -o CMakeFiles/Brain.dir/BrainEngine/src/main.cpp.s
 
-CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_window.cpp.o: CMakeFiles/Brain.dir/flags.make
-CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_window.cpp.o: /Users/c2/Documents/BrainEngine/BrainEngine/src/vulkan/brain_window.cpp
-CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_window.cpp.o: CMakeFiles/Brain.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/c2/Documents/BrainEngine/BrainEngine/out/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_window.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_window.cpp.o -MF CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_window.cpp.o.d -o CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_window.cpp.o -c /Users/c2/Documents/BrainEngine/BrainEngine/src/vulkan/brain_window.cpp
+CMakeFiles/Brain.dir/BrainEngine/src/gameLayer/gameLayer.cpp.o: CMakeFiles/Brain.dir/flags.make
+CMakeFiles/Brain.dir/BrainEngine/src/gameLayer/gameLayer.cpp.o: /Users/c2/Documents/BrainEngine/BrainEngine/src/gameLayer/gameLayer.cpp
+CMakeFiles/Brain.dir/BrainEngine/src/gameLayer/gameLayer.cpp.o: CMakeFiles/Brain.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/c2/Documents/BrainEngine/BrainEngine/out/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Brain.dir/BrainEngine/src/gameLayer/gameLayer.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Brain.dir/BrainEngine/src/gameLayer/gameLayer.cpp.o -MF CMakeFiles/Brain.dir/BrainEngine/src/gameLayer/gameLayer.cpp.o.d -o CMakeFiles/Brain.dir/BrainEngine/src/gameLayer/gameLayer.cpp.o -c /Users/c2/Documents/BrainEngine/BrainEngine/src/gameLayer/gameLayer.cpp
 
-CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_window.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_window.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/c2/Documents/BrainEngine/BrainEngine/src/vulkan/brain_window.cpp > CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_window.cpp.i
+CMakeFiles/Brain.dir/BrainEngine/src/gameLayer/gameLayer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Brain.dir/BrainEngine/src/gameLayer/gameLayer.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/c2/Documents/BrainEngine/BrainEngine/src/gameLayer/gameLayer.cpp > CMakeFiles/Brain.dir/BrainEngine/src/gameLayer/gameLayer.cpp.i
 
-CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_window.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_window.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/c2/Documents/BrainEngine/BrainEngine/src/vulkan/brain_window.cpp -o CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_window.cpp.s
+CMakeFiles/Brain.dir/BrainEngine/src/gameLayer/gameLayer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Brain.dir/BrainEngine/src/gameLayer/gameLayer.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/c2/Documents/BrainEngine/BrainEngine/src/gameLayer/gameLayer.cpp -o CMakeFiles/Brain.dir/BrainEngine/src/gameLayer/gameLayer.cpp.s
 
-CMakeFiles/Brain.dir/BrainEngine/src/vulkan/first_app.cpp.o: CMakeFiles/Brain.dir/flags.make
-CMakeFiles/Brain.dir/BrainEngine/src/vulkan/first_app.cpp.o: /Users/c2/Documents/BrainEngine/BrainEngine/src/vulkan/first_app.cpp
-CMakeFiles/Brain.dir/BrainEngine/src/vulkan/first_app.cpp.o: CMakeFiles/Brain.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/c2/Documents/BrainEngine/BrainEngine/out/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Brain.dir/BrainEngine/src/vulkan/first_app.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Brain.dir/BrainEngine/src/vulkan/first_app.cpp.o -MF CMakeFiles/Brain.dir/BrainEngine/src/vulkan/first_app.cpp.o.d -o CMakeFiles/Brain.dir/BrainEngine/src/vulkan/first_app.cpp.o -c /Users/c2/Documents/BrainEngine/BrainEngine/src/vulkan/first_app.cpp
+CMakeFiles/Brain.dir/BrainEngine/src/platform/errorReporting.cpp.o: CMakeFiles/Brain.dir/flags.make
+CMakeFiles/Brain.dir/BrainEngine/src/platform/errorReporting.cpp.o: /Users/c2/Documents/BrainEngine/BrainEngine/src/platform/errorReporting.cpp
+CMakeFiles/Brain.dir/BrainEngine/src/platform/errorReporting.cpp.o: CMakeFiles/Brain.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/c2/Documents/BrainEngine/BrainEngine/out/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Brain.dir/BrainEngine/src/platform/errorReporting.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Brain.dir/BrainEngine/src/platform/errorReporting.cpp.o -MF CMakeFiles/Brain.dir/BrainEngine/src/platform/errorReporting.cpp.o.d -o CMakeFiles/Brain.dir/BrainEngine/src/platform/errorReporting.cpp.o -c /Users/c2/Documents/BrainEngine/BrainEngine/src/platform/errorReporting.cpp
 
-CMakeFiles/Brain.dir/BrainEngine/src/vulkan/first_app.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Brain.dir/BrainEngine/src/vulkan/first_app.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/c2/Documents/BrainEngine/BrainEngine/src/vulkan/first_app.cpp > CMakeFiles/Brain.dir/BrainEngine/src/vulkan/first_app.cpp.i
+CMakeFiles/Brain.dir/BrainEngine/src/platform/errorReporting.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Brain.dir/BrainEngine/src/platform/errorReporting.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/c2/Documents/BrainEngine/BrainEngine/src/platform/errorReporting.cpp > CMakeFiles/Brain.dir/BrainEngine/src/platform/errorReporting.cpp.i
 
-CMakeFiles/Brain.dir/BrainEngine/src/vulkan/first_app.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Brain.dir/BrainEngine/src/vulkan/first_app.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/c2/Documents/BrainEngine/BrainEngine/src/vulkan/first_app.cpp -o CMakeFiles/Brain.dir/BrainEngine/src/vulkan/first_app.cpp.s
+CMakeFiles/Brain.dir/BrainEngine/src/platform/errorReporting.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Brain.dir/BrainEngine/src/platform/errorReporting.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/c2/Documents/BrainEngine/BrainEngine/src/platform/errorReporting.cpp -o CMakeFiles/Brain.dir/BrainEngine/src/platform/errorReporting.cpp.s
 
-CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_pipeline.cpp.o: CMakeFiles/Brain.dir/flags.make
-CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_pipeline.cpp.o: /Users/c2/Documents/BrainEngine/BrainEngine/src/vulkan/brain_pipeline.cpp
-CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_pipeline.cpp.o: CMakeFiles/Brain.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/c2/Documents/BrainEngine/BrainEngine/out/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_pipeline.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_pipeline.cpp.o -MF CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_pipeline.cpp.o.d -o CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_pipeline.cpp.o -c /Users/c2/Documents/BrainEngine/BrainEngine/src/vulkan/brain_pipeline.cpp
+CMakeFiles/Brain.dir/BrainEngine/src/platform/opterPlatformFunctions.cpp.o: CMakeFiles/Brain.dir/flags.make
+CMakeFiles/Brain.dir/BrainEngine/src/platform/opterPlatformFunctions.cpp.o: /Users/c2/Documents/BrainEngine/BrainEngine/src/platform/opterPlatformFunctions.cpp
+CMakeFiles/Brain.dir/BrainEngine/src/platform/opterPlatformFunctions.cpp.o: CMakeFiles/Brain.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/c2/Documents/BrainEngine/BrainEngine/out/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Brain.dir/BrainEngine/src/platform/opterPlatformFunctions.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Brain.dir/BrainEngine/src/platform/opterPlatformFunctions.cpp.o -MF CMakeFiles/Brain.dir/BrainEngine/src/platform/opterPlatformFunctions.cpp.o.d -o CMakeFiles/Brain.dir/BrainEngine/src/platform/opterPlatformFunctions.cpp.o -c /Users/c2/Documents/BrainEngine/BrainEngine/src/platform/opterPlatformFunctions.cpp
 
-CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_pipeline.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_pipeline.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/c2/Documents/BrainEngine/BrainEngine/src/vulkan/brain_pipeline.cpp > CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_pipeline.cpp.i
+CMakeFiles/Brain.dir/BrainEngine/src/platform/opterPlatformFunctions.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Brain.dir/BrainEngine/src/platform/opterPlatformFunctions.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/c2/Documents/BrainEngine/BrainEngine/src/platform/opterPlatformFunctions.cpp > CMakeFiles/Brain.dir/BrainEngine/src/platform/opterPlatformFunctions.cpp.i
 
-CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_pipeline.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_pipeline.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/c2/Documents/BrainEngine/BrainEngine/src/vulkan/brain_pipeline.cpp -o CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_pipeline.cpp.s
+CMakeFiles/Brain.dir/BrainEngine/src/platform/opterPlatformFunctions.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Brain.dir/BrainEngine/src/platform/opterPlatformFunctions.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/c2/Documents/BrainEngine/BrainEngine/src/platform/opterPlatformFunctions.cpp -o CMakeFiles/Brain.dir/BrainEngine/src/platform/opterPlatformFunctions.cpp.s
+
+CMakeFiles/Brain.dir/BrainEngine/src/platform/platformInput.cpp.o: CMakeFiles/Brain.dir/flags.make
+CMakeFiles/Brain.dir/BrainEngine/src/platform/platformInput.cpp.o: /Users/c2/Documents/BrainEngine/BrainEngine/src/platform/platformInput.cpp
+CMakeFiles/Brain.dir/BrainEngine/src/platform/platformInput.cpp.o: CMakeFiles/Brain.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/c2/Documents/BrainEngine/BrainEngine/out/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Brain.dir/BrainEngine/src/platform/platformInput.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Brain.dir/BrainEngine/src/platform/platformInput.cpp.o -MF CMakeFiles/Brain.dir/BrainEngine/src/platform/platformInput.cpp.o.d -o CMakeFiles/Brain.dir/BrainEngine/src/platform/platformInput.cpp.o -c /Users/c2/Documents/BrainEngine/BrainEngine/src/platform/platformInput.cpp
+
+CMakeFiles/Brain.dir/BrainEngine/src/platform/platformInput.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Brain.dir/BrainEngine/src/platform/platformInput.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/c2/Documents/BrainEngine/BrainEngine/src/platform/platformInput.cpp > CMakeFiles/Brain.dir/BrainEngine/src/platform/platformInput.cpp.i
+
+CMakeFiles/Brain.dir/BrainEngine/src/platform/platformInput.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Brain.dir/BrainEngine/src/platform/platformInput.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/c2/Documents/BrainEngine/BrainEngine/src/platform/platformInput.cpp -o CMakeFiles/Brain.dir/BrainEngine/src/platform/platformInput.cpp.s
 
 CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_device.cpp.o: CMakeFiles/Brain.dir/flags.make
 CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_device.cpp.o: /Users/c2/Documents/BrainEngine/BrainEngine/src/vulkan/brain_device.cpp
 CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_device.cpp.o: CMakeFiles/Brain.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/c2/Documents/BrainEngine/BrainEngine/out/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_device.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/c2/Documents/BrainEngine/BrainEngine/out/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_device.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_device.cpp.o -MF CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_device.cpp.o.d -o CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_device.cpp.o -c /Users/c2/Documents/BrainEngine/BrainEngine/src/vulkan/brain_device.cpp
 
 CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_device.cpp.i: cmake_force
@@ -138,20 +152,6 @@ CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_device.cpp.i: cmake_force
 CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_device.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_device.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/c2/Documents/BrainEngine/BrainEngine/src/vulkan/brain_device.cpp -o CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_device.cpp.s
-
-CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_swap_chain.cpp.o: CMakeFiles/Brain.dir/flags.make
-CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_swap_chain.cpp.o: /Users/c2/Documents/BrainEngine/BrainEngine/src/vulkan/brain_swap_chain.cpp
-CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_swap_chain.cpp.o: CMakeFiles/Brain.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/c2/Documents/BrainEngine/BrainEngine/out/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_swap_chain.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_swap_chain.cpp.o -MF CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_swap_chain.cpp.o.d -o CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_swap_chain.cpp.o -c /Users/c2/Documents/BrainEngine/BrainEngine/src/vulkan/brain_swap_chain.cpp
-
-CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_swap_chain.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_swap_chain.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/c2/Documents/BrainEngine/BrainEngine/src/vulkan/brain_swap_chain.cpp > CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_swap_chain.cpp.i
-
-CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_swap_chain.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_swap_chain.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/c2/Documents/BrainEngine/BrainEngine/src/vulkan/brain_swap_chain.cpp -o CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_swap_chain.cpp.s
 
 CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_model.cpp.o: CMakeFiles/Brain.dir/flags.make
 CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_model.cpp.o: /Users/c2/Documents/BrainEngine/BrainEngine/src/vulkan/brain_model.cpp
@@ -167,90 +167,90 @@ CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_model.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_model.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/c2/Documents/BrainEngine/BrainEngine/src/vulkan/brain_model.cpp -o CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_model.cpp.s
 
-CMakeFiles/Brain.dir/BrainEngine/src/gameLayer/gameLayer.cpp.o: CMakeFiles/Brain.dir/flags.make
-CMakeFiles/Brain.dir/BrainEngine/src/gameLayer/gameLayer.cpp.o: /Users/c2/Documents/BrainEngine/BrainEngine/src/gameLayer/gameLayer.cpp
-CMakeFiles/Brain.dir/BrainEngine/src/gameLayer/gameLayer.cpp.o: CMakeFiles/Brain.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/c2/Documents/BrainEngine/BrainEngine/out/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Brain.dir/BrainEngine/src/gameLayer/gameLayer.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Brain.dir/BrainEngine/src/gameLayer/gameLayer.cpp.o -MF CMakeFiles/Brain.dir/BrainEngine/src/gameLayer/gameLayer.cpp.o.d -o CMakeFiles/Brain.dir/BrainEngine/src/gameLayer/gameLayer.cpp.o -c /Users/c2/Documents/BrainEngine/BrainEngine/src/gameLayer/gameLayer.cpp
+CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_pipeline.cpp.o: CMakeFiles/Brain.dir/flags.make
+CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_pipeline.cpp.o: /Users/c2/Documents/BrainEngine/BrainEngine/src/vulkan/brain_pipeline.cpp
+CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_pipeline.cpp.o: CMakeFiles/Brain.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/c2/Documents/BrainEngine/BrainEngine/out/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_pipeline.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_pipeline.cpp.o -MF CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_pipeline.cpp.o.d -o CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_pipeline.cpp.o -c /Users/c2/Documents/BrainEngine/BrainEngine/src/vulkan/brain_pipeline.cpp
 
-CMakeFiles/Brain.dir/BrainEngine/src/gameLayer/gameLayer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Brain.dir/BrainEngine/src/gameLayer/gameLayer.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/c2/Documents/BrainEngine/BrainEngine/src/gameLayer/gameLayer.cpp > CMakeFiles/Brain.dir/BrainEngine/src/gameLayer/gameLayer.cpp.i
+CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_pipeline.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_pipeline.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/c2/Documents/BrainEngine/BrainEngine/src/vulkan/brain_pipeline.cpp > CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_pipeline.cpp.i
 
-CMakeFiles/Brain.dir/BrainEngine/src/gameLayer/gameLayer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Brain.dir/BrainEngine/src/gameLayer/gameLayer.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/c2/Documents/BrainEngine/BrainEngine/src/gameLayer/gameLayer.cpp -o CMakeFiles/Brain.dir/BrainEngine/src/gameLayer/gameLayer.cpp.s
+CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_pipeline.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_pipeline.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/c2/Documents/BrainEngine/BrainEngine/src/vulkan/brain_pipeline.cpp -o CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_pipeline.cpp.s
 
-CMakeFiles/Brain.dir/BrainEngine/src/platform/errorReporting.cpp.o: CMakeFiles/Brain.dir/flags.make
-CMakeFiles/Brain.dir/BrainEngine/src/platform/errorReporting.cpp.o: /Users/c2/Documents/BrainEngine/BrainEngine/src/platform/errorReporting.cpp
-CMakeFiles/Brain.dir/BrainEngine/src/platform/errorReporting.cpp.o: CMakeFiles/Brain.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/c2/Documents/BrainEngine/BrainEngine/out/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Brain.dir/BrainEngine/src/platform/errorReporting.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Brain.dir/BrainEngine/src/platform/errorReporting.cpp.o -MF CMakeFiles/Brain.dir/BrainEngine/src/platform/errorReporting.cpp.o.d -o CMakeFiles/Brain.dir/BrainEngine/src/platform/errorReporting.cpp.o -c /Users/c2/Documents/BrainEngine/BrainEngine/src/platform/errorReporting.cpp
+CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_swap_chain.cpp.o: CMakeFiles/Brain.dir/flags.make
+CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_swap_chain.cpp.o: /Users/c2/Documents/BrainEngine/BrainEngine/src/vulkan/brain_swap_chain.cpp
+CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_swap_chain.cpp.o: CMakeFiles/Brain.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/c2/Documents/BrainEngine/BrainEngine/out/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_swap_chain.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_swap_chain.cpp.o -MF CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_swap_chain.cpp.o.d -o CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_swap_chain.cpp.o -c /Users/c2/Documents/BrainEngine/BrainEngine/src/vulkan/brain_swap_chain.cpp
 
-CMakeFiles/Brain.dir/BrainEngine/src/platform/errorReporting.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Brain.dir/BrainEngine/src/platform/errorReporting.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/c2/Documents/BrainEngine/BrainEngine/src/platform/errorReporting.cpp > CMakeFiles/Brain.dir/BrainEngine/src/platform/errorReporting.cpp.i
+CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_swap_chain.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_swap_chain.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/c2/Documents/BrainEngine/BrainEngine/src/vulkan/brain_swap_chain.cpp > CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_swap_chain.cpp.i
 
-CMakeFiles/Brain.dir/BrainEngine/src/platform/errorReporting.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Brain.dir/BrainEngine/src/platform/errorReporting.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/c2/Documents/BrainEngine/BrainEngine/src/platform/errorReporting.cpp -o CMakeFiles/Brain.dir/BrainEngine/src/platform/errorReporting.cpp.s
+CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_swap_chain.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_swap_chain.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/c2/Documents/BrainEngine/BrainEngine/src/vulkan/brain_swap_chain.cpp -o CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_swap_chain.cpp.s
 
-CMakeFiles/Brain.dir/BrainEngine/src/platform/opterPlatformFunctions.cpp.o: CMakeFiles/Brain.dir/flags.make
-CMakeFiles/Brain.dir/BrainEngine/src/platform/opterPlatformFunctions.cpp.o: /Users/c2/Documents/BrainEngine/BrainEngine/src/platform/opterPlatformFunctions.cpp
-CMakeFiles/Brain.dir/BrainEngine/src/platform/opterPlatformFunctions.cpp.o: CMakeFiles/Brain.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/c2/Documents/BrainEngine/BrainEngine/out/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Brain.dir/BrainEngine/src/platform/opterPlatformFunctions.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Brain.dir/BrainEngine/src/platform/opterPlatformFunctions.cpp.o -MF CMakeFiles/Brain.dir/BrainEngine/src/platform/opterPlatformFunctions.cpp.o.d -o CMakeFiles/Brain.dir/BrainEngine/src/platform/opterPlatformFunctions.cpp.o -c /Users/c2/Documents/BrainEngine/BrainEngine/src/platform/opterPlatformFunctions.cpp
+CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_window.cpp.o: CMakeFiles/Brain.dir/flags.make
+CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_window.cpp.o: /Users/c2/Documents/BrainEngine/BrainEngine/src/vulkan/brain_window.cpp
+CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_window.cpp.o: CMakeFiles/Brain.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/c2/Documents/BrainEngine/BrainEngine/out/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_window.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_window.cpp.o -MF CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_window.cpp.o.d -o CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_window.cpp.o -c /Users/c2/Documents/BrainEngine/BrainEngine/src/vulkan/brain_window.cpp
 
-CMakeFiles/Brain.dir/BrainEngine/src/platform/opterPlatformFunctions.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Brain.dir/BrainEngine/src/platform/opterPlatformFunctions.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/c2/Documents/BrainEngine/BrainEngine/src/platform/opterPlatformFunctions.cpp > CMakeFiles/Brain.dir/BrainEngine/src/platform/opterPlatformFunctions.cpp.i
+CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_window.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_window.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/c2/Documents/BrainEngine/BrainEngine/src/vulkan/brain_window.cpp > CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_window.cpp.i
 
-CMakeFiles/Brain.dir/BrainEngine/src/platform/opterPlatformFunctions.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Brain.dir/BrainEngine/src/platform/opterPlatformFunctions.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/c2/Documents/BrainEngine/BrainEngine/src/platform/opterPlatformFunctions.cpp -o CMakeFiles/Brain.dir/BrainEngine/src/platform/opterPlatformFunctions.cpp.s
+CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_window.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_window.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/c2/Documents/BrainEngine/BrainEngine/src/vulkan/brain_window.cpp -o CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_window.cpp.s
 
-CMakeFiles/Brain.dir/BrainEngine/src/platform/platformInput.cpp.o: CMakeFiles/Brain.dir/flags.make
-CMakeFiles/Brain.dir/BrainEngine/src/platform/platformInput.cpp.o: /Users/c2/Documents/BrainEngine/BrainEngine/src/platform/platformInput.cpp
-CMakeFiles/Brain.dir/BrainEngine/src/platform/platformInput.cpp.o: CMakeFiles/Brain.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/c2/Documents/BrainEngine/BrainEngine/out/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Brain.dir/BrainEngine/src/platform/platformInput.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Brain.dir/BrainEngine/src/platform/platformInput.cpp.o -MF CMakeFiles/Brain.dir/BrainEngine/src/platform/platformInput.cpp.o.d -o CMakeFiles/Brain.dir/BrainEngine/src/platform/platformInput.cpp.o -c /Users/c2/Documents/BrainEngine/BrainEngine/src/platform/platformInput.cpp
+CMakeFiles/Brain.dir/BrainEngine/src/vulkan/first_app.cpp.o: CMakeFiles/Brain.dir/flags.make
+CMakeFiles/Brain.dir/BrainEngine/src/vulkan/first_app.cpp.o: /Users/c2/Documents/BrainEngine/BrainEngine/src/vulkan/first_app.cpp
+CMakeFiles/Brain.dir/BrainEngine/src/vulkan/first_app.cpp.o: CMakeFiles/Brain.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/c2/Documents/BrainEngine/BrainEngine/out/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Brain.dir/BrainEngine/src/vulkan/first_app.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Brain.dir/BrainEngine/src/vulkan/first_app.cpp.o -MF CMakeFiles/Brain.dir/BrainEngine/src/vulkan/first_app.cpp.o.d -o CMakeFiles/Brain.dir/BrainEngine/src/vulkan/first_app.cpp.o -c /Users/c2/Documents/BrainEngine/BrainEngine/src/vulkan/first_app.cpp
 
-CMakeFiles/Brain.dir/BrainEngine/src/platform/platformInput.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Brain.dir/BrainEngine/src/platform/platformInput.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/c2/Documents/BrainEngine/BrainEngine/src/platform/platformInput.cpp > CMakeFiles/Brain.dir/BrainEngine/src/platform/platformInput.cpp.i
+CMakeFiles/Brain.dir/BrainEngine/src/vulkan/first_app.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Brain.dir/BrainEngine/src/vulkan/first_app.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/c2/Documents/BrainEngine/BrainEngine/src/vulkan/first_app.cpp > CMakeFiles/Brain.dir/BrainEngine/src/vulkan/first_app.cpp.i
 
-CMakeFiles/Brain.dir/BrainEngine/src/platform/platformInput.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Brain.dir/BrainEngine/src/platform/platformInput.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/c2/Documents/BrainEngine/BrainEngine/src/platform/platformInput.cpp -o CMakeFiles/Brain.dir/BrainEngine/src/platform/platformInput.cpp.s
+CMakeFiles/Brain.dir/BrainEngine/src/vulkan/first_app.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Brain.dir/BrainEngine/src/vulkan/first_app.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/c2/Documents/BrainEngine/BrainEngine/src/vulkan/first_app.cpp -o CMakeFiles/Brain.dir/BrainEngine/src/vulkan/first_app.cpp.s
 
 # Object files for target Brain
 Brain_OBJECTS = \
 "CMakeFiles/Brain.dir/BrainEngine/src/main.cpp.o" \
-"CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_window.cpp.o" \
-"CMakeFiles/Brain.dir/BrainEngine/src/vulkan/first_app.cpp.o" \
-"CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_pipeline.cpp.o" \
-"CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_device.cpp.o" \
-"CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_swap_chain.cpp.o" \
-"CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_model.cpp.o" \
 "CMakeFiles/Brain.dir/BrainEngine/src/gameLayer/gameLayer.cpp.o" \
 "CMakeFiles/Brain.dir/BrainEngine/src/platform/errorReporting.cpp.o" \
 "CMakeFiles/Brain.dir/BrainEngine/src/platform/opterPlatformFunctions.cpp.o" \
-"CMakeFiles/Brain.dir/BrainEngine/src/platform/platformInput.cpp.o"
+"CMakeFiles/Brain.dir/BrainEngine/src/platform/platformInput.cpp.o" \
+"CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_device.cpp.o" \
+"CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_model.cpp.o" \
+"CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_pipeline.cpp.o" \
+"CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_swap_chain.cpp.o" \
+"CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_window.cpp.o" \
+"CMakeFiles/Brain.dir/BrainEngine/src/vulkan/first_app.cpp.o"
 
 # External object files for target Brain
 Brain_EXTERNAL_OBJECTS =
 
 Brain: CMakeFiles/Brain.dir/BrainEngine/src/main.cpp.o
-Brain: CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_window.cpp.o
-Brain: CMakeFiles/Brain.dir/BrainEngine/src/vulkan/first_app.cpp.o
-Brain: CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_pipeline.cpp.o
-Brain: CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_device.cpp.o
-Brain: CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_swap_chain.cpp.o
-Brain: CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_model.cpp.o
 Brain: CMakeFiles/Brain.dir/BrainEngine/src/gameLayer/gameLayer.cpp.o
 Brain: CMakeFiles/Brain.dir/BrainEngine/src/platform/errorReporting.cpp.o
 Brain: CMakeFiles/Brain.dir/BrainEngine/src/platform/opterPlatformFunctions.cpp.o
 Brain: CMakeFiles/Brain.dir/BrainEngine/src/platform/platformInput.cpp.o
+Brain: CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_device.cpp.o
+Brain: CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_model.cpp.o
+Brain: CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_pipeline.cpp.o
+Brain: CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_swap_chain.cpp.o
+Brain: CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_window.cpp.o
+Brain: CMakeFiles/Brain.dir/BrainEngine/src/vulkan/first_app.cpp.o
 Brain: CMakeFiles/Brain.dir/build.make
 Brain: BrainEngine/Dependencies/glm/glm/libglm.a
 Brain: BrainEngine/Dependencies/glfw-3.3.2/src/libglfw3.a
