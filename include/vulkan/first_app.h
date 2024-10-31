@@ -36,14 +36,17 @@ private:
   void createPipelineLayout();
   void createPipeline();
   void createCommandBuffers();
+  void freeCommandBuffers();
   void drawFrame();
+  void recreateSwapChain();
+  void recordCommandBuffer(int imageIndex);
 
   void sierpinski(std::vector<BrnModel::Vertex> &vertices, int depth,
                   glm::vec2 left, glm::vec2 right, glm::vec2 top);
 
   BrnWindow brnWindow{WIDTH, HEIGHT, "Hello Vulkan"};
   BrnDevice brnDevice{brnWindow};
-  BrnSwapChain brnSwapChain{brnDevice, brnWindow.getExtent()};
+  std::unique_ptr<BrnSwapChain> brnSwapChain;
   std::unique_ptr<BrnPipeline> brnPipeline;
   VkPipelineLayout pipelineLayout;
   std::vector<VkCommandBuffer> commandBuffers;

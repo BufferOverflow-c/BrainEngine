@@ -12,49 +12,55 @@
 #include <vector>
 
 namespace brn {
-    struct PipelineConfigInfo {
-        PipelineConfigInfo() = default;
-        PipelineConfigInfo(const PipelineConfigInfo&) = delete;
-        PipelineConfigInfo& operator=(const PipelineConfigInfo&) = delete;
-        VkViewport viewport;
-        VkRect2D scissor;
-        VkPipelineViewportStateCreateInfo viewportInfo;
-        VkPipelineInputAssemblyStateCreateInfo inputAssemblyInfo;
-        VkPipelineRasterizationStateCreateInfo rasterizationInfo;
-        VkPipelineMultisampleStateCreateInfo multisampleInfo;
-        VkPipelineColorBlendAttachmentState colorBlendAttachment;
-        VkPipelineColorBlendStateCreateInfo colorBlendInfo;
-        VkPipelineDepthStencilStateCreateInfo depthStencilInfo;
-        VkPipelineLayout pipelineLayout = nullptr;
-        VkRenderPass renderPass = nullptr;
-        uint32_t subpass = 0;
-    };
+struct PipelineConfigInfo {
+  PipelineConfigInfo() = default;
+  PipelineConfigInfo(const PipelineConfigInfo &) = delete;
+  PipelineConfigInfo &operator=(const PipelineConfigInfo &) = delete;
+
+  VkPipelineViewportStateCreateInfo viewportInfo;
+  VkPipelineInputAssemblyStateCreateInfo inputAssemblyInfo;
+  VkPipelineRasterizationStateCreateInfo rasterizationInfo;
+  VkPipelineMultisampleStateCreateInfo multisampleInfo;
+  VkPipelineColorBlendAttachmentState colorBlendAttachment;
+  VkPipelineColorBlendStateCreateInfo colorBlendInfo;
+  VkPipelineDepthStencilStateCreateInfo depthStencilInfo;
+  std::vector<VkDynamicState> dynamicStateEnables;
+  VkPipelineDynamicStateCreateInfo dynamicStateInfo;
+  VkPipelineLayout pipelineLayout = nullptr;
+  VkRenderPass renderPass = nullptr;
+  uint32_t subpass = 0;
+};
 
 class BrnPipeline {
 public:
-    BrnPipeline(BrnDevice& device, const std::string& vertFilePath, const std::string& fragFilePath, const PipelineConfigInfo& configInfo);
-    ~BrnPipeline();
+  BrnPipeline(BrnDevice &device, const std::string &vertFilePath,
+              const std::string &fragFilePath,
+              const PipelineConfigInfo &configInfo);
+  ~BrnPipeline();
 
-    //~ Delete Copy Constructors
-    BrnPipeline(const BrnPipeline&) = delete;
-    void operator=(const BrnPipeline&) = delete;
+  //~ Delete Copy Constructors
+  BrnPipeline(const BrnPipeline &) = delete;
+  void operator=(const BrnPipeline &) = delete;
 
-    void bind(VkCommandBuffer commandBuffer);
+  void bind(VkCommandBuffer commandBuffer);
 
-    static void defaultPipelineConfigInfo(PipelineConfigInfo& configInfo, uint32_t width, uint32_t height);
+  static void defaultPipelineConfigInfo(PipelineConfigInfo &configInfo);
 
 private:
-    static std::vector<char> readFile(const std::string& filePath);
+  static std::vector<char> readFile(const std::string &filePath);
 
-    void createGraphicsPipeline(const std::string& vertFilePath, const std::string& fragFilePath, const PipelineConfigInfo& configInfo);
+  void createGraphicsPipeline(const std::string &vertFilePath,
+                              const std::string &fragFilePath,
+                              const PipelineConfigInfo &configInfo);
 
-    void createShaderModule(const std::vector<char>& code, VkShaderModule* shaderModule);
+  void createShaderModule(const std::vector<char> &code,
+                          VkShaderModule *shaderModule);
 
-    BrnDevice& brnDevice;
-    VkPipeline graphicsPipeline;
-    VkShaderModule vertShaderModule;
-    VkShaderModule fragShaderModule;
+  BrnDevice &brnDevice;
+  VkPipeline graphicsPipeline;
+  VkShaderModule vertShaderModule;
+  VkShaderModule fragShaderModule;
 };
-} // brn
+} // namespace brn
 
-#endif //brn_PIPELINE_H
+#endif // brn_PIPELINE_H
