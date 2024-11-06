@@ -5,6 +5,11 @@
 #include "../../include/vulkan/first_app.h"
 #include "vulkan/vulkan_core.h"
 
+//~ libs
+#define GLM_FORCE_RADIANS
+#define GLM_FORCE_DEPTH_ZERO_TO_ONE
+#include <glm/glm.hpp>
+
 //~ std
 #include <array>
 #include <cmath>
@@ -12,6 +17,12 @@
 #include <stdexcept>
 
 namespace brn {
+
+struct SimplePushConstantData {
+  glm::vec2 offset;
+  alignas(16) glm::vec3 color;
+};
+
 FirstApp::FirstApp() {
   loadModels();
   createPipelineLayout();
@@ -56,12 +67,18 @@ void FirstApp::loadModels() {
 }
 
 void FirstApp::createPipelineLayout() {
+  VkPushConstantRange pushConstantRange{};
+  pushConstantRange.stageFlags =
+      VK_SHADER_STAGE_VERTEX_BIT | VK_SHADER_STAGE_FRAGMENT_BIT;
+  pushConstantRange.offset = 0;
+  pushConstantRange.size = sizeof(SimplePushConstantData);
+
   VkPipelineLayoutCreateInfo pipelineLayoutInfo{};
   pipelineLayoutInfo.sType = VK_STRUCTURE_TYPE_PIPELINE_LAYOUT_CREATE_INFO;
   pipelineLayoutInfo.setLayoutCount = 0;
   pipelineLayoutInfo.pSetLayouts = nullptr;
-  pipelineLayoutInfo.pushConstantRangeCount = 0;
-  pipelineLayoutInfo.pPushConstantRanges = nullptr;
+  pipelineLayoutInfo.pushConstantRangeCount = 1;
+  pipelineLayoutInfo.pPushConstantRanges = &pushConstantRange;
   if (vkCreatePipelineLayout(brnDevice.device(), &pipelineLayoutInfo, nullptr,
                              &pipelineLayout) != VK_SUCCESS) {
     throw std::runtime_error("Failed to create pipeline layout");
@@ -131,6 +148,9 @@ void FirstApp::freeCommandBuffers() {
 }
 
 void FirstApp::recordCommandBuffer(int imageIndex) {
+  static int frame = 0;
+  frame = (frame + 1) % 1000;
+
   VkCommandBufferBeginInfo beginInfo{};
   beginInfo.sType = VK_STRUCTURE_TYPE_COMMAND_BUFFER_BEGIN_INFO;
 
@@ -148,7 +168,7 @@ void FirstApp::recordCommandBuffer(int imageIndex) {
   renderPassInfo.renderArea.extent = brnSwapChain->getSwapChainExtent();
 
   std::array<VkClearValue, 2> clearValues{};
-  clearValues[0].color = {0.1f, 0.1f, 0.1f, 1.f};
+  clearValues[0].color = {0.01f, 0.01f, 0.01f, 1.f};
   clearValues[1].depthStencil = {1.f, 0};
   renderPassInfo.clearValueCount = static_cast<uint32_t>(clearValues.size());
   renderPassInfo.pClearValues = clearValues.data();
@@ -170,7 +190,19 @@ void FirstApp::recordCommandBuffer(int imageIndex) {
 
   brnPipeline->bind(commandBuffers[imageIndex]);
   brnModel->bind(commandBuffers[imageIndex]);
-  brnModel->draw(commandBuffers[imageIndex]);
+
+  for (int i{}; i < 4; i++) {
+    SimplePushConstantData push{};
+    push.offset = {-0.5f + frame * 0.02f, -0.4f + i * 0.25f};
+    push.color = {0.0f, 0.0f, 0.2f + 0.2f * i};
+
+    vkCmdPushConstants(commandBuffers[imageIndex], pipelineLayout,
+                       VK_SHADER_STAGE_VERTEX_BIT |
+                           VK_SHADER_STAGE_FRAGMENT_BIT,
+                       0, sizeof(SimplePushConstantData), &push);
+
+    brnModel->draw(commandBuffers[imageIndex]);
+  }
 
   vkCmdEndRenderPass(commandBuffers[imageIndex]);
   if (vkEndCommandBuffer(commandBuffers[imageIndex]) != VK_SUCCESS) {
