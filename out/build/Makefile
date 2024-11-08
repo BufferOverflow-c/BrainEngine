@@ -452,6 +452,30 @@ BrainEngine/src/vulkan/brain_pipeline.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_pipeline.cpp.s
 .PHONY : BrainEngine/src/vulkan/brain_pipeline.cpp.s
 
+BrainEngine/src/vulkan/brain_renderer.o: BrainEngine/src/vulkan/brain_renderer.cpp.o
+.PHONY : BrainEngine/src/vulkan/brain_renderer.o
+
+# target to build an object file
+BrainEngine/src/vulkan/brain_renderer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_renderer.cpp.o
+.PHONY : BrainEngine/src/vulkan/brain_renderer.cpp.o
+
+BrainEngine/src/vulkan/brain_renderer.i: BrainEngine/src/vulkan/brain_renderer.cpp.i
+.PHONY : BrainEngine/src/vulkan/brain_renderer.i
+
+# target to preprocess a source file
+BrainEngine/src/vulkan/brain_renderer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_renderer.cpp.i
+.PHONY : BrainEngine/src/vulkan/brain_renderer.cpp.i
+
+BrainEngine/src/vulkan/brain_renderer.s: BrainEngine/src/vulkan/brain_renderer.cpp.s
+.PHONY : BrainEngine/src/vulkan/brain_renderer.s
+
+# target to generate assembly for a file
+BrainEngine/src/vulkan/brain_renderer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_renderer.cpp.s
+.PHONY : BrainEngine/src/vulkan/brain_renderer.cpp.s
+
 BrainEngine/src/vulkan/brain_swap_chain.o: BrainEngine/src/vulkan/brain_swap_chain.cpp.o
 .PHONY : BrainEngine/src/vulkan/brain_swap_chain.o
 
@@ -524,6 +548,30 @@ BrainEngine/src/vulkan/first_app.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/src/vulkan/first_app.cpp.s
 .PHONY : BrainEngine/src/vulkan/first_app.cpp.s
 
+BrainEngine/src/vulkan/simple_render_system.o: BrainEngine/src/vulkan/simple_render_system.cpp.o
+.PHONY : BrainEngine/src/vulkan/simple_render_system.o
+
+# target to build an object file
+BrainEngine/src/vulkan/simple_render_system.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/src/vulkan/simple_render_system.cpp.o
+.PHONY : BrainEngine/src/vulkan/simple_render_system.cpp.o
+
+BrainEngine/src/vulkan/simple_render_system.i: BrainEngine/src/vulkan/simple_render_system.cpp.i
+.PHONY : BrainEngine/src/vulkan/simple_render_system.i
+
+# target to preprocess a source file
+BrainEngine/src/vulkan/simple_render_system.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/src/vulkan/simple_render_system.cpp.i
+.PHONY : BrainEngine/src/vulkan/simple_render_system.cpp.i
+
+BrainEngine/src/vulkan/simple_render_system.s: BrainEngine/src/vulkan/simple_render_system.cpp.s
+.PHONY : BrainEngine/src/vulkan/simple_render_system.s
+
+# target to generate assembly for a file
+BrainEngine/src/vulkan/simple_render_system.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/src/vulkan/simple_render_system.cpp.s
+.PHONY : BrainEngine/src/vulkan/simple_render_system.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -567,6 +615,9 @@ help:
 	@echo "... BrainEngine/src/vulkan/brain_pipeline.o"
 	@echo "... BrainEngine/src/vulkan/brain_pipeline.i"
 	@echo "... BrainEngine/src/vulkan/brain_pipeline.s"
+	@echo "... BrainEngine/src/vulkan/brain_renderer.o"
+	@echo "... BrainEngine/src/vulkan/brain_renderer.i"
+	@echo "... BrainEngine/src/vulkan/brain_renderer.s"
 	@echo "... BrainEngine/src/vulkan/brain_swap_chain.o"
 	@echo "... BrainEngine/src/vulkan/brain_swap_chain.i"
 	@echo "... BrainEngine/src/vulkan/brain_swap_chain.s"
@@ -576,6 +627,9 @@ help:
 	@echo "... BrainEngine/src/vulkan/first_app.o"
 	@echo "... BrainEngine/src/vulkan/first_app.i"
 	@echo "... BrainEngine/src/vulkan/first_app.s"
+	@echo "... BrainEngine/src/vulkan/simple_render_system.o"
+	@echo "... BrainEngine/src/vulkan/simple_render_system.i"
+	@echo "... BrainEngine/src/vulkan/simple_render_system.s"
 .PHONY : help
 
 

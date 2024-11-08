@@ -6,9 +6,8 @@
 #define FIRST_APP_H
 
 #include "brain_device.h"
-#include "brain_model.h"
-#include "brain_pipeline.h"
-#include "brain_swap_chain.h"
+#include "brain_game_object.h"
+#include "brain_renderer.h"
 #include "brain_window.h"
 
 //~ std
@@ -32,25 +31,12 @@ public:
   void run();
 
 private:
-  void loadModels();
-  void createPipelineLayout();
-  void createPipeline();
-  void createCommandBuffers();
-  void freeCommandBuffers();
-  void drawFrame();
-  void recreateSwapChain();
-  void recordCommandBuffer(int imageIndex);
-
-  void sierpinski(std::vector<BrnModel::Vertex> &vertices, int depth,
-                  glm::vec2 left, glm::vec2 right, glm::vec2 top);
+  void loadGameObjects();
 
   BrnWindow brnWindow{WIDTH, HEIGHT, "Hello Vulkan"};
   BrnDevice brnDevice{brnWindow};
-  std::unique_ptr<BrnSwapChain> brnSwapChain;
-  std::unique_ptr<BrnPipeline> brnPipeline;
-  VkPipelineLayout pipelineLayout;
-  std::vector<VkCommandBuffer> commandBuffers;
-  std::unique_ptr<BrnModel> brnModel;
+  BrnRenderer brnRenderer{brnWindow, brnDevice};
+  std::vector<BrnGameObject> gameObjects;
 };
 
 } // namespace brn

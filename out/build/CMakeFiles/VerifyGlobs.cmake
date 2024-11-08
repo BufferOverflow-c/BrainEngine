@@ -13,9 +13,11 @@ set(OLD_GLOB
   "/Users/c2/Documents/BrainEngine/BrainEngine/src/vulkan/brain_device.cpp"
   "/Users/c2/Documents/BrainEngine/BrainEngine/src/vulkan/brain_model.cpp"
   "/Users/c2/Documents/BrainEngine/BrainEngine/src/vulkan/brain_pipeline.cpp"
+  "/Users/c2/Documents/BrainEngine/BrainEngine/src/vulkan/brain_renderer.cpp"
   "/Users/c2/Documents/BrainEngine/BrainEngine/src/vulkan/brain_swap_chain.cpp"
   "/Users/c2/Documents/BrainEngine/BrainEngine/src/vulkan/brain_window.cpp"
   "/Users/c2/Documents/BrainEngine/BrainEngine/src/vulkan/first_app.cpp"
+  "/Users/c2/Documents/BrainEngine/BrainEngine/src/vulkan/simple_render_system.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
