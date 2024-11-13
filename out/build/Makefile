@@ -380,6 +380,30 @@ BrainEngine/src/platform/platformInput.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/src/platform/platformInput.cpp.s
 .PHONY : BrainEngine/src/platform/platformInput.cpp.s
 
+BrainEngine/src/vulkan/brain_camera.o: BrainEngine/src/vulkan/brain_camera.cpp.o
+.PHONY : BrainEngine/src/vulkan/brain_camera.o
+
+# target to build an object file
+BrainEngine/src/vulkan/brain_camera.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_camera.cpp.o
+.PHONY : BrainEngine/src/vulkan/brain_camera.cpp.o
+
+BrainEngine/src/vulkan/brain_camera.i: BrainEngine/src/vulkan/brain_camera.cpp.i
+.PHONY : BrainEngine/src/vulkan/brain_camera.i
+
+# target to preprocess a source file
+BrainEngine/src/vulkan/brain_camera.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_camera.cpp.i
+.PHONY : BrainEngine/src/vulkan/brain_camera.cpp.i
+
+BrainEngine/src/vulkan/brain_camera.s: BrainEngine/src/vulkan/brain_camera.cpp.s
+.PHONY : BrainEngine/src/vulkan/brain_camera.s
+
+# target to generate assembly for a file
+BrainEngine/src/vulkan/brain_camera.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_camera.cpp.s
+.PHONY : BrainEngine/src/vulkan/brain_camera.cpp.s
+
 BrainEngine/src/vulkan/brain_device.o: BrainEngine/src/vulkan/brain_device.cpp.o
 .PHONY : BrainEngine/src/vulkan/brain_device.o
 
@@ -606,6 +630,9 @@ help:
 	@echo "... BrainEngine/src/platform/platformInput.o"
 	@echo "... BrainEngine/src/platform/platformInput.i"
 	@echo "... BrainEngine/src/platform/platformInput.s"
+	@echo "... BrainEngine/src/vulkan/brain_camera.o"
+	@echo "... BrainEngine/src/vulkan/brain_camera.i"
+	@echo "... BrainEngine/src/vulkan/brain_camera.s"
 	@echo "... BrainEngine/src/vulkan/brain_device.o"
 	@echo "... BrainEngine/src/vulkan/brain_device.i"
 	@echo "... BrainEngine/src/vulkan/brain_device.s"

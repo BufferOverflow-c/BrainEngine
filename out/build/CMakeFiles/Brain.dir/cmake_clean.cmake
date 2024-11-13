@@ -11,6 +11,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Brain.dir/BrainEngine/src/platform/opterPlatformFunctions.cpp.o.d"
   "CMakeFiles/Brain.dir/BrainEngine/src/platform/platformInput.cpp.o"
   "CMakeFiles/Brain.dir/BrainEngine/src/platform/platformInput.cpp.o.d"
+  "CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_camera.cpp.o"
+  "CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_camera.cpp.o.d"
   "CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_device.cpp.o"
   "CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_device.cpp.o.d"
   "CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_model.cpp.o"

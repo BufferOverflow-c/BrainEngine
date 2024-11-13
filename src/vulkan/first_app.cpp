@@ -3,9 +3,11 @@
 //
 
 #include "../../include/vulkan/first_app.h"
+#include "../../include/vulkan/brain_camera.h"
 #include "../../include/vulkan/simple_render_system.h"
+
 #include "vulkan/vulkan_core.h"
-#include <memory>
+
 //~ libs
 #define GLM_FORCE_RADIANS
 #define GLM_FORCE_DEPTH_ZERO_TO_ONE
@@ -16,6 +18,7 @@
 #include <array>
 #include <cmath>
 #include <cstdint>
+#include <memory>
 #include <stdexcept>
 
 namespace brn {
@@ -28,12 +31,18 @@ void FirstApp::run() {
   SimpleRenderSystem simplerendersystem{brnDevice,
                                         brnRenderer.getSwapChainRenderPass()};
 
+  BrnCamera camera{};
+
   while (!brnWindow.shouldClose()) {
     glfwPollEvents();
 
+    float aspect = brnRenderer.getAspectRatio();
+    // camera.setOrthographicProjection(-aspect, aspect, -1, 1, -1, 1);
+    camera.setPerspectiveProjection(glm::radians(50.f), aspect, 0.1f, 10);
+
     if (auto commandBuffer = brnRenderer.beginFrame()) {
       brnRenderer.beginSwapChainRenderPass(commandBuffer);
-      simplerendersystem.renderGameObjects(commandBuffer, gameObjects);
+      simplerendersystem.renderGameObjects(commandBuffer, gameObjects, camera);
       brnRenderer.endSwapChainRenderPass(commandBuffer);
       brnRenderer.endFrame();
     }
@@ -106,7 +115,7 @@ void FirstApp::loadGameObjects() {
 
   auto cube = BrnGameObject::createGameObject();
   cube.model = brnModel;
-  cube.transform.translation = {0.f, 0.f, 0.5f};
+  cube.transform.translation = {0.f, 0.f, 2.5f};
   cube.transform.scale = {0.5f, 0.5f, 0.5f};
 
   gameObjects.push_back(std::move(cube));

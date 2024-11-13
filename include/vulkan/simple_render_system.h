@@ -1,6 +1,7 @@
 #ifndef SIMPLE_RENDER_SYSTEM_H
 #define SIMPLE_RENDER_SYSTEM_H
 
+#include "brain_camera.h"
 #include "brain_device.h"
 #include "brain_game_object.h"
 #include "brain_pipeline.h"
@@ -21,7 +22,8 @@ public:
   SimpleRenderSystem &operator=(const SimpleRenderSystem &) = delete;
 
   void renderGameObjects(VkCommandBuffer commandBuffer,
-                         std::vector<BrnGameObject> &gameObjects);
+                         std::vector<BrnGameObject> &gameObjects,
+                         const BrnCamera &camera);
 
 private:
   void createPipelineLayout();
