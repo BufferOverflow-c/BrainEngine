@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/Users/c2/Documents/BrainEngine/BrainEngine/src/app/first_app.cpp" "CMakeFiles/Brain.dir/BrainEngine/src/app/first_app.cpp.o" "gcc" "CMakeFiles/Brain.dir/BrainEngine/src/app/first_app.cpp.o.d"
   "/Users/c2/Documents/BrainEngine/BrainEngine/src/gameLayer/gameLayer.cpp" "CMakeFiles/Brain.dir/BrainEngine/src/gameLayer/gameLayer.cpp.o" "gcc" "CMakeFiles/Brain.dir/BrainEngine/src/gameLayer/gameLayer.cpp.o.d"
   "/Users/c2/Documents/BrainEngine/BrainEngine/src/main.cpp" "CMakeFiles/Brain.dir/BrainEngine/src/main.cpp.o" "gcc" "CMakeFiles/Brain.dir/BrainEngine/src/main.cpp.o.d"
   "/Users/c2/Documents/BrainEngine/BrainEngine/src/platform/errorReporting.cpp" "CMakeFiles/Brain.dir/BrainEngine/src/platform/errorReporting.cpp.o" "gcc" "CMakeFiles/Brain.dir/BrainEngine/src/platform/errorReporting.cpp.o.d"
@@ -20,7 +21,6 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/c2/Documents/BrainEngine/BrainEngine/src/vulkan/brain_renderer.cpp" "CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_renderer.cpp.o" "gcc" "CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_renderer.cpp.o.d"
   "/Users/c2/Documents/BrainEngine/BrainEngine/src/vulkan/brain_swap_chain.cpp" "CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_swap_chain.cpp.o" "gcc" "CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_swap_chain.cpp.o.d"
   "/Users/c2/Documents/BrainEngine/BrainEngine/src/vulkan/brain_window.cpp" "CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_window.cpp.o" "gcc" "CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_window.cpp.o.d"
-  "/Users/c2/Documents/BrainEngine/BrainEngine/src/vulkan/first_app.cpp" "CMakeFiles/Brain.dir/BrainEngine/src/vulkan/first_app.cpp.o" "gcc" "CMakeFiles/Brain.dir/BrainEngine/src/vulkan/first_app.cpp.o.d"
   "/Users/c2/Documents/BrainEngine/BrainEngine/src/vulkan/simple_render_system.cpp" "CMakeFiles/Brain.dir/BrainEngine/src/vulkan/simple_render_system.cpp.o" "gcc" "CMakeFiles/Brain.dir/BrainEngine/src/vulkan/simple_render_system.cpp.o.d"
   )
 

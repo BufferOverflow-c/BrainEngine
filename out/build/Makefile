@@ -260,6 +260,30 @@ glui/fast:
 	$(MAKE) $(MAKESILENT) -f BrainEngine/Dependencies/glui/CMakeFiles/glui.dir/build.make BrainEngine/Dependencies/glui/CMakeFiles/glui.dir/build
 .PHONY : glui/fast
 
+BrainEngine/src/app/first_app.o: BrainEngine/src/app/first_app.cpp.o
+.PHONY : BrainEngine/src/app/first_app.o
+
+# target to build an object file
+BrainEngine/src/app/first_app.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/src/app/first_app.cpp.o
+.PHONY : BrainEngine/src/app/first_app.cpp.o
+
+BrainEngine/src/app/first_app.i: BrainEngine/src/app/first_app.cpp.i
+.PHONY : BrainEngine/src/app/first_app.i
+
+# target to preprocess a source file
+BrainEngine/src/app/first_app.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/src/app/first_app.cpp.i
+.PHONY : BrainEngine/src/app/first_app.cpp.i
+
+BrainEngine/src/app/first_app.s: BrainEngine/src/app/first_app.cpp.s
+.PHONY : BrainEngine/src/app/first_app.s
+
+# target to generate assembly for a file
+BrainEngine/src/app/first_app.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/src/app/first_app.cpp.s
+.PHONY : BrainEngine/src/app/first_app.cpp.s
+
 BrainEngine/src/gameLayer/gameLayer.o: BrainEngine/src/gameLayer/gameLayer.cpp.o
 .PHONY : BrainEngine/src/gameLayer/gameLayer.o
 
@@ -548,30 +572,6 @@ BrainEngine/src/vulkan/brain_window.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_window.cpp.s
 .PHONY : BrainEngine/src/vulkan/brain_window.cpp.s
 
-BrainEngine/src/vulkan/first_app.o: BrainEngine/src/vulkan/first_app.cpp.o
-.PHONY : BrainEngine/src/vulkan/first_app.o
-
-# target to build an object file
-BrainEngine/src/vulkan/first_app.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/src/vulkan/first_app.cpp.o
-.PHONY : BrainEngine/src/vulkan/first_app.cpp.o
-
-BrainEngine/src/vulkan/first_app.i: BrainEngine/src/vulkan/first_app.cpp.i
-.PHONY : BrainEngine/src/vulkan/first_app.i
-
-# target to preprocess a source file
-BrainEngine/src/vulkan/first_app.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/src/vulkan/first_app.cpp.i
-.PHONY : BrainEngine/src/vulkan/first_app.cpp.i
-
-BrainEngine/src/vulkan/first_app.s: BrainEngine/src/vulkan/first_app.cpp.s
-.PHONY : BrainEngine/src/vulkan/first_app.s
-
-# target to generate assembly for a file
-BrainEngine/src/vulkan/first_app.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/src/vulkan/first_app.cpp.s
-.PHONY : BrainEngine/src/vulkan/first_app.cpp.s
-
 BrainEngine/src/vulkan/simple_render_system.o: BrainEngine/src/vulkan/simple_render_system.cpp.o
 .PHONY : BrainEngine/src/vulkan/simple_render_system.o
 
@@ -615,6 +615,9 @@ help:
 	@echo "... safeSave"
 	@echo "... stb_image"
 	@echo "... stb_truetype"
+	@echo "... BrainEngine/src/app/first_app.o"
+	@echo "... BrainEngine/src/app/first_app.i"
+	@echo "... BrainEngine/src/app/first_app.s"
 	@echo "... BrainEngine/src/gameLayer/gameLayer.o"
 	@echo "... BrainEngine/src/gameLayer/gameLayer.i"
 	@echo "... BrainEngine/src/gameLayer/gameLayer.s"
@@ -651,9 +654,6 @@ help:
 	@echo "... BrainEngine/src/vulkan/brain_window.o"
 	@echo "... BrainEngine/src/vulkan/brain_window.i"
 	@echo "... BrainEngine/src/vulkan/brain_window.s"
-	@echo "... BrainEngine/src/vulkan/first_app.o"
-	@echo "... BrainEngine/src/vulkan/first_app.i"
-	@echo "... BrainEngine/src/vulkan/first_app.s"
 	@echo "... BrainEngine/src/vulkan/simple_render_system.o"
 	@echo "... BrainEngine/src/vulkan/simple_render_system.i"
 	@echo "... BrainEngine/src/vulkan/simple_render_system.s"

@@ -2,7 +2,7 @@
 // Created by - on 6/12/24.
 //
 
-#include "../../include/vulkan/first_app.h"
+#include "../../include/app/first_app.h"
 #include "../../include/vulkan/brain_camera.h"
 #include "../../include/vulkan/simple_render_system.h"
 

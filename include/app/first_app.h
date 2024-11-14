@@ -5,10 +5,10 @@
 #ifndef FIRST_APP_H
 #define FIRST_APP_H
 
-#include "brain_device.h"
-#include "brain_game_object.h"
-#include "brain_renderer.h"
-#include "brain_window.h"
+#include "../vulkan/brain_device.h"
+#include "../vulkan/brain_game_object.h"
+#include "../vulkan/brain_renderer.h"
+#include "../vulkan/brain_window.h"
 
 //~ std
 #include <memory>

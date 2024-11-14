@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "Brain"
   "Brain.pdb"
+  "CMakeFiles/Brain.dir/BrainEngine/src/app/first_app.cpp.o"
+  "CMakeFiles/Brain.dir/BrainEngine/src/app/first_app.cpp.o.d"
   "CMakeFiles/Brain.dir/BrainEngine/src/gameLayer/gameLayer.cpp.o"
   "CMakeFiles/Brain.dir/BrainEngine/src/gameLayer/gameLayer.cpp.o.d"
   "CMakeFiles/Brain.dir/BrainEngine/src/main.cpp.o"
@@ -25,8 +27,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_swap_chain.cpp.o.d"
   "CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_window.cpp.o"
   "CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_window.cpp.o.d"
-  "CMakeFiles/Brain.dir/BrainEngine/src/vulkan/first_app.cpp.o"
-  "CMakeFiles/Brain.dir/BrainEngine/src/vulkan/first_app.cpp.o.d"
   "CMakeFiles/Brain.dir/BrainEngine/src/vulkan/simple_render_system.cpp.o"
   "CMakeFiles/Brain.dir/BrainEngine/src/vulkan/simple_render_system.cpp.o.d"
 )

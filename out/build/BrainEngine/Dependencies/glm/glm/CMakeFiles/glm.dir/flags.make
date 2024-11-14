@@ -6,7 +6,7 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/Users/c2/Documents/BrainEngine/BrainEngine/Dependencies/glm
 
-CXX_FLAGSarm64 = -Wall -Wno-dev -std=c++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk -mmacosx-version-min=15.0 -Wno-c++98-compat -Wno-c++98-compat-pedantic
+CXX_FLAGSarm64 = -Wall -Wno-dev -std=c++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk -Wno-c++98-compat -Wno-c++98-compat-pedantic
 
-CXX_FLAGS = -Wall -Wno-dev -std=c++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk -mmacosx-version-min=15.0 -Wno-c++98-compat -Wno-c++98-compat-pedantic
+CXX_FLAGS = -Wall -Wno-dev -std=c++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk -Wno-c++98-compat -Wno-c++98-compat-pedantic
 
