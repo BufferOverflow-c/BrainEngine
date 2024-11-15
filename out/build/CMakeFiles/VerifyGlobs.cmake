@@ -6,6 +6,7 @@ cmake_policy(SET CMP0009 NEW)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/Users/c2/Documents/BrainEngine/BrainEngine/src/*.cpp")
 set(OLD_GLOB
   "/Users/c2/Documents/BrainEngine/BrainEngine/src/app/first_app.cpp"
+  "/Users/c2/Documents/BrainEngine/BrainEngine/src/app/keyboard_movement_controller.cpp"
   "/Users/c2/Documents/BrainEngine/BrainEngine/src/gameLayer/gameLayer.cpp"
   "/Users/c2/Documents/BrainEngine/BrainEngine/src/main.cpp"
   "/Users/c2/Documents/BrainEngine/BrainEngine/src/platform/errorReporting.cpp"

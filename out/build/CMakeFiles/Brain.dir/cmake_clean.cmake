@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "Brain.pdb"
   "CMakeFiles/Brain.dir/BrainEngine/src/app/first_app.cpp.o"
   "CMakeFiles/Brain.dir/BrainEngine/src/app/first_app.cpp.o.d"
+  "CMakeFiles/Brain.dir/BrainEngine/src/app/keyboard_movement_controller.cpp.o"
+  "CMakeFiles/Brain.dir/BrainEngine/src/app/keyboard_movement_controller.cpp.o.d"
   "CMakeFiles/Brain.dir/BrainEngine/src/gameLayer/gameLayer.cpp.o"
   "CMakeFiles/Brain.dir/BrainEngine/src/gameLayer/gameLayer.cpp.o.d"
   "CMakeFiles/Brain.dir/BrainEngine/src/main.cpp.o"

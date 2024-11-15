@@ -31,6 +31,8 @@ public:
 
   void createWindowSurface(VkInstance instance, VkSurfaceKHR *surface);
 
+  GLFWwindow *getGLFWwindow() const { return window; }
+
 private:
   //~ Initialize Window
   static void framebufferResizeCallback(GLFWwindow *window, int width,

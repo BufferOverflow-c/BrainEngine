@@ -284,6 +284,30 @@ BrainEngine/src/app/first_app.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/src/app/first_app.cpp.s
 .PHONY : BrainEngine/src/app/first_app.cpp.s
 
+BrainEngine/src/app/keyboard_movement_controller.o: BrainEngine/src/app/keyboard_movement_controller.cpp.o
+.PHONY : BrainEngine/src/app/keyboard_movement_controller.o
+
+# target to build an object file
+BrainEngine/src/app/keyboard_movement_controller.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/src/app/keyboard_movement_controller.cpp.o
+.PHONY : BrainEngine/src/app/keyboard_movement_controller.cpp.o
+
+BrainEngine/src/app/keyboard_movement_controller.i: BrainEngine/src/app/keyboard_movement_controller.cpp.i
+.PHONY : BrainEngine/src/app/keyboard_movement_controller.i
+
+# target to preprocess a source file
+BrainEngine/src/app/keyboard_movement_controller.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/src/app/keyboard_movement_controller.cpp.i
+.PHONY : BrainEngine/src/app/keyboard_movement_controller.cpp.i
+
+BrainEngine/src/app/keyboard_movement_controller.s: BrainEngine/src/app/keyboard_movement_controller.cpp.s
+.PHONY : BrainEngine/src/app/keyboard_movement_controller.s
+
+# target to generate assembly for a file
+BrainEngine/src/app/keyboard_movement_controller.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/src/app/keyboard_movement_controller.cpp.s
+.PHONY : BrainEngine/src/app/keyboard_movement_controller.cpp.s
+
 BrainEngine/src/gameLayer/gameLayer.o: BrainEngine/src/gameLayer/gameLayer.cpp.o
 .PHONY : BrainEngine/src/gameLayer/gameLayer.o
 
@@ -618,6 +642,9 @@ help:
 	@echo "... BrainEngine/src/app/first_app.o"
 	@echo "... BrainEngine/src/app/first_app.i"
 	@echo "... BrainEngine/src/app/first_app.s"
+	@echo "... BrainEngine/src/app/keyboard_movement_controller.o"
+	@echo "... BrainEngine/src/app/keyboard_movement_controller.i"
+	@echo "... BrainEngine/src/app/keyboard_movement_controller.s"
 	@echo "... BrainEngine/src/gameLayer/gameLayer.o"
 	@echo "... BrainEngine/src/gameLayer/gameLayer.i"
 	@echo "... BrainEngine/src/gameLayer/gameLayer.s"
