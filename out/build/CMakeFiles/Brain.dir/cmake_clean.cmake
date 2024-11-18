@@ -19,6 +19,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_camera.cpp.o.d"
   "CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_device.cpp.o"
   "CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_device.cpp.o.d"
+  "CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_game_object.cpp.o"
+  "CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_game_object.cpp.o.d"
   "CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_model.cpp.o"
   "CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_model.cpp.o.d"
   "CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_pipeline.cpp.o"

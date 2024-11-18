@@ -14,6 +14,7 @@ set(OLD_GLOB
   "/Users/c2/Documents/BrainEngine/BrainEngine/src/platform/platformInput.cpp"
   "/Users/c2/Documents/BrainEngine/BrainEngine/src/vulkan/brain_camera.cpp"
   "/Users/c2/Documents/BrainEngine/BrainEngine/src/vulkan/brain_device.cpp"
+  "/Users/c2/Documents/BrainEngine/BrainEngine/src/vulkan/brain_game_object.cpp"
   "/Users/c2/Documents/BrainEngine/BrainEngine/src/vulkan/brain_model.cpp"
   "/Users/c2/Documents/BrainEngine/BrainEngine/src/vulkan/brain_pipeline.cpp"
   "/Users/c2/Documents/BrainEngine/BrainEngine/src/vulkan/brain_renderer.cpp"

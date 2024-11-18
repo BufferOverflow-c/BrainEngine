@@ -476,6 +476,30 @@ BrainEngine/src/vulkan/brain_device.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_device.cpp.s
 .PHONY : BrainEngine/src/vulkan/brain_device.cpp.s
 
+BrainEngine/src/vulkan/brain_game_object.o: BrainEngine/src/vulkan/brain_game_object.cpp.o
+.PHONY : BrainEngine/src/vulkan/brain_game_object.o
+
+# target to build an object file
+BrainEngine/src/vulkan/brain_game_object.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_game_object.cpp.o
+.PHONY : BrainEngine/src/vulkan/brain_game_object.cpp.o
+
+BrainEngine/src/vulkan/brain_game_object.i: BrainEngine/src/vulkan/brain_game_object.cpp.i
+.PHONY : BrainEngine/src/vulkan/brain_game_object.i
+
+# target to preprocess a source file
+BrainEngine/src/vulkan/brain_game_object.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_game_object.cpp.i
+.PHONY : BrainEngine/src/vulkan/brain_game_object.cpp.i
+
+BrainEngine/src/vulkan/brain_game_object.s: BrainEngine/src/vulkan/brain_game_object.cpp.s
+.PHONY : BrainEngine/src/vulkan/brain_game_object.s
+
+# target to generate assembly for a file
+BrainEngine/src/vulkan/brain_game_object.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_game_object.cpp.s
+.PHONY : BrainEngine/src/vulkan/brain_game_object.cpp.s
+
 BrainEngine/src/vulkan/brain_model.o: BrainEngine/src/vulkan/brain_model.cpp.o
 .PHONY : BrainEngine/src/vulkan/brain_model.o
 
@@ -666,6 +690,9 @@ help:
 	@echo "... BrainEngine/src/vulkan/brain_device.o"
 	@echo "... BrainEngine/src/vulkan/brain_device.i"
 	@echo "... BrainEngine/src/vulkan/brain_device.s"
+	@echo "... BrainEngine/src/vulkan/brain_game_object.o"
+	@echo "... BrainEngine/src/vulkan/brain_game_object.i"
+	@echo "... BrainEngine/src/vulkan/brain_game_object.s"
 	@echo "... BrainEngine/src/vulkan/brain_model.o"
 	@echo "... BrainEngine/src/vulkan/brain_model.i"
 	@echo "... BrainEngine/src/vulkan/brain_model.s"

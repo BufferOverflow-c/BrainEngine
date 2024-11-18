@@ -17,6 +17,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/c2/Documents/BrainEngine/BrainEngine/src/platform/platformInput.cpp" "CMakeFiles/Brain.dir/BrainEngine/src/platform/platformInput.cpp.o" "gcc" "CMakeFiles/Brain.dir/BrainEngine/src/platform/platformInput.cpp.o.d"
   "/Users/c2/Documents/BrainEngine/BrainEngine/src/vulkan/brain_camera.cpp" "CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_camera.cpp.o" "gcc" "CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_camera.cpp.o.d"
   "/Users/c2/Documents/BrainEngine/BrainEngine/src/vulkan/brain_device.cpp" "CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_device.cpp.o" "gcc" "CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_device.cpp.o.d"
+  "/Users/c2/Documents/BrainEngine/BrainEngine/src/vulkan/brain_game_object.cpp" "CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_game_object.cpp.o" "gcc" "CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_game_object.cpp.o.d"
   "/Users/c2/Documents/BrainEngine/BrainEngine/src/vulkan/brain_model.cpp" "CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_model.cpp.o" "gcc" "CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_model.cpp.o.d"
   "/Users/c2/Documents/BrainEngine/BrainEngine/src/vulkan/brain_pipeline.cpp" "CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_pipeline.cpp.o" "gcc" "CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_pipeline.cpp.o.d"
   "/Users/c2/Documents/BrainEngine/BrainEngine/src/vulkan/brain_renderer.cpp" "CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_renderer.cpp.o" "gcc" "CMakeFiles/Brain.dir/BrainEngine/src/vulkan/brain_renderer.cpp.o.d"

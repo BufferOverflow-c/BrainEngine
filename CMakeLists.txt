@@ -39,8 +39,7 @@ endif()
 #    endif()
 #endif()
 
-add_executable(Brain BrainEngine/src/main.cpp
-)
+add_executable(Brain BrainEngine/src/main.cpp)
 
 find_package(Vulkan REQUIRED)
 #target_link_libraries(Brain ${Vulkan_LIBRARIES})
@@ -61,6 +60,7 @@ add_subdirectory(BrainEngine/Dependencies/stb_truetype)     #loading ttf files
 add_subdirectory(BrainEngine/Dependencies/raudio)           #audio
 add_subdirectory(BrainEngine/Dependencies/glm)              #math
 add_subdirectory(BrainEngine/Dependencies/imgui-docking)    #ui
+add_subdirectory(BrainEngine/Dependencies/tinyobjloader)    # obj loader
 
 add_subdirectory(BrainEngine/Dependencies/safeSave)         #saving Data
 add_subdirectory(BrainEngine/Dependencies/profilerLib)       #profiling, measuring elapsed time
@@ -110,6 +110,7 @@ target_include_directories("Brain" PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/BrainEngi
 target_include_directories("Brain" PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/BrainEngine/include/gameLayer/")
 target_include_directories("Brain" PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/BrainEngine/include/platform/")
 target_include_directories("Brain" PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/BrainEngine/include/vulkan")
+target_include_directories("Brain" PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/BrainEngine/include/tinyobjloader")
 
 #enet not working yet on linux for some reason
 target_link_libraries("Brain" PRIVATE
