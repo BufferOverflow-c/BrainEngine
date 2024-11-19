@@ -30,7 +30,9 @@ namespace brn {
 
 struct GlobalUbo {
   glm::mat4 projectionView{1.f};
-  glm::vec3 lightDirection = glm::normalize(glm::vec3{1.f, -3.f, -1.f});
+  glm::vec4 ambientLightColor{1.f, 1.f, 1.f, 0.02f};
+  glm::vec3 lightPosition{-1.f};
+  alignas(16) glm::vec4 lightColor{1.f}; // w is light intensity
 };
 
 FirstApp::FirstApp() {
@@ -76,6 +78,8 @@ void FirstApp::run() {
   camera.setViewTarget(glm::vec3(-1.f, -2.f, 2.f), glm::vec3(0.f, 0.f, 2.5f));
 
   auto viewerObject = BrnGameObject::createGameObject();
+  viewerObject.transform.translation.z = -2.5f;
+
   KeyboardMovementController cameraController{};
 
   auto currentTime = std::chrono::high_resolution_clock::now();
@@ -96,7 +100,7 @@ void FirstApp::run() {
                       viewerObject.transform.rotation);
 
     float aspect = brnRenderer.getAspectRatio();
-    camera.setPerspectiveProjection(glm::radians(50.f), aspect, 0.1f, 10);
+    camera.setPerspectiveProjection(glm::radians(50.f), aspect, 0.1f, 1000.0f);
 
     if (auto commandBuffer = brnRenderer.beginFrame()) {
       int frameIndex = brnRenderer.getFrameIndex();
@@ -122,12 +126,25 @@ void FirstApp::run() {
 void FirstApp::loadGameObjects() {
   std::shared_ptr<BrnModel> brnModel =
       BrnModel::createModelFromFile(brnDevice, "../../models/flat_vase.obj");
+  auto flatVase = BrnGameObject::createGameObject();
+  flatVase.model = brnModel;
+  flatVase.transform.translation = {-0.5f, 0.5f, 0.f};
+  flatVase.transform.scale = glm::vec3{3.f, 1.5f, 3.f};
+  gameObjects.push_back(std::move(flatVase));
 
-  auto gameObj = BrnGameObject::createGameObject();
-  gameObj.model = brnModel;
-  gameObj.transform.translation = {0.f, 0.5f, 2.5f};
-  gameObj.transform.scale = glm::vec3{3.f};
+  brnModel =
+      BrnModel::createModelFromFile(brnDevice, "../../models/smooth_vase.obj");
+  auto smoothVase = BrnGameObject::createGameObject();
+  smoothVase.model = brnModel;
+  smoothVase.transform.translation = {0.5f, 0.5f, 0.f};
+  smoothVase.transform.scale = {3.f, 1.5f, 3.f};
+  gameObjects.push_back(std::move(smoothVase));
 
-  gameObjects.push_back(std::move(gameObj));
+  brnModel = BrnModel::createModelFromFile(brnDevice, "../../models/quad.obj");
+  auto floor = BrnGameObject::createGameObject();
+  floor.model = brnModel;
+  floor.transform.translation = {0.f, 0.5f, 0.f};
+  floor.transform.scale = {3.f, 1.0f, 3.f};
+  gameObjects.push_back(std::move(floor));
 }
 } // namespace brn
