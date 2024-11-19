@@ -5,6 +5,7 @@
 #ifndef FIRST_APP_H
 #define FIRST_APP_H
 
+#include "../vulkan/brain_descriptors.h"
 #include "../vulkan/brain_device.h"
 #include "../vulkan/brain_game_object.h"
 #include "../vulkan/brain_renderer.h"
@@ -36,6 +37,9 @@ private:
   BrnWindow brnWindow{WIDTH, HEIGHT, "Hello Vulkan"};
   BrnDevice brnDevice{brnWindow};
   BrnRenderer brnRenderer{brnWindow, brnDevice};
+
+  // note: order of declarations matters
+  std::unique_ptr<BrnDescriptorPool> globalPool{};
   std::vector<BrnGameObject> gameObjects;
 };
 

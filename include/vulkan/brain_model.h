@@ -5,8 +5,8 @@
 #ifndef BRAIN_MODEL_H
 #define BRAIN_MODEL_H
 
-#include "brain_device.h"
-#include <cstdint>
+#include "../../include/vulkan/brain_buffer.h"
+#include "../../include/vulkan/brain_device.h"
 
 //~ libs
 #define GLM_FORCE_RADIANS
@@ -14,6 +14,7 @@
 #include <glm/glm.hpp>
 
 //~ std
+#include <cstdint>
 #include <memory>
 #include <vector>
 
@@ -59,13 +60,11 @@ public:
 
 private:
   BrnDevice &brnDevice;
-  VkBuffer vertexBuffer;
-  VkDeviceMemory vertexBufferMemory;
+  std::unique_ptr<BrnBuffer> vertexBuffer;
   uint32_t vertexCount;
 
   bool hasIndexBuffer = false;
-  VkBuffer indexBuffer;
-  VkDeviceMemory indexBufferMemory;
+  std::unique_ptr<BrnBuffer> indexBuffer;
   uint32_t indexCount;
 
   void createVertexBuffers(const std::vector<Vertex> &vertices);
