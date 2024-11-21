@@ -2,6 +2,7 @@
 #define BRAIN_FRAME_INFO_H
 
 #include "brain_camera.h"
+#include "brain_game_object.h"
 
 // lib
 #include <vulkan/vulkan.h>
@@ -13,6 +14,7 @@ struct FrameInfo {
   VkCommandBuffer commandBuffer;
   BrnCamera &camera;
   VkDescriptorSet globalDescriptorSet;
+  BrnGameObject::Map &gameObjects;
 };
 
 } // namespace brn

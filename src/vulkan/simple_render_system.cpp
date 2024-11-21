@@ -63,23 +63,25 @@ void SimpleRenderSystem::createPipeline(VkRenderPass renderPass) {
   pipelineConfig.renderPass = renderPass;
   pipelineConfig.pipelineLayout = pipelineLayout;
   brnPipeline = std::make_unique<BrnPipeline>(
-      brnDevice,
-      "/Users/c2/Documents/BrainEngine/BrainEngine/shaders/"
-      "simple_shader.vert.spv",
-      "/Users/c2/Documents/BrainEngine/BrainEngine/shaders/"
-      "simple_shader.frag.spv",
+      brnDevice, "../../shaders/simple_shader.vert.spv",
+      "../../shaders/simple_shader.frag.spv",
+      //"/Users/c2/Documents/BrainEngine/BrainEngine/shaders/"
+      //"simple_shader.vert.spv",
+      //"/Users/c2/Documents/BrainEngine/BrainEngine/shaders/"
+      //"simple_shader.frag.spv",
       pipelineConfig);
 }
-void SimpleRenderSystem::renderGameObjects(
-    FrameInfo &frameInfo, std::vector<BrnGameObject> &gameObjects) {
+void SimpleRenderSystem::renderGameObjects(FrameInfo &frameInfo) {
   brnPipeline->bind(frameInfo.commandBuffer);
 
   vkCmdBindDescriptorSets(frameInfo.commandBuffer,
                           VK_PIPELINE_BIND_POINT_GRAPHICS, pipelineLayout, 0, 1,
                           &frameInfo.globalDescriptorSet, 0, nullptr);
 
-  for (auto &obj : gameObjects) {
-
+  for (auto &kv : frameInfo.gameObjects) {
+    auto &obj = kv.second;
+    if (obj.model == nullptr)
+      continue;
     SimplePushConstantData push{};
     push.modelMatrix = obj.transform.mat4();
     push.normalMatrix = obj.transform.normalMatrix();

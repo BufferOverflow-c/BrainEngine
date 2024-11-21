@@ -58,7 +58,7 @@ void FirstApp::run() {
 
   auto globalSetLayout = BrnDescriptorSetLayout::Builder(brnDevice)
                              .addBinding(0, VK_DESCRIPTOR_TYPE_UNIFORM_BUFFER,
-                                         VK_SHADER_STAGE_VERTEX_BIT)
+                                         VK_SHADER_STAGE_ALL_GRAPHICS)
                              .build();
 
   std::vector<VkDescriptorSet> globalDescriptorSets(
@@ -104,8 +104,12 @@ void FirstApp::run() {
 
     if (auto commandBuffer = brnRenderer.beginFrame()) {
       int frameIndex = brnRenderer.getFrameIndex();
-      FrameInfo frameInfo{frameIndex, frameTime, commandBuffer, camera,
-                          globalDescriptorSets[frameIndex]};
+      FrameInfo frameInfo{frameIndex,
+                          frameTime,
+                          commandBuffer,
+                          camera,
+                          globalDescriptorSets[frameIndex],
+                          gameObjects};
 
       // update
       GlobalUbo ubo{};
@@ -115,7 +119,7 @@ void FirstApp::run() {
 
       // render
       brnRenderer.beginSwapChainRenderPass(commandBuffer);
-      simpleRenderSystem.renderGameObjects(frameInfo, gameObjects);
+      simpleRenderSystem.renderGameObjects(frameInfo);
       brnRenderer.endSwapChainRenderPass(commandBuffer);
       brnRenderer.endFrame();
     }
@@ -130,7 +134,7 @@ void FirstApp::loadGameObjects() {
   flatVase.model = brnModel;
   flatVase.transform.translation = {-0.5f, 0.5f, 0.f};
   flatVase.transform.scale = glm::vec3{3.f, 1.5f, 3.f};
-  gameObjects.push_back(std::move(flatVase));
+  gameObjects.emplace(flatVase.getId(), std::move(flatVase));
 
   brnModel =
       BrnModel::createModelFromFile(brnDevice, "../../models/smooth_vase.obj");
@@ -138,13 +142,13 @@ void FirstApp::loadGameObjects() {
   smoothVase.model = brnModel;
   smoothVase.transform.translation = {0.5f, 0.5f, 0.f};
   smoothVase.transform.scale = {3.f, 1.5f, 3.f};
-  gameObjects.push_back(std::move(smoothVase));
+  gameObjects.emplace(smoothVase.getId(), std::move(smoothVase));
 
   brnModel = BrnModel::createModelFromFile(brnDevice, "../../models/quad.obj");
   auto floor = BrnGameObject::createGameObject();
   floor.model = brnModel;
   floor.transform.translation = {0.f, 0.5f, 0.f};
   floor.transform.scale = {3.f, 1.0f, 3.f};
-  gameObjects.push_back(std::move(floor));
+  gameObjects.emplace(floor.getId(), std::move(floor));
 }
 } // namespace brn

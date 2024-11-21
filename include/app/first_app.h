@@ -34,13 +34,13 @@ public:
 private:
   void loadGameObjects();
 
-  BrnWindow brnWindow{WIDTH, HEIGHT, "Hello Vulkan"};
+  BrnWindow brnWindow{WIDTH, HEIGHT, "Brain Engine"};
   BrnDevice brnDevice{brnWindow};
   BrnRenderer brnRenderer{brnWindow, brnDevice};
 
   // note: order of declarations matters
   std::unique_ptr<BrnDescriptorPool> globalPool{};
-  std::vector<BrnGameObject> gameObjects;
+  BrnGameObject::Map gameObjects;
 };
 
 } // namespace brn
