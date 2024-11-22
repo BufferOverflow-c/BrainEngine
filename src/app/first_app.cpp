@@ -9,6 +9,7 @@
 // engine
 #include "brain_buffer.h"
 #include "brain_camera.h"
+#include "point_light_system.h"
 #include "simple_render_system.h"
 
 //~ libs
@@ -29,7 +30,8 @@
 namespace brn {
 
 struct GlobalUbo {
-  glm::mat4 projectionView{1.f};
+  glm::mat4 projection{1.f};
+  glm::mat4 view{1.f};
   glm::vec4 ambientLightColor{1.f, 1.f, 1.f, 0.02f};
   glm::vec3 lightPosition{-1.f};
   alignas(16) glm::vec4 lightColor{1.f}; // w is light intensity
@@ -74,6 +76,10 @@ void FirstApp::run() {
       brnDevice, brnRenderer.getSwapChainRenderPass(),
       globalSetLayout->getDescriptorSetLayout()};
 
+  PointLightSystem pointLightSystem{brnDevice,
+                                    brnRenderer.getSwapChainRenderPass(),
+                                    globalSetLayout->getDescriptorSetLayout()};
+
   BrnCamera camera{};
   camera.setViewTarget(glm::vec3(-1.f, -2.f, 2.f), glm::vec3(0.f, 0.f, 2.5f));
 
@@ -113,13 +119,15 @@ void FirstApp::run() {
 
       // update
       GlobalUbo ubo{};
-      ubo.projectionView = camera.getProjection() * camera.getView();
+      ubo.projection = camera.getProjection();
+      ubo.view = camera.getView();
       uboBuffers[frameIndex]->writeToBuffer(&ubo);
       uboBuffers[frameIndex]->flush();
 
       // render
       brnRenderer.beginSwapChainRenderPass(commandBuffer);
       simpleRenderSystem.renderGameObjects(frameInfo);
+      pointLightSystem.render(frameInfo);
       brnRenderer.endSwapChainRenderPass(commandBuffer);
       brnRenderer.endFrame();
     }

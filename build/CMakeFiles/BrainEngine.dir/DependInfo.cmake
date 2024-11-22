@@ -25,7 +25,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/c2/Documents/BrainEngine/BrainEngine/src/vulkan/brain_renderer.cpp" "CMakeFiles/BrainEngine.dir/src/vulkan/brain_renderer.cpp.o" "gcc" "CMakeFiles/BrainEngine.dir/src/vulkan/brain_renderer.cpp.o.d"
   "/Users/c2/Documents/BrainEngine/BrainEngine/src/vulkan/brain_swap_chain.cpp" "CMakeFiles/BrainEngine.dir/src/vulkan/brain_swap_chain.cpp.o" "gcc" "CMakeFiles/BrainEngine.dir/src/vulkan/brain_swap_chain.cpp.o.d"
   "/Users/c2/Documents/BrainEngine/BrainEngine/src/vulkan/brain_window.cpp" "CMakeFiles/BrainEngine.dir/src/vulkan/brain_window.cpp.o" "gcc" "CMakeFiles/BrainEngine.dir/src/vulkan/brain_window.cpp.o.d"
-  "/Users/c2/Documents/BrainEngine/BrainEngine/src/vulkan/simple_render_system.cpp" "CMakeFiles/BrainEngine.dir/src/vulkan/simple_render_system.cpp.o" "gcc" "CMakeFiles/BrainEngine.dir/src/vulkan/simple_render_system.cpp.o.d"
+  "/Users/c2/Documents/BrainEngine/BrainEngine/src/vulkan/system/point_light_system.cpp" "CMakeFiles/BrainEngine.dir/src/vulkan/system/point_light_system.cpp.o" "gcc" "CMakeFiles/BrainEngine.dir/src/vulkan/system/point_light_system.cpp.o.d"
+  "/Users/c2/Documents/BrainEngine/BrainEngine/src/vulkan/system/simple_render_system.cpp" "CMakeFiles/BrainEngine.dir/src/vulkan/system/simple_render_system.cpp.o" "gcc" "CMakeFiles/BrainEngine.dir/src/vulkan/system/simple_render_system.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

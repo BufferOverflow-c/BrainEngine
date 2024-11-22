@@ -668,29 +668,53 @@ src/vulkan/brain_window.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrainEngine.dir/build.make CMakeFiles/BrainEngine.dir/src/vulkan/brain_window.cpp.s
 .PHONY : src/vulkan/brain_window.cpp.s
 
-src/vulkan/simple_render_system.o: src/vulkan/simple_render_system.cpp.o
-.PHONY : src/vulkan/simple_render_system.o
+src/vulkan/system/point_light_system.o: src/vulkan/system/point_light_system.cpp.o
+.PHONY : src/vulkan/system/point_light_system.o
 
 # target to build an object file
-src/vulkan/simple_render_system.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrainEngine.dir/build.make CMakeFiles/BrainEngine.dir/src/vulkan/simple_render_system.cpp.o
-.PHONY : src/vulkan/simple_render_system.cpp.o
+src/vulkan/system/point_light_system.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrainEngine.dir/build.make CMakeFiles/BrainEngine.dir/src/vulkan/system/point_light_system.cpp.o
+.PHONY : src/vulkan/system/point_light_system.cpp.o
 
-src/vulkan/simple_render_system.i: src/vulkan/simple_render_system.cpp.i
-.PHONY : src/vulkan/simple_render_system.i
+src/vulkan/system/point_light_system.i: src/vulkan/system/point_light_system.cpp.i
+.PHONY : src/vulkan/system/point_light_system.i
 
 # target to preprocess a source file
-src/vulkan/simple_render_system.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrainEngine.dir/build.make CMakeFiles/BrainEngine.dir/src/vulkan/simple_render_system.cpp.i
-.PHONY : src/vulkan/simple_render_system.cpp.i
+src/vulkan/system/point_light_system.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrainEngine.dir/build.make CMakeFiles/BrainEngine.dir/src/vulkan/system/point_light_system.cpp.i
+.PHONY : src/vulkan/system/point_light_system.cpp.i
 
-src/vulkan/simple_render_system.s: src/vulkan/simple_render_system.cpp.s
-.PHONY : src/vulkan/simple_render_system.s
+src/vulkan/system/point_light_system.s: src/vulkan/system/point_light_system.cpp.s
+.PHONY : src/vulkan/system/point_light_system.s
 
 # target to generate assembly for a file
-src/vulkan/simple_render_system.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrainEngine.dir/build.make CMakeFiles/BrainEngine.dir/src/vulkan/simple_render_system.cpp.s
-.PHONY : src/vulkan/simple_render_system.cpp.s
+src/vulkan/system/point_light_system.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrainEngine.dir/build.make CMakeFiles/BrainEngine.dir/src/vulkan/system/point_light_system.cpp.s
+.PHONY : src/vulkan/system/point_light_system.cpp.s
+
+src/vulkan/system/simple_render_system.o: src/vulkan/system/simple_render_system.cpp.o
+.PHONY : src/vulkan/system/simple_render_system.o
+
+# target to build an object file
+src/vulkan/system/simple_render_system.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrainEngine.dir/build.make CMakeFiles/BrainEngine.dir/src/vulkan/system/simple_render_system.cpp.o
+.PHONY : src/vulkan/system/simple_render_system.cpp.o
+
+src/vulkan/system/simple_render_system.i: src/vulkan/system/simple_render_system.cpp.i
+.PHONY : src/vulkan/system/simple_render_system.i
+
+# target to preprocess a source file
+src/vulkan/system/simple_render_system.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrainEngine.dir/build.make CMakeFiles/BrainEngine.dir/src/vulkan/system/simple_render_system.cpp.i
+.PHONY : src/vulkan/system/simple_render_system.cpp.i
+
+src/vulkan/system/simple_render_system.s: src/vulkan/system/simple_render_system.cpp.s
+.PHONY : src/vulkan/system/simple_render_system.s
+
+# target to generate assembly for a file
+src/vulkan/system/simple_render_system.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrainEngine.dir/build.make CMakeFiles/BrainEngine.dir/src/vulkan/system/simple_render_system.cpp.s
+.PHONY : src/vulkan/system/simple_render_system.cpp.s
 
 # Help Target
 help:
@@ -762,9 +786,12 @@ help:
 	@echo "... src/vulkan/brain_window.o"
 	@echo "... src/vulkan/brain_window.i"
 	@echo "... src/vulkan/brain_window.s"
-	@echo "... src/vulkan/simple_render_system.o"
-	@echo "... src/vulkan/simple_render_system.i"
-	@echo "... src/vulkan/simple_render_system.s"
+	@echo "... src/vulkan/system/point_light_system.o"
+	@echo "... src/vulkan/system/point_light_system.i"
+	@echo "... src/vulkan/system/point_light_system.s"
+	@echo "... src/vulkan/system/simple_render_system.o"
+	@echo "... src/vulkan/system/simple_render_system.i"
+	@echo "... src/vulkan/system/simple_render_system.s"
 .PHONY : help
 
 

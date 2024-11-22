@@ -284,12 +284,12 @@ CMakeFiles/BrainEngine.dir/all: Dependencies/gl2d/CMakeFiles/gl2d.dir/all
 CMakeFiles/BrainEngine.dir/all: Dependencies/glui/CMakeFiles/glui.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrainEngine.dir/build.make CMakeFiles/BrainEngine.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrainEngine.dir/build.make CMakeFiles/BrainEngine.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/c2/Documents/BrainEngine/BrainEngine/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19 "Built target BrainEngine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/c2/Documents/BrainEngine/BrainEngine/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20 "Built target BrainEngine"
 .PHONY : CMakeFiles/BrainEngine.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/BrainEngine.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/c2/Documents/BrainEngine/BrainEngine/build/CMakeFiles 44
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/c2/Documents/BrainEngine/BrainEngine/build/CMakeFiles 45
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/BrainEngine.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/c2/Documents/BrainEngine/BrainEngine/build/CMakeFiles 0
 .PHONY : CMakeFiles/BrainEngine.dir/rule
@@ -310,12 +310,12 @@ CMakeFiles/BrainEngine.dir/clean:
 CMakeFiles/Shaders.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Shaders.dir/build.make CMakeFiles/Shaders.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Shaders.dir/build.make CMakeFiles/Shaders.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/c2/Documents/BrainEngine/BrainEngine/build/CMakeFiles --progress-num=20,21 "Built target Shaders"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/c2/Documents/BrainEngine/BrainEngine/build/CMakeFiles --progress-num=21,22,23,24 "Built target Shaders"
 .PHONY : CMakeFiles/Shaders.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Shaders.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/c2/Documents/BrainEngine/BrainEngine/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/c2/Documents/BrainEngine/BrainEngine/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Shaders.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/c2/Documents/BrainEngine/BrainEngine/build/CMakeFiles 0
 .PHONY : CMakeFiles/Shaders.dir/rule
@@ -336,7 +336,7 @@ CMakeFiles/Shaders.dir/clean:
 Dependencies/glad/CMakeFiles/glad.dir/all:
 	$(MAKE) $(MAKESILENT) -f Dependencies/glad/CMakeFiles/glad.dir/build.make Dependencies/glad/CMakeFiles/glad.dir/depend
 	$(MAKE) $(MAKESILENT) -f Dependencies/glad/CMakeFiles/glad.dir/build.make Dependencies/glad/CMakeFiles/glad.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/c2/Documents/BrainEngine/BrainEngine/build/CMakeFiles --progress-num=25,26 "Built target glad"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/c2/Documents/BrainEngine/BrainEngine/build/CMakeFiles --progress-num=28,29 "Built target glad"
 .PHONY : Dependencies/glad/CMakeFiles/glad.dir/all
 
 # Build rule for subdir invocation for target.
@@ -362,7 +362,7 @@ Dependencies/glad/CMakeFiles/glad.dir/clean:
 Dependencies/stb_image/CMakeFiles/stb_image.dir/all:
 	$(MAKE) $(MAKESILENT) -f Dependencies/stb_image/CMakeFiles/stb_image.dir/build.make Dependencies/stb_image/CMakeFiles/stb_image.dir/depend
 	$(MAKE) $(MAKESILENT) -f Dependencies/stb_image/CMakeFiles/stb_image.dir/build.make Dependencies/stb_image/CMakeFiles/stb_image.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/c2/Documents/BrainEngine/BrainEngine/build/CMakeFiles --progress-num=43,44 "Built target stb_image"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/c2/Documents/BrainEngine/BrainEngine/build/CMakeFiles --progress-num=46,47 "Built target stb_image"
 .PHONY : Dependencies/stb_image/CMakeFiles/stb_image.dir/all
 
 # Build rule for subdir invocation for target.
@@ -388,7 +388,7 @@ Dependencies/stb_image/CMakeFiles/stb_image.dir/clean:
 Dependencies/stb_truetype/CMakeFiles/stb_truetype.dir/all:
 	$(MAKE) $(MAKESILENT) -f Dependencies/stb_truetype/CMakeFiles/stb_truetype.dir/build.make Dependencies/stb_truetype/CMakeFiles/stb_truetype.dir/depend
 	$(MAKE) $(MAKESILENT) -f Dependencies/stb_truetype/CMakeFiles/stb_truetype.dir/build.make Dependencies/stb_truetype/CMakeFiles/stb_truetype.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/c2/Documents/BrainEngine/BrainEngine/build/CMakeFiles --progress-num=45,46 "Built target stb_truetype"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/c2/Documents/BrainEngine/BrainEngine/build/CMakeFiles --progress-num=48,49 "Built target stb_truetype"
 .PHONY : Dependencies/stb_truetype/CMakeFiles/stb_truetype.dir/all
 
 # Build rule for subdir invocation for target.
@@ -414,7 +414,7 @@ Dependencies/stb_truetype/CMakeFiles/stb_truetype.dir/clean:
 Dependencies/raudio/CMakeFiles/raudio.dir/all:
 	$(MAKE) $(MAKESILENT) -f Dependencies/raudio/CMakeFiles/raudio.dir/build.make Dependencies/raudio/CMakeFiles/raudio.dir/depend
 	$(MAKE) $(MAKESILENT) -f Dependencies/raudio/CMakeFiles/raudio.dir/build.make Dependencies/raudio/CMakeFiles/raudio.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/c2/Documents/BrainEngine/BrainEngine/build/CMakeFiles --progress-num=39,40 "Built target raudio"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/c2/Documents/BrainEngine/BrainEngine/build/CMakeFiles --progress-num=42,43 "Built target raudio"
 .PHONY : Dependencies/raudio/CMakeFiles/raudio.dir/all
 
 # Build rule for subdir invocation for target.
@@ -440,7 +440,7 @@ Dependencies/raudio/CMakeFiles/raudio.dir/clean:
 Dependencies/glm/glm/CMakeFiles/glm.dir/all:
 	$(MAKE) $(MAKESILENT) -f Dependencies/glm/glm/CMakeFiles/glm.dir/build.make Dependencies/glm/glm/CMakeFiles/glm.dir/depend
 	$(MAKE) $(MAKESILENT) -f Dependencies/glm/glm/CMakeFiles/glm.dir/build.make Dependencies/glm/glm/CMakeFiles/glm.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/c2/Documents/BrainEngine/BrainEngine/build/CMakeFiles --progress-num=27,28 "Built target glm"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/c2/Documents/BrainEngine/BrainEngine/build/CMakeFiles --progress-num=30,31 "Built target glm"
 .PHONY : Dependencies/glm/glm/CMakeFiles/glm.dir/all
 
 # Build rule for subdir invocation for target.
@@ -466,7 +466,7 @@ Dependencies/glm/glm/CMakeFiles/glm.dir/clean:
 Dependencies/imgui-docking/CMakeFiles/imgui.dir/all: Dependencies/glad/CMakeFiles/glad.dir/all
 	$(MAKE) $(MAKESILENT) -f Dependencies/imgui-docking/CMakeFiles/imgui.dir/build.make Dependencies/imgui-docking/CMakeFiles/imgui.dir/depend
 	$(MAKE) $(MAKESILENT) -f Dependencies/imgui-docking/CMakeFiles/imgui.dir/build.make Dependencies/imgui-docking/CMakeFiles/imgui.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/c2/Documents/BrainEngine/BrainEngine/build/CMakeFiles --progress-num=31,32,33,34,35,36,37,38 "Built target imgui"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/c2/Documents/BrainEngine/BrainEngine/build/CMakeFiles --progress-num=34,35,36,37,38,39,40,41 "Built target imgui"
 .PHONY : Dependencies/imgui-docking/CMakeFiles/imgui.dir/all
 
 # Build rule for subdir invocation for target.
@@ -492,7 +492,7 @@ Dependencies/imgui-docking/CMakeFiles/imgui.dir/clean:
 Dependencies/safeSave/CMakeFiles/safeSave.dir/all:
 	$(MAKE) $(MAKESILENT) -f Dependencies/safeSave/CMakeFiles/safeSave.dir/build.make Dependencies/safeSave/CMakeFiles/safeSave.dir/depend
 	$(MAKE) $(MAKESILENT) -f Dependencies/safeSave/CMakeFiles/safeSave.dir/build.make Dependencies/safeSave/CMakeFiles/safeSave.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/c2/Documents/BrainEngine/BrainEngine/build/CMakeFiles --progress-num=41,42 "Built target safeSave"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/c2/Documents/BrainEngine/BrainEngine/build/CMakeFiles --progress-num=44,45 "Built target safeSave"
 .PHONY : Dependencies/safeSave/CMakeFiles/safeSave.dir/all
 
 # Build rule for subdir invocation for target.
@@ -521,7 +521,7 @@ Dependencies/gl2d/CMakeFiles/gl2d.dir/all: Dependencies/stb_truetype/CMakeFiles/
 Dependencies/gl2d/CMakeFiles/gl2d.dir/all: Dependencies/glm/glm/CMakeFiles/glm.dir/all
 	$(MAKE) $(MAKESILENT) -f Dependencies/gl2d/CMakeFiles/gl2d.dir/build.make Dependencies/gl2d/CMakeFiles/gl2d.dir/depend
 	$(MAKE) $(MAKESILENT) -f Dependencies/gl2d/CMakeFiles/gl2d.dir/build.make Dependencies/gl2d/CMakeFiles/gl2d.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/c2/Documents/BrainEngine/BrainEngine/build/CMakeFiles --progress-num=22,23,24 "Built target gl2d"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/c2/Documents/BrainEngine/BrainEngine/build/CMakeFiles --progress-num=25,26,27 "Built target gl2d"
 .PHONY : Dependencies/gl2d/CMakeFiles/gl2d.dir/all
 
 # Build rule for subdir invocation for target.
@@ -551,7 +551,7 @@ Dependencies/glui/CMakeFiles/glui.dir/all: Dependencies/glm/glm/CMakeFiles/glm.d
 Dependencies/glui/CMakeFiles/glui.dir/all: Dependencies/gl2d/CMakeFiles/gl2d.dir/all
 	$(MAKE) $(MAKESILENT) -f Dependencies/glui/CMakeFiles/glui.dir/build.make Dependencies/glui/CMakeFiles/glui.dir/depend
 	$(MAKE) $(MAKESILENT) -f Dependencies/glui/CMakeFiles/glui.dir/build.make Dependencies/glui/CMakeFiles/glui.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/c2/Documents/BrainEngine/BrainEngine/build/CMakeFiles --progress-num=29,30 "Built target glui"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/c2/Documents/BrainEngine/BrainEngine/build/CMakeFiles --progress-num=32,33 "Built target glui"
 .PHONY : Dependencies/glui/CMakeFiles/glui.dir/all
 
 # Build rule for subdir invocation for target.

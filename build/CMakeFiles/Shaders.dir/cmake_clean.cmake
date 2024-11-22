@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "/Users/c2/Documents/BrainEngine/BrainEngine/shaders/point_light.frag.spv"
+  "/Users/c2/Documents/BrainEngine/BrainEngine/shaders/point_light.vert.spv"
   "/Users/c2/Documents/BrainEngine/BrainEngine/shaders/simple_shader.frag.spv"
   "/Users/c2/Documents/BrainEngine/BrainEngine/shaders/simple_shader.vert.spv"
   "CMakeFiles/Shaders"

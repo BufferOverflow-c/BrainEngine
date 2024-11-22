@@ -307,19 +307,33 @@ CMakeFiles/BrainEngine.dir/src/vulkan/brain_window.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/BrainEngine.dir/src/vulkan/brain_window.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/c2/Documents/BrainEngine/BrainEngine/src/vulkan/brain_window.cpp -o CMakeFiles/BrainEngine.dir/src/vulkan/brain_window.cpp.s
 
-CMakeFiles/BrainEngine.dir/src/vulkan/simple_render_system.cpp.o: CMakeFiles/BrainEngine.dir/flags.make
-CMakeFiles/BrainEngine.dir/src/vulkan/simple_render_system.cpp.o: /Users/c2/Documents/BrainEngine/BrainEngine/src/vulkan/simple_render_system.cpp
-CMakeFiles/BrainEngine.dir/src/vulkan/simple_render_system.cpp.o: CMakeFiles/BrainEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/c2/Documents/BrainEngine/BrainEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/BrainEngine.dir/src/vulkan/simple_render_system.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BrainEngine.dir/src/vulkan/simple_render_system.cpp.o -MF CMakeFiles/BrainEngine.dir/src/vulkan/simple_render_system.cpp.o.d -o CMakeFiles/BrainEngine.dir/src/vulkan/simple_render_system.cpp.o -c /Users/c2/Documents/BrainEngine/BrainEngine/src/vulkan/simple_render_system.cpp
+CMakeFiles/BrainEngine.dir/src/vulkan/system/point_light_system.cpp.o: CMakeFiles/BrainEngine.dir/flags.make
+CMakeFiles/BrainEngine.dir/src/vulkan/system/point_light_system.cpp.o: /Users/c2/Documents/BrainEngine/BrainEngine/src/vulkan/system/point_light_system.cpp
+CMakeFiles/BrainEngine.dir/src/vulkan/system/point_light_system.cpp.o: CMakeFiles/BrainEngine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/c2/Documents/BrainEngine/BrainEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/BrainEngine.dir/src/vulkan/system/point_light_system.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BrainEngine.dir/src/vulkan/system/point_light_system.cpp.o -MF CMakeFiles/BrainEngine.dir/src/vulkan/system/point_light_system.cpp.o.d -o CMakeFiles/BrainEngine.dir/src/vulkan/system/point_light_system.cpp.o -c /Users/c2/Documents/BrainEngine/BrainEngine/src/vulkan/system/point_light_system.cpp
 
-CMakeFiles/BrainEngine.dir/src/vulkan/simple_render_system.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/BrainEngine.dir/src/vulkan/simple_render_system.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/c2/Documents/BrainEngine/BrainEngine/src/vulkan/simple_render_system.cpp > CMakeFiles/BrainEngine.dir/src/vulkan/simple_render_system.cpp.i
+CMakeFiles/BrainEngine.dir/src/vulkan/system/point_light_system.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/BrainEngine.dir/src/vulkan/system/point_light_system.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/c2/Documents/BrainEngine/BrainEngine/src/vulkan/system/point_light_system.cpp > CMakeFiles/BrainEngine.dir/src/vulkan/system/point_light_system.cpp.i
 
-CMakeFiles/BrainEngine.dir/src/vulkan/simple_render_system.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/BrainEngine.dir/src/vulkan/simple_render_system.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/c2/Documents/BrainEngine/BrainEngine/src/vulkan/simple_render_system.cpp -o CMakeFiles/BrainEngine.dir/src/vulkan/simple_render_system.cpp.s
+CMakeFiles/BrainEngine.dir/src/vulkan/system/point_light_system.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/BrainEngine.dir/src/vulkan/system/point_light_system.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/c2/Documents/BrainEngine/BrainEngine/src/vulkan/system/point_light_system.cpp -o CMakeFiles/BrainEngine.dir/src/vulkan/system/point_light_system.cpp.s
+
+CMakeFiles/BrainEngine.dir/src/vulkan/system/simple_render_system.cpp.o: CMakeFiles/BrainEngine.dir/flags.make
+CMakeFiles/BrainEngine.dir/src/vulkan/system/simple_render_system.cpp.o: /Users/c2/Documents/BrainEngine/BrainEngine/src/vulkan/system/simple_render_system.cpp
+CMakeFiles/BrainEngine.dir/src/vulkan/system/simple_render_system.cpp.o: CMakeFiles/BrainEngine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/c2/Documents/BrainEngine/BrainEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/BrainEngine.dir/src/vulkan/system/simple_render_system.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BrainEngine.dir/src/vulkan/system/simple_render_system.cpp.o -MF CMakeFiles/BrainEngine.dir/src/vulkan/system/simple_render_system.cpp.o.d -o CMakeFiles/BrainEngine.dir/src/vulkan/system/simple_render_system.cpp.o -c /Users/c2/Documents/BrainEngine/BrainEngine/src/vulkan/system/simple_render_system.cpp
+
+CMakeFiles/BrainEngine.dir/src/vulkan/system/simple_render_system.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/BrainEngine.dir/src/vulkan/system/simple_render_system.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/c2/Documents/BrainEngine/BrainEngine/src/vulkan/system/simple_render_system.cpp > CMakeFiles/BrainEngine.dir/src/vulkan/system/simple_render_system.cpp.i
+
+CMakeFiles/BrainEngine.dir/src/vulkan/system/simple_render_system.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/BrainEngine.dir/src/vulkan/system/simple_render_system.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/c2/Documents/BrainEngine/BrainEngine/src/vulkan/system/simple_render_system.cpp -o CMakeFiles/BrainEngine.dir/src/vulkan/system/simple_render_system.cpp.s
 
 # Object files for target BrainEngine
 BrainEngine_OBJECTS = \
@@ -340,7 +354,8 @@ BrainEngine_OBJECTS = \
 "CMakeFiles/BrainEngine.dir/src/vulkan/brain_renderer.cpp.o" \
 "CMakeFiles/BrainEngine.dir/src/vulkan/brain_swap_chain.cpp.o" \
 "CMakeFiles/BrainEngine.dir/src/vulkan/brain_window.cpp.o" \
-"CMakeFiles/BrainEngine.dir/src/vulkan/simple_render_system.cpp.o"
+"CMakeFiles/BrainEngine.dir/src/vulkan/system/point_light_system.cpp.o" \
+"CMakeFiles/BrainEngine.dir/src/vulkan/system/simple_render_system.cpp.o"
 
 # External object files for target BrainEngine
 BrainEngine_EXTERNAL_OBJECTS =
@@ -362,7 +377,8 @@ BrainEngine: CMakeFiles/BrainEngine.dir/src/vulkan/brain_pipeline.cpp.o
 BrainEngine: CMakeFiles/BrainEngine.dir/src/vulkan/brain_renderer.cpp.o
 BrainEngine: CMakeFiles/BrainEngine.dir/src/vulkan/brain_swap_chain.cpp.o
 BrainEngine: CMakeFiles/BrainEngine.dir/src/vulkan/brain_window.cpp.o
-BrainEngine: CMakeFiles/BrainEngine.dir/src/vulkan/simple_render_system.cpp.o
+BrainEngine: CMakeFiles/BrainEngine.dir/src/vulkan/system/point_light_system.cpp.o
+BrainEngine: CMakeFiles/BrainEngine.dir/src/vulkan/system/simple_render_system.cpp.o
 BrainEngine: CMakeFiles/BrainEngine.dir/build.make
 BrainEngine: Dependencies/glm/glm/libglm.a
 BrainEngine: Dependencies/glad/libglad.a
@@ -381,7 +397,7 @@ BrainEngine: Dependencies/glad/libglad.a
 BrainEngine: Dependencies/stb_image/libstb_image.a
 BrainEngine: Dependencies/stb_truetype/libstb_truetype.a
 BrainEngine: CMakeFiles/BrainEngine.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/c2/Documents/BrainEngine/BrainEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Linking CXX executable BrainEngine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/c2/Documents/BrainEngine/BrainEngine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Linking CXX executable BrainEngine"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/BrainEngine.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

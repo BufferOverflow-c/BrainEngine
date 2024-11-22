@@ -35,8 +35,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/BrainEngine.dir/src/vulkan/brain_swap_chain.cpp.o.d"
   "CMakeFiles/BrainEngine.dir/src/vulkan/brain_window.cpp.o"
   "CMakeFiles/BrainEngine.dir/src/vulkan/brain_window.cpp.o.d"
-  "CMakeFiles/BrainEngine.dir/src/vulkan/simple_render_system.cpp.o"
-  "CMakeFiles/BrainEngine.dir/src/vulkan/simple_render_system.cpp.o.d"
+  "CMakeFiles/BrainEngine.dir/src/vulkan/system/point_light_system.cpp.o"
+  "CMakeFiles/BrainEngine.dir/src/vulkan/system/point_light_system.cpp.o.d"
+  "CMakeFiles/BrainEngine.dir/src/vulkan/system/simple_render_system.cpp.o"
+  "CMakeFiles/BrainEngine.dir/src/vulkan/system/simple_render_system.cpp.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

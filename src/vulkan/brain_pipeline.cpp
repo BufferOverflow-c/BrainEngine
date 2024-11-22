@@ -78,10 +78,8 @@ void BrnPipeline::createGraphicsPipeline(const std::string &vertFilePath,
   shaderStages[1].pNext = nullptr;
   shaderStages[1].pSpecializationInfo = nullptr;
 
-  std::vector<VkVertexInputBindingDescription> bindingDescriptions =
-      BrnModel::Vertex::getBindingDescriptions();
-  std::vector<VkVertexInputAttributeDescription> attributeDescriptions =
-      BrnModel::Vertex::getAttributeDescriptions();
+  auto &bindingDescriptions = configInfo.bindingDescriptions;
+  auto &attributeDescriptions = configInfo.attributeDescriptions;
   VkPipelineVertexInputStateCreateInfo vertexInputInfo{};
   vertexInputInfo.sType =
       VK_STRUCTURE_TYPE_PIPELINE_VERTEX_INPUT_STATE_CREATE_INFO;
@@ -218,5 +216,10 @@ void BrnPipeline::defaultPipelineConfigInfo(PipelineConfigInfo &configInfo) {
       configInfo.dynamicStateEnables.data();
   configInfo.dynamicStateInfo.dynamicStateCount =
       static_cast<uint32_t>(configInfo.dynamicStateEnables.size());
+  configInfo.dynamicStateInfo.flags = 0;
+
+  configInfo.bindingDescriptions = BrnModel::Vertex::getBindingDescriptions();
+  configInfo.attributeDescriptions =
+      BrnModel::Vertex::getAttributeDescriptions();
 }
 } // namespace brn
