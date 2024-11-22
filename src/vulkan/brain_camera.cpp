@@ -1,4 +1,4 @@
-#include "../../include/vulkan/brain_camera.h"
+#include "brain_camera.h"
 
 // std
 #include <cassert>

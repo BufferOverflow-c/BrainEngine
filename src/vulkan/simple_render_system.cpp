@@ -1,5 +1,5 @@
 
-#include "../../include/vulkan/simple_render_system.h"
+#include "simple_render_system.h"
 #include "vulkan/vulkan_core.h"
 
 //~ libs
@@ -63,8 +63,8 @@ void SimpleRenderSystem::createPipeline(VkRenderPass renderPass) {
   pipelineConfig.renderPass = renderPass;
   pipelineConfig.pipelineLayout = pipelineLayout;
   brnPipeline = std::make_unique<BrnPipeline>(
-      brnDevice, "../../shaders/simple_shader.vert.spv",
-      "../../shaders/simple_shader.frag.spv",
+      brnDevice, "shaders/simple_shader.vert.spv",
+      "shaders/simple_shader.frag.spv",
       //"/Users/c2/Documents/BrainEngine/BrainEngine/shaders/"
       //"simple_shader.vert.spv",
       //"/Users/c2/Documents/BrainEngine/BrainEngine/shaders/"

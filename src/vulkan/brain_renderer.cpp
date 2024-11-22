@@ -1,4 +1,4 @@
-#include "../../include/vulkan/brain_renderer.h"
+#include "brain_renderer.h"
 #include "vulkan/vulkan_core.h"
 
 //~ std

@@ -1,0 +1,4 @@
+# Hashes of file build rules.
+bce7876e3740cdd57a508587ea0b7dda /Users/c2/Documents/BrainEngine/BrainEngine/shaders/simple_shader.frag.spv
+8589e97b701949a9690db76a21d224a4 /Users/c2/Documents/BrainEngine/BrainEngine/shaders/simple_shader.vert.spv
+22cee6ab85381ead50c3b0736c2a6f66 CMakeFiles/Shaders

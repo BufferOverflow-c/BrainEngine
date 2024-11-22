@@ -12,6 +12,10 @@
 #include <iostream>
 #include <stdexcept>
 
+#ifndef ENGINE_DIR
+#define ENGINE_DIR "../"
+#endif
+
 namespace brn {
 BrnPipeline::BrnPipeline(BrnDevice &device, const std::string &vertFilePath,
                          const std::string &fragFilePath,
@@ -27,9 +31,10 @@ BrnPipeline::~BrnPipeline() {
 }
 
 std::vector<char> BrnPipeline::readFile(const std::string &filePath) {
-  std::ifstream file{filePath, std::ios::ate | std::ios::binary};
+  std::string enginePath = ENGINE_DIR + filePath;
+  std::ifstream file{enginePath, std::ios::ate | std::ios::binary};
   if (!file.is_open()) {
-    throw std::runtime_error("Failed to open file: " + filePath);
+    throw std::runtime_error("Failed to open file: " + enginePath);
   }
 
   size_t fileSize = static_cast<size_t>(file.tellg());

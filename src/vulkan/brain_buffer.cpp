@@ -5,7 +5,7 @@
  * https://github.com/SaschaWillems/Vulkan/blob/master/base/VulkanBuffer.h
  */
 
-#include "../../include/vulkan/brain_buffer.h"
+#include "brain_buffer.h"
 
 // std
 #include <cassert>

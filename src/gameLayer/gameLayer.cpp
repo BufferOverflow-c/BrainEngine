@@ -44,7 +44,7 @@ bool gameLogic(float deltaTime)
 	int w = 0; int h = 0;
 	w = platform::getFrameBufferSizeX(); //window w
 	h = platform::getFrameBufferSizeY(); //window h
-	
+
 	glViewport(0, 0, w, h);
 	glClear(GL_COLOR_BUFFER_BIT); //clear screen
 
@@ -71,7 +71,6 @@ bool gameLogic(float deltaTime)
 
 	gameData.rectPos = glm::clamp(gameData.rectPos, glm::vec2{0,0}, glm::vec2{w - 100,h - 100});
 	renderer.renderRectangle({gameData.rectPos, 100, 100}, Colors_Blue);
-
 
 	renderer.flush();
 

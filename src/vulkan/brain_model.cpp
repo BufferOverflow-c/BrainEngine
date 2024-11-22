@@ -2,8 +2,8 @@
 // Created by - on 6/14/24.
 //
 
-#include "../../include/vulkan/brain_model.h"
-#include "../../include/vulkan/brain_utils.h"
+#include "brain_model.h"
+#include "brain_utils.h"
 
 #include <memory>
 #include <stdexcept>
@@ -20,6 +20,10 @@
 #include <cstddef>
 #include <cstdint>
 #include <cstring>
+
+#ifndef ENGINE_DIR
+#define ENGINE_DIR "../"
+#endif
 
 namespace std {
 template <> struct hash<brn::BrnModel::Vertex> {
@@ -46,7 +50,7 @@ std::unique_ptr<BrnModel>
 BrnModel::createModelFromFile(BrnDevice &device, const std::string &filePath) {
   Builder builder{};
 
-  builder.loadModels(filePath);
+  builder.loadModels(ENGINE_DIR + filePath);
 
   return std::make_unique<BrnModel>(device, builder);
 }

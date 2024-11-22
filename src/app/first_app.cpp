@@ -3,13 +3,13 @@
 //
 
 // app
-#include "../../include/app/first_app.h"
+#include "first_app.h"
+#include "keyboard_movement_controller.h"
 
 // engine
-#include "../../include/app/keyboard_movement_controller.h"
-#include "../../include/vulkan/brain_buffer.h"
-#include "../../include/vulkan/brain_camera.h"
-#include "../../include/vulkan/simple_render_system.h"
+#include "brain_buffer.h"
+#include "brain_camera.h"
+#include "simple_render_system.h"
 
 //~ libs
 #define GLM_FORCE_RADIANS
@@ -129,22 +129,21 @@ void FirstApp::run() {
 
 void FirstApp::loadGameObjects() {
   std::shared_ptr<BrnModel> brnModel =
-      BrnModel::createModelFromFile(brnDevice, "../../models/flat_vase.obj");
+      BrnModel::createModelFromFile(brnDevice, "models/flat_vase.obj");
   auto flatVase = BrnGameObject::createGameObject();
   flatVase.model = brnModel;
   flatVase.transform.translation = {-0.5f, 0.5f, 0.f};
   flatVase.transform.scale = glm::vec3{3.f, 1.5f, 3.f};
   gameObjects.emplace(flatVase.getId(), std::move(flatVase));
 
-  brnModel =
-      BrnModel::createModelFromFile(brnDevice, "../../models/smooth_vase.obj");
+  brnModel = BrnModel::createModelFromFile(brnDevice, "models/smooth_vase.obj");
   auto smoothVase = BrnGameObject::createGameObject();
   smoothVase.model = brnModel;
   smoothVase.transform.translation = {0.5f, 0.5f, 0.f};
   smoothVase.transform.scale = {3.f, 1.5f, 3.f};
   gameObjects.emplace(smoothVase.getId(), std::move(smoothVase));
 
-  brnModel = BrnModel::createModelFromFile(brnDevice, "../../models/quad.obj");
+  brnModel = BrnModel::createModelFromFile(brnDevice, "models/quad.obj");
   auto floor = BrnGameObject::createGameObject();
   floor.model = brnModel;
   floor.transform.translation = {0.f, 0.5f, 0.f};

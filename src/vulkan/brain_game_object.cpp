@@ -1,4 +1,4 @@
-#include "../../include/vulkan/brain_game_object.h"
+#include "brain_game_object.h"
 
 namespace brn {
 glm::mat4 TransformComponent::mat4() {

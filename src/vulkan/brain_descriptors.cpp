@@ -1,4 +1,4 @@
-#include "../../include/vulkan/brain_descriptors.h"
+#include "brain_descriptors.h"
 
 // std
 #include <cassert>

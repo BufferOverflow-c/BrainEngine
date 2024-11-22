@@ -57,7 +57,7 @@ RM = /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/c2/Documents/BrainEngine
+CMAKE_SOURCE_DIR = /Users/c2/Documents/BrainEngine/BrainEngine
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /Users/c2/Documents/BrainEngine/BrainEngine
@@ -113,159 +113,89 @@ preinstall/fast:
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -P /Users/c2/Documents/BrainEngine/BrainEngine/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Brain
+# Target rules for targets named BrainEngine
 
 # Build rule for target.
-Brain: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Brain
-.PHONY : Brain
+BrainEngine: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BrainEngine
+.PHONY : BrainEngine
 
 # fast build rule for target.
-Brain/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/build
-.PHONY : Brain/fast
+BrainEngine/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrainEngine.dir/build.make CMakeFiles/BrainEngine.dir/build
+.PHONY : BrainEngine/fast
 
 #=============================================================================
-# Target rules for targets named glfw
+# Target rules for targets named Shaders
 
 # Build rule for target.
-glfw: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw
-.PHONY : glfw
+Shaders: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Shaders
+.PHONY : Shaders
 
 # fast build rule for target.
-glfw/fast:
-	$(MAKE) $(MAKESILENT) -f BrainEngine/Dependencies/glfw-3.3.2/src/CMakeFiles/glfw.dir/build.make BrainEngine/Dependencies/glfw-3.3.2/src/CMakeFiles/glfw.dir/build
-.PHONY : glfw/fast
+Shaders/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Shaders.dir/build.make CMakeFiles/Shaders.dir/build
+.PHONY : Shaders/fast
 
-#=============================================================================
-# Target rules for targets named glad
+src/app/first_app.o: src/app/first_app.cpp.o
+.PHONY : src/app/first_app.o
 
-# Build rule for target.
-glad: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glad
-.PHONY : glad
+# target to build an object file
+src/app/first_app.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrainEngine.dir/build.make CMakeFiles/BrainEngine.dir/src/app/first_app.cpp.o
+.PHONY : src/app/first_app.cpp.o
 
-# fast build rule for target.
-glad/fast:
-	$(MAKE) $(MAKESILENT) -f BrainEngine/Dependencies/glad/CMakeFiles/glad.dir/build.make BrainEngine/Dependencies/glad/CMakeFiles/glad.dir/build
-.PHONY : glad/fast
+src/app/first_app.i: src/app/first_app.cpp.i
+.PHONY : src/app/first_app.i
 
-#=============================================================================
-# Target rules for targets named stb_image
+# target to preprocess a source file
+src/app/first_app.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrainEngine.dir/build.make CMakeFiles/BrainEngine.dir/src/app/first_app.cpp.i
+.PHONY : src/app/first_app.cpp.i
 
-# Build rule for target.
-stb_image: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 stb_image
-.PHONY : stb_image
+src/app/first_app.s: src/app/first_app.cpp.s
+.PHONY : src/app/first_app.s
 
-# fast build rule for target.
-stb_image/fast:
-	$(MAKE) $(MAKESILENT) -f BrainEngine/Dependencies/stb_image/CMakeFiles/stb_image.dir/build.make BrainEngine/Dependencies/stb_image/CMakeFiles/stb_image.dir/build
-.PHONY : stb_image/fast
+# target to generate assembly for a file
+src/app/first_app.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrainEngine.dir/build.make CMakeFiles/BrainEngine.dir/src/app/first_app.cpp.s
+.PHONY : src/app/first_app.cpp.s
 
-#=============================================================================
-# Target rules for targets named stb_truetype
+src/app/keyboard_movement_controller.o: src/app/keyboard_movement_controller.cpp.o
+.PHONY : src/app/keyboard_movement_controller.o
 
-# Build rule for target.
-stb_truetype: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 stb_truetype
-.PHONY : stb_truetype
+# target to build an object file
+src/app/keyboard_movement_controller.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrainEngine.dir/build.make CMakeFiles/BrainEngine.dir/src/app/keyboard_movement_controller.cpp.o
+.PHONY : src/app/keyboard_movement_controller.cpp.o
 
-# fast build rule for target.
-stb_truetype/fast:
-	$(MAKE) $(MAKESILENT) -f BrainEngine/Dependencies/stb_truetype/CMakeFiles/stb_truetype.dir/build.make BrainEngine/Dependencies/stb_truetype/CMakeFiles/stb_truetype.dir/build
-.PHONY : stb_truetype/fast
+src/app/keyboard_movement_controller.i: src/app/keyboard_movement_controller.cpp.i
+.PHONY : src/app/keyboard_movement_controller.i
 
-#=============================================================================
-# Target rules for targets named raudio
+# target to preprocess a source file
+src/app/keyboard_movement_controller.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrainEngine.dir/build.make CMakeFiles/BrainEngine.dir/src/app/keyboard_movement_controller.cpp.i
+.PHONY : src/app/keyboard_movement_controller.cpp.i
 
-# Build rule for target.
-raudio: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 raudio
-.PHONY : raudio
+src/app/keyboard_movement_controller.s: src/app/keyboard_movement_controller.cpp.s
+.PHONY : src/app/keyboard_movement_controller.s
 
-# fast build rule for target.
-raudio/fast:
-	$(MAKE) $(MAKESILENT) -f BrainEngine/Dependencies/raudio/CMakeFiles/raudio.dir/build.make BrainEngine/Dependencies/raudio/CMakeFiles/raudio.dir/build
-.PHONY : raudio/fast
-
-#=============================================================================
-# Target rules for targets named glm
-
-# Build rule for target.
-glm: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glm
-.PHONY : glm
-
-# fast build rule for target.
-glm/fast:
-	$(MAKE) $(MAKESILENT) -f BrainEngine/Dependencies/glm/glm/CMakeFiles/glm.dir/build.make BrainEngine/Dependencies/glm/glm/CMakeFiles/glm.dir/build
-.PHONY : glm/fast
-
-#=============================================================================
-# Target rules for targets named imgui
-
-# Build rule for target.
-imgui: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 imgui
-.PHONY : imgui
-
-# fast build rule for target.
-imgui/fast:
-	$(MAKE) $(MAKESILENT) -f BrainEngine/Dependencies/imgui-docking/CMakeFiles/imgui.dir/build.make BrainEngine/Dependencies/imgui-docking/CMakeFiles/imgui.dir/build
-.PHONY : imgui/fast
-
-#=============================================================================
-# Target rules for targets named safeSave
-
-# Build rule for target.
-safeSave: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 safeSave
-.PHONY : safeSave
-
-# fast build rule for target.
-safeSave/fast:
-	$(MAKE) $(MAKESILENT) -f BrainEngine/Dependencies/safeSave/CMakeFiles/safeSave.dir/build.make BrainEngine/Dependencies/safeSave/CMakeFiles/safeSave.dir/build
-.PHONY : safeSave/fast
-
-#=============================================================================
-# Target rules for targets named gl2d
-
-# Build rule for target.
-gl2d: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gl2d
-.PHONY : gl2d
-
-# fast build rule for target.
-gl2d/fast:
-	$(MAKE) $(MAKESILENT) -f BrainEngine/Dependencies/gl2d/CMakeFiles/gl2d.dir/build.make BrainEngine/Dependencies/gl2d/CMakeFiles/gl2d.dir/build
-.PHONY : gl2d/fast
-
-#=============================================================================
-# Target rules for targets named glui
-
-# Build rule for target.
-glui: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glui
-.PHONY : glui
-
-# fast build rule for target.
-glui/fast:
-	$(MAKE) $(MAKESILENT) -f BrainEngine/Dependencies/glui/CMakeFiles/glui.dir/build.make BrainEngine/Dependencies/glui/CMakeFiles/glui.dir/build
-.PHONY : glui/fast
+# target to generate assembly for a file
+src/app/keyboard_movement_controller.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrainEngine.dir/build.make CMakeFiles/BrainEngine.dir/src/app/keyboard_movement_controller.cpp.s
+.PHONY : src/app/keyboard_movement_controller.cpp.s
 
 src/gameLayer/gameLayer.o: src/gameLayer/gameLayer.cpp.o
 .PHONY : src/gameLayer/gameLayer.o
 
 # target to build an object file
 src/gameLayer/gameLayer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/src/gameLayer/gameLayer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrainEngine.dir/build.make CMakeFiles/BrainEngine.dir/src/gameLayer/gameLayer.cpp.o
 .PHONY : src/gameLayer/gameLayer.cpp.o
 
 src/gameLayer/gameLayer.i: src/gameLayer/gameLayer.cpp.i
@@ -273,7 +203,7 @@ src/gameLayer/gameLayer.i: src/gameLayer/gameLayer.cpp.i
 
 # target to preprocess a source file
 src/gameLayer/gameLayer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/src/gameLayer/gameLayer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrainEngine.dir/build.make CMakeFiles/BrainEngine.dir/src/gameLayer/gameLayer.cpp.i
 .PHONY : src/gameLayer/gameLayer.cpp.i
 
 src/gameLayer/gameLayer.s: src/gameLayer/gameLayer.cpp.s
@@ -281,7 +211,7 @@ src/gameLayer/gameLayer.s: src/gameLayer/gameLayer.cpp.s
 
 # target to generate assembly for a file
 src/gameLayer/gameLayer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/src/gameLayer/gameLayer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrainEngine.dir/build.make CMakeFiles/BrainEngine.dir/src/gameLayer/gameLayer.cpp.s
 .PHONY : src/gameLayer/gameLayer.cpp.s
 
 src/main.o: src/main.cpp.o
@@ -289,7 +219,7 @@ src/main.o: src/main.cpp.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/src/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrainEngine.dir/build.make CMakeFiles/BrainEngine.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -297,7 +227,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrainEngine.dir/build.make CMakeFiles/BrainEngine.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -305,7 +235,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrainEngine.dir/build.make CMakeFiles/BrainEngine.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 src/platform/errorReporting.o: src/platform/errorReporting.cpp.o
@@ -313,7 +243,7 @@ src/platform/errorReporting.o: src/platform/errorReporting.cpp.o
 
 # target to build an object file
 src/platform/errorReporting.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/src/platform/errorReporting.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrainEngine.dir/build.make CMakeFiles/BrainEngine.dir/src/platform/errorReporting.cpp.o
 .PHONY : src/platform/errorReporting.cpp.o
 
 src/platform/errorReporting.i: src/platform/errorReporting.cpp.i
@@ -321,7 +251,7 @@ src/platform/errorReporting.i: src/platform/errorReporting.cpp.i
 
 # target to preprocess a source file
 src/platform/errorReporting.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/src/platform/errorReporting.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrainEngine.dir/build.make CMakeFiles/BrainEngine.dir/src/platform/errorReporting.cpp.i
 .PHONY : src/platform/errorReporting.cpp.i
 
 src/platform/errorReporting.s: src/platform/errorReporting.cpp.s
@@ -329,7 +259,7 @@ src/platform/errorReporting.s: src/platform/errorReporting.cpp.s
 
 # target to generate assembly for a file
 src/platform/errorReporting.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/src/platform/errorReporting.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrainEngine.dir/build.make CMakeFiles/BrainEngine.dir/src/platform/errorReporting.cpp.s
 .PHONY : src/platform/errorReporting.cpp.s
 
 src/platform/opterPlatformFunctions.o: src/platform/opterPlatformFunctions.cpp.o
@@ -337,7 +267,7 @@ src/platform/opterPlatformFunctions.o: src/platform/opterPlatformFunctions.cpp.o
 
 # target to build an object file
 src/platform/opterPlatformFunctions.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/src/platform/opterPlatformFunctions.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrainEngine.dir/build.make CMakeFiles/BrainEngine.dir/src/platform/opterPlatformFunctions.cpp.o
 .PHONY : src/platform/opterPlatformFunctions.cpp.o
 
 src/platform/opterPlatformFunctions.i: src/platform/opterPlatformFunctions.cpp.i
@@ -345,7 +275,7 @@ src/platform/opterPlatformFunctions.i: src/platform/opterPlatformFunctions.cpp.i
 
 # target to preprocess a source file
 src/platform/opterPlatformFunctions.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/src/platform/opterPlatformFunctions.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrainEngine.dir/build.make CMakeFiles/BrainEngine.dir/src/platform/opterPlatformFunctions.cpp.i
 .PHONY : src/platform/opterPlatformFunctions.cpp.i
 
 src/platform/opterPlatformFunctions.s: src/platform/opterPlatformFunctions.cpp.s
@@ -353,7 +283,7 @@ src/platform/opterPlatformFunctions.s: src/platform/opterPlatformFunctions.cpp.s
 
 # target to generate assembly for a file
 src/platform/opterPlatformFunctions.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/src/platform/opterPlatformFunctions.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrainEngine.dir/build.make CMakeFiles/BrainEngine.dir/src/platform/opterPlatformFunctions.cpp.s
 .PHONY : src/platform/opterPlatformFunctions.cpp.s
 
 src/platform/platformInput.o: src/platform/platformInput.cpp.o
@@ -361,7 +291,7 @@ src/platform/platformInput.o: src/platform/platformInput.cpp.o
 
 # target to build an object file
 src/platform/platformInput.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/src/platform/platformInput.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrainEngine.dir/build.make CMakeFiles/BrainEngine.dir/src/platform/platformInput.cpp.o
 .PHONY : src/platform/platformInput.cpp.o
 
 src/platform/platformInput.i: src/platform/platformInput.cpp.i
@@ -369,7 +299,7 @@ src/platform/platformInput.i: src/platform/platformInput.cpp.i
 
 # target to preprocess a source file
 src/platform/platformInput.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/src/platform/platformInput.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrainEngine.dir/build.make CMakeFiles/BrainEngine.dir/src/platform/platformInput.cpp.i
 .PHONY : src/platform/platformInput.cpp.i
 
 src/platform/platformInput.s: src/platform/platformInput.cpp.s
@@ -377,15 +307,87 @@ src/platform/platformInput.s: src/platform/platformInput.cpp.s
 
 # target to generate assembly for a file
 src/platform/platformInput.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/src/platform/platformInput.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrainEngine.dir/build.make CMakeFiles/BrainEngine.dir/src/platform/platformInput.cpp.s
 .PHONY : src/platform/platformInput.cpp.s
+
+src/vulkan/brain_buffer.o: src/vulkan/brain_buffer.cpp.o
+.PHONY : src/vulkan/brain_buffer.o
+
+# target to build an object file
+src/vulkan/brain_buffer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrainEngine.dir/build.make CMakeFiles/BrainEngine.dir/src/vulkan/brain_buffer.cpp.o
+.PHONY : src/vulkan/brain_buffer.cpp.o
+
+src/vulkan/brain_buffer.i: src/vulkan/brain_buffer.cpp.i
+.PHONY : src/vulkan/brain_buffer.i
+
+# target to preprocess a source file
+src/vulkan/brain_buffer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrainEngine.dir/build.make CMakeFiles/BrainEngine.dir/src/vulkan/brain_buffer.cpp.i
+.PHONY : src/vulkan/brain_buffer.cpp.i
+
+src/vulkan/brain_buffer.s: src/vulkan/brain_buffer.cpp.s
+.PHONY : src/vulkan/brain_buffer.s
+
+# target to generate assembly for a file
+src/vulkan/brain_buffer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrainEngine.dir/build.make CMakeFiles/BrainEngine.dir/src/vulkan/brain_buffer.cpp.s
+.PHONY : src/vulkan/brain_buffer.cpp.s
+
+src/vulkan/brain_camera.o: src/vulkan/brain_camera.cpp.o
+.PHONY : src/vulkan/brain_camera.o
+
+# target to build an object file
+src/vulkan/brain_camera.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrainEngine.dir/build.make CMakeFiles/BrainEngine.dir/src/vulkan/brain_camera.cpp.o
+.PHONY : src/vulkan/brain_camera.cpp.o
+
+src/vulkan/brain_camera.i: src/vulkan/brain_camera.cpp.i
+.PHONY : src/vulkan/brain_camera.i
+
+# target to preprocess a source file
+src/vulkan/brain_camera.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrainEngine.dir/build.make CMakeFiles/BrainEngine.dir/src/vulkan/brain_camera.cpp.i
+.PHONY : src/vulkan/brain_camera.cpp.i
+
+src/vulkan/brain_camera.s: src/vulkan/brain_camera.cpp.s
+.PHONY : src/vulkan/brain_camera.s
+
+# target to generate assembly for a file
+src/vulkan/brain_camera.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrainEngine.dir/build.make CMakeFiles/BrainEngine.dir/src/vulkan/brain_camera.cpp.s
+.PHONY : src/vulkan/brain_camera.cpp.s
+
+src/vulkan/brain_descriptors.o: src/vulkan/brain_descriptors.cpp.o
+.PHONY : src/vulkan/brain_descriptors.o
+
+# target to build an object file
+src/vulkan/brain_descriptors.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrainEngine.dir/build.make CMakeFiles/BrainEngine.dir/src/vulkan/brain_descriptors.cpp.o
+.PHONY : src/vulkan/brain_descriptors.cpp.o
+
+src/vulkan/brain_descriptors.i: src/vulkan/brain_descriptors.cpp.i
+.PHONY : src/vulkan/brain_descriptors.i
+
+# target to preprocess a source file
+src/vulkan/brain_descriptors.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrainEngine.dir/build.make CMakeFiles/BrainEngine.dir/src/vulkan/brain_descriptors.cpp.i
+.PHONY : src/vulkan/brain_descriptors.cpp.i
+
+src/vulkan/brain_descriptors.s: src/vulkan/brain_descriptors.cpp.s
+.PHONY : src/vulkan/brain_descriptors.s
+
+# target to generate assembly for a file
+src/vulkan/brain_descriptors.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrainEngine.dir/build.make CMakeFiles/BrainEngine.dir/src/vulkan/brain_descriptors.cpp.s
+.PHONY : src/vulkan/brain_descriptors.cpp.s
 
 src/vulkan/brain_device.o: src/vulkan/brain_device.cpp.o
 .PHONY : src/vulkan/brain_device.o
 
 # target to build an object file
 src/vulkan/brain_device.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/src/vulkan/brain_device.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrainEngine.dir/build.make CMakeFiles/BrainEngine.dir/src/vulkan/brain_device.cpp.o
 .PHONY : src/vulkan/brain_device.cpp.o
 
 src/vulkan/brain_device.i: src/vulkan/brain_device.cpp.i
@@ -393,7 +395,7 @@ src/vulkan/brain_device.i: src/vulkan/brain_device.cpp.i
 
 # target to preprocess a source file
 src/vulkan/brain_device.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/src/vulkan/brain_device.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrainEngine.dir/build.make CMakeFiles/BrainEngine.dir/src/vulkan/brain_device.cpp.i
 .PHONY : src/vulkan/brain_device.cpp.i
 
 src/vulkan/brain_device.s: src/vulkan/brain_device.cpp.s
@@ -401,15 +403,39 @@ src/vulkan/brain_device.s: src/vulkan/brain_device.cpp.s
 
 # target to generate assembly for a file
 src/vulkan/brain_device.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/src/vulkan/brain_device.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrainEngine.dir/build.make CMakeFiles/BrainEngine.dir/src/vulkan/brain_device.cpp.s
 .PHONY : src/vulkan/brain_device.cpp.s
+
+src/vulkan/brain_game_object.o: src/vulkan/brain_game_object.cpp.o
+.PHONY : src/vulkan/brain_game_object.o
+
+# target to build an object file
+src/vulkan/brain_game_object.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrainEngine.dir/build.make CMakeFiles/BrainEngine.dir/src/vulkan/brain_game_object.cpp.o
+.PHONY : src/vulkan/brain_game_object.cpp.o
+
+src/vulkan/brain_game_object.i: src/vulkan/brain_game_object.cpp.i
+.PHONY : src/vulkan/brain_game_object.i
+
+# target to preprocess a source file
+src/vulkan/brain_game_object.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrainEngine.dir/build.make CMakeFiles/BrainEngine.dir/src/vulkan/brain_game_object.cpp.i
+.PHONY : src/vulkan/brain_game_object.cpp.i
+
+src/vulkan/brain_game_object.s: src/vulkan/brain_game_object.cpp.s
+.PHONY : src/vulkan/brain_game_object.s
+
+# target to generate assembly for a file
+src/vulkan/brain_game_object.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrainEngine.dir/build.make CMakeFiles/BrainEngine.dir/src/vulkan/brain_game_object.cpp.s
+.PHONY : src/vulkan/brain_game_object.cpp.s
 
 src/vulkan/brain_model.o: src/vulkan/brain_model.cpp.o
 .PHONY : src/vulkan/brain_model.o
 
 # target to build an object file
 src/vulkan/brain_model.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/src/vulkan/brain_model.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrainEngine.dir/build.make CMakeFiles/BrainEngine.dir/src/vulkan/brain_model.cpp.o
 .PHONY : src/vulkan/brain_model.cpp.o
 
 src/vulkan/brain_model.i: src/vulkan/brain_model.cpp.i
@@ -417,7 +443,7 @@ src/vulkan/brain_model.i: src/vulkan/brain_model.cpp.i
 
 # target to preprocess a source file
 src/vulkan/brain_model.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/src/vulkan/brain_model.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrainEngine.dir/build.make CMakeFiles/BrainEngine.dir/src/vulkan/brain_model.cpp.i
 .PHONY : src/vulkan/brain_model.cpp.i
 
 src/vulkan/brain_model.s: src/vulkan/brain_model.cpp.s
@@ -425,7 +451,7 @@ src/vulkan/brain_model.s: src/vulkan/brain_model.cpp.s
 
 # target to generate assembly for a file
 src/vulkan/brain_model.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/src/vulkan/brain_model.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrainEngine.dir/build.make CMakeFiles/BrainEngine.dir/src/vulkan/brain_model.cpp.s
 .PHONY : src/vulkan/brain_model.cpp.s
 
 src/vulkan/brain_pipeline.o: src/vulkan/brain_pipeline.cpp.o
@@ -433,7 +459,7 @@ src/vulkan/brain_pipeline.o: src/vulkan/brain_pipeline.cpp.o
 
 # target to build an object file
 src/vulkan/brain_pipeline.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/src/vulkan/brain_pipeline.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrainEngine.dir/build.make CMakeFiles/BrainEngine.dir/src/vulkan/brain_pipeline.cpp.o
 .PHONY : src/vulkan/brain_pipeline.cpp.o
 
 src/vulkan/brain_pipeline.i: src/vulkan/brain_pipeline.cpp.i
@@ -441,7 +467,7 @@ src/vulkan/brain_pipeline.i: src/vulkan/brain_pipeline.cpp.i
 
 # target to preprocess a source file
 src/vulkan/brain_pipeline.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/src/vulkan/brain_pipeline.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrainEngine.dir/build.make CMakeFiles/BrainEngine.dir/src/vulkan/brain_pipeline.cpp.i
 .PHONY : src/vulkan/brain_pipeline.cpp.i
 
 src/vulkan/brain_pipeline.s: src/vulkan/brain_pipeline.cpp.s
@@ -449,15 +475,39 @@ src/vulkan/brain_pipeline.s: src/vulkan/brain_pipeline.cpp.s
 
 # target to generate assembly for a file
 src/vulkan/brain_pipeline.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/src/vulkan/brain_pipeline.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrainEngine.dir/build.make CMakeFiles/BrainEngine.dir/src/vulkan/brain_pipeline.cpp.s
 .PHONY : src/vulkan/brain_pipeline.cpp.s
+
+src/vulkan/brain_renderer.o: src/vulkan/brain_renderer.cpp.o
+.PHONY : src/vulkan/brain_renderer.o
+
+# target to build an object file
+src/vulkan/brain_renderer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrainEngine.dir/build.make CMakeFiles/BrainEngine.dir/src/vulkan/brain_renderer.cpp.o
+.PHONY : src/vulkan/brain_renderer.cpp.o
+
+src/vulkan/brain_renderer.i: src/vulkan/brain_renderer.cpp.i
+.PHONY : src/vulkan/brain_renderer.i
+
+# target to preprocess a source file
+src/vulkan/brain_renderer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrainEngine.dir/build.make CMakeFiles/BrainEngine.dir/src/vulkan/brain_renderer.cpp.i
+.PHONY : src/vulkan/brain_renderer.cpp.i
+
+src/vulkan/brain_renderer.s: src/vulkan/brain_renderer.cpp.s
+.PHONY : src/vulkan/brain_renderer.s
+
+# target to generate assembly for a file
+src/vulkan/brain_renderer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrainEngine.dir/build.make CMakeFiles/BrainEngine.dir/src/vulkan/brain_renderer.cpp.s
+.PHONY : src/vulkan/brain_renderer.cpp.s
 
 src/vulkan/brain_swap_chain.o: src/vulkan/brain_swap_chain.cpp.o
 .PHONY : src/vulkan/brain_swap_chain.o
 
 # target to build an object file
 src/vulkan/brain_swap_chain.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/src/vulkan/brain_swap_chain.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrainEngine.dir/build.make CMakeFiles/BrainEngine.dir/src/vulkan/brain_swap_chain.cpp.o
 .PHONY : src/vulkan/brain_swap_chain.cpp.o
 
 src/vulkan/brain_swap_chain.i: src/vulkan/brain_swap_chain.cpp.i
@@ -465,7 +515,7 @@ src/vulkan/brain_swap_chain.i: src/vulkan/brain_swap_chain.cpp.i
 
 # target to preprocess a source file
 src/vulkan/brain_swap_chain.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/src/vulkan/brain_swap_chain.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrainEngine.dir/build.make CMakeFiles/BrainEngine.dir/src/vulkan/brain_swap_chain.cpp.i
 .PHONY : src/vulkan/brain_swap_chain.cpp.i
 
 src/vulkan/brain_swap_chain.s: src/vulkan/brain_swap_chain.cpp.s
@@ -473,7 +523,7 @@ src/vulkan/brain_swap_chain.s: src/vulkan/brain_swap_chain.cpp.s
 
 # target to generate assembly for a file
 src/vulkan/brain_swap_chain.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/src/vulkan/brain_swap_chain.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrainEngine.dir/build.make CMakeFiles/BrainEngine.dir/src/vulkan/brain_swap_chain.cpp.s
 .PHONY : src/vulkan/brain_swap_chain.cpp.s
 
 src/vulkan/brain_window.o: src/vulkan/brain_window.cpp.o
@@ -481,7 +531,7 @@ src/vulkan/brain_window.o: src/vulkan/brain_window.cpp.o
 
 # target to build an object file
 src/vulkan/brain_window.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/src/vulkan/brain_window.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrainEngine.dir/build.make CMakeFiles/BrainEngine.dir/src/vulkan/brain_window.cpp.o
 .PHONY : src/vulkan/brain_window.cpp.o
 
 src/vulkan/brain_window.i: src/vulkan/brain_window.cpp.i
@@ -489,7 +539,7 @@ src/vulkan/brain_window.i: src/vulkan/brain_window.cpp.i
 
 # target to preprocess a source file
 src/vulkan/brain_window.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/src/vulkan/brain_window.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrainEngine.dir/build.make CMakeFiles/BrainEngine.dir/src/vulkan/brain_window.cpp.i
 .PHONY : src/vulkan/brain_window.cpp.i
 
 src/vulkan/brain_window.s: src/vulkan/brain_window.cpp.s
@@ -497,32 +547,32 @@ src/vulkan/brain_window.s: src/vulkan/brain_window.cpp.s
 
 # target to generate assembly for a file
 src/vulkan/brain_window.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/src/vulkan/brain_window.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrainEngine.dir/build.make CMakeFiles/BrainEngine.dir/src/vulkan/brain_window.cpp.s
 .PHONY : src/vulkan/brain_window.cpp.s
 
-src/vulkan/first_app.o: src/vulkan/first_app.cpp.o
-.PHONY : src/vulkan/first_app.o
+src/vulkan/simple_render_system.o: src/vulkan/simple_render_system.cpp.o
+.PHONY : src/vulkan/simple_render_system.o
 
 # target to build an object file
-src/vulkan/first_app.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/src/vulkan/first_app.cpp.o
-.PHONY : src/vulkan/first_app.cpp.o
+src/vulkan/simple_render_system.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrainEngine.dir/build.make CMakeFiles/BrainEngine.dir/src/vulkan/simple_render_system.cpp.o
+.PHONY : src/vulkan/simple_render_system.cpp.o
 
-src/vulkan/first_app.i: src/vulkan/first_app.cpp.i
-.PHONY : src/vulkan/first_app.i
+src/vulkan/simple_render_system.i: src/vulkan/simple_render_system.cpp.i
+.PHONY : src/vulkan/simple_render_system.i
 
 # target to preprocess a source file
-src/vulkan/first_app.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/src/vulkan/first_app.cpp.i
-.PHONY : src/vulkan/first_app.cpp.i
+src/vulkan/simple_render_system.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrainEngine.dir/build.make CMakeFiles/BrainEngine.dir/src/vulkan/simple_render_system.cpp.i
+.PHONY : src/vulkan/simple_render_system.cpp.i
 
-src/vulkan/first_app.s: src/vulkan/first_app.cpp.s
-.PHONY : src/vulkan/first_app.s
+src/vulkan/simple_render_system.s: src/vulkan/simple_render_system.cpp.s
+.PHONY : src/vulkan/simple_render_system.s
 
 # target to generate assembly for a file
-src/vulkan/first_app.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Brain.dir/build.make CMakeFiles/Brain.dir/src/vulkan/first_app.cpp.s
-.PHONY : src/vulkan/first_app.cpp.s
+src/vulkan/simple_render_system.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrainEngine.dir/build.make CMakeFiles/BrainEngine.dir/src/vulkan/simple_render_system.cpp.s
+.PHONY : src/vulkan/simple_render_system.cpp.s
 
 # Help Target
 help:
@@ -532,17 +582,14 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... Brain"
-	@echo "... gl2d"
-	@echo "... glad"
-	@echo "... glfw"
-	@echo "... glm"
-	@echo "... glui"
-	@echo "... imgui"
-	@echo "... raudio"
-	@echo "... safeSave"
-	@echo "... stb_image"
-	@echo "... stb_truetype"
+	@echo "... Shaders"
+	@echo "... BrainEngine"
+	@echo "... src/app/first_app.o"
+	@echo "... src/app/first_app.i"
+	@echo "... src/app/first_app.s"
+	@echo "... src/app/keyboard_movement_controller.o"
+	@echo "... src/app/keyboard_movement_controller.i"
+	@echo "... src/app/keyboard_movement_controller.s"
 	@echo "... src/gameLayer/gameLayer.o"
 	@echo "... src/gameLayer/gameLayer.i"
 	@echo "... src/gameLayer/gameLayer.s"
@@ -558,24 +605,39 @@ help:
 	@echo "... src/platform/platformInput.o"
 	@echo "... src/platform/platformInput.i"
 	@echo "... src/platform/platformInput.s"
+	@echo "... src/vulkan/brain_buffer.o"
+	@echo "... src/vulkan/brain_buffer.i"
+	@echo "... src/vulkan/brain_buffer.s"
+	@echo "... src/vulkan/brain_camera.o"
+	@echo "... src/vulkan/brain_camera.i"
+	@echo "... src/vulkan/brain_camera.s"
+	@echo "... src/vulkan/brain_descriptors.o"
+	@echo "... src/vulkan/brain_descriptors.i"
+	@echo "... src/vulkan/brain_descriptors.s"
 	@echo "... src/vulkan/brain_device.o"
 	@echo "... src/vulkan/brain_device.i"
 	@echo "... src/vulkan/brain_device.s"
+	@echo "... src/vulkan/brain_game_object.o"
+	@echo "... src/vulkan/brain_game_object.i"
+	@echo "... src/vulkan/brain_game_object.s"
 	@echo "... src/vulkan/brain_model.o"
 	@echo "... src/vulkan/brain_model.i"
 	@echo "... src/vulkan/brain_model.s"
 	@echo "... src/vulkan/brain_pipeline.o"
 	@echo "... src/vulkan/brain_pipeline.i"
 	@echo "... src/vulkan/brain_pipeline.s"
+	@echo "... src/vulkan/brain_renderer.o"
+	@echo "... src/vulkan/brain_renderer.i"
+	@echo "... src/vulkan/brain_renderer.s"
 	@echo "... src/vulkan/brain_swap_chain.o"
 	@echo "... src/vulkan/brain_swap_chain.i"
 	@echo "... src/vulkan/brain_swap_chain.s"
 	@echo "... src/vulkan/brain_window.o"
 	@echo "... src/vulkan/brain_window.i"
 	@echo "... src/vulkan/brain_window.s"
-	@echo "... src/vulkan/first_app.o"
-	@echo "... src/vulkan/first_app.i"
-	@echo "... src/vulkan/first_app.s"
+	@echo "... src/vulkan/simple_render_system.o"
+	@echo "... src/vulkan/simple_render_system.i"
+	@echo "... src/vulkan/simple_render_system.s"
 .PHONY : help
 
 
@@ -587,7 +649,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -P /Users/c2/Documents/BrainEngine/BrainEngine/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
