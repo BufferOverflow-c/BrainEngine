@@ -112,12 +112,15 @@ void FirstApp::run() {
       GlobalUbo ubo{};
       ubo.projection = camera.getProjection();
       ubo.view = camera.getView();
+      ubo.inverseView = camera.getInverseView();
       pointLightSystem.update(frameInfo, ubo);
       uboBuffers[frameIndex]->writeToBuffer(&ubo);
       uboBuffers[frameIndex]->flush();
 
       // render
       brnRenderer.beginSwapChainRenderPass(commandBuffer);
+
+      // order matters here
       simpleRenderSystem.renderGameObjects(frameInfo);
       pointLightSystem.render(frameInfo);
       brnRenderer.endSwapChainRenderPass(commandBuffer);
