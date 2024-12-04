@@ -1,4 +1,5 @@
 #include "brain_game_object.h"
+#include <memory>
 
 namespace brn {
 glm::mat4 TransformComponent::mat4() {
@@ -54,6 +55,16 @@ glm::mat3 TransformComponent::normalMatrix() {
           invScale.z * (c1 * c2),
       },
   };
+}
+
+BrnGameObject BrnGameObject::makePointLight(float intensity, float radius,
+                                            glm::vec3 color) {
+  BrnGameObject gameObj = BrnGameObject::createGameObject();
+  gameObj.color = color;
+  gameObj.transform.scale.x = radius;
+  gameObj.pointLight = std::make_unique<PointLightComponent>();
+  gameObj.pointLight->lightIntensity = intensity;
+  return gameObj;
 }
 
 } // namespace brn
