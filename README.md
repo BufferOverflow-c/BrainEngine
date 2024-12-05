@@ -1,63 +1,77 @@
-# cmakeSetup
+## <a name="Building"></a> Building
 
----
+### <a name="UnixBuild"></a> Unix Build Instructions
 
-## What is it?
+- Install the dependencies: cmake, glm, vulkan and glfw
 
-This is a CMake setup that loads glfw, OpenGL, stb_image, stb_truetype, and a custom 2d library. It works both on Windows and Linux.
+- For example
+  ```
+    sudo apt install vulkan-tools
+    sudo apt install libvulkan-dev
+    sudo apt install vulkan-validationlayers-dev spirv-tools
+    sudo apt install libglfw3-dev
+    sudo apt install libglm-dev
+    sudo apt install cmake
+  ```
+- To Build
+  ```
+   cd BrainEngine
+   ./unixBuild.sh
+  ```
 
-## Why use cmakeSetup?
+### <a name="MacOSBuild"></a> MacOS Build Instructions
 
-All I do is configure the project in a good way. It is cross-platform, easy to add libraries, and the input and window opening are implemented. All the rest is up to you, with no weird abstractions, you get the init() update(), and close() functions and you do whatever you want with them.
+#### Install Dependencies
 
+- [Download and install MacOS Vulkan sdk](https://vulkan.lunarg.com/)
+- [Download and install Homebrew](https://brew.sh/)
 
-![](https://github.com/meemknight/photos/blob/master/cmakeSetup1.png)
----
+- Then in a terminal window
 
-  [FULL EXAMPLE VIDEO!](https://www.youtube.com/watch?v=zJoXMfCI9LM)
-  
-  [LONGER VERSION!!](https://www.youtube.com/watch?v=XOs2qynEmNE)
-  
-  [VIDEO ABOUT THE SETUP](https://www.youtube.com/watch?v=K8f73k9HM8M)
+  ```
+    brew install cmake
+    brew install glfw
+    brew install glm
+  ```
 
----
+- To Build
+  ```
+   cd BrainEngine
+   ./unixBuild.sh
+  ```
 
-<p>Opening the Solution:</p> 
+### <a name="WindowsBuild"></a> Windows build instructions
 
-<img src="https://raw.githubusercontent.com/meemknight/photos/master/llge1.gif" width="350">
+- [Download and install Windows Vulkan sdk](https://vulkan.lunarg.com/)
+- [Download and install Windows cmake x64 installer](https://cmake.org/download/)
+  - Make sure to select "Add cmake to the system Path for all users"
+- [Download GLFW](https://www.glfw.org/download.html) (64-bit precompiled binary)
+- [Download GLM](https://github.com/g-truc/glm/releases)
+- Download and open the project and rename "envWindowsExample.cmake" to ".env.cmake"
+- Update the filepath variables in .env.cmake to your installation locations
 
-Or
+#### Building for Visual Studio 2019
 
-<img src="https://raw.githubusercontent.com/meemknight/photos/master/llge2.gif" width="500">
+- In windows powershell
 
-Running the setup
+```
+ cd BrainEngine
+ mkdir build
+ cmake -S . -B .\build\
+```
 
-Go to CMakeLists.txt, <kbd>CTRL + S</kbd> to make sure the solution was built.
+- If cmake finished successfully, it will create a LveEngine.sln file in the build directory that can be opened with visual studio. In visual studio right click the Shaders project -> build, to build the shaders. Right click the LveEngine project -> set as startup project. Change from debug to release, and then build and start without debugging.
 
-Then, from this dropdown select mygame.exe
+#### Building for minGW
 
-<img src="https://raw.githubusercontent.com/meemknight/photos/master/llge3.gif" width="200">
+- [Download and install MinGW-w64](https://www.mingw-w64.org/downloads/), you probably want MingW-W64-builds/
+- Make sure MinGW has been added to your Path
+- Also set MINGW_PATH variable in the project's .env.cmake
+- In windows powershell
 
-<kbd>Ctrl + F5</kbd> to build (<kbd>F5</kbd> oppens the debugger, you usually want to press <kbd>Ctrl + F5</kbd> because it oppens faster like this.
+```
+ cd BrainEngine
+ ./mingwBuild.bat
+```
 
-<p>Adding files:<br>
-You should add .cpp in src/gameLayer and .h in include/gameLayer. Whenever you add a new file CMake will ask you if you want to add that thing, say NO every time! I am already adding all of the things.
-If you accidentally say YES, just remove that file from the CMake.lists
-</p>
-
-<p>Refreshing your changes:<br>
-After you add a file, the changes should be automatically added but if you want to be sure, you can refresh changes by saving the CMake file. If you want to make a hard refresh (you might have to do that sometimes) close Visual Studio, delete the out folder, reopen VS, <kbd>CTRL + S</kbd> on CMakeLists.txt</p>
-
-
-# How to use:
-
-  gameLayer.cpp has the game main loop. Add your files in scr/gamelayer and include/gamelayer.
-  Look at the example provided to see how to acces user input.
-  Also you have to use the RESOURCES_PATH macro to get to your assets path.
-
-  [FULL EXAMPLE VIDEO!](https://www.youtube.com/watch?v=zJoXMfCI9LM)
-
-
-# IMPORTANT!
-  To ship the game: 
-  In Cmakelists.txt, set the PRODUCTION_BUILD flag to ON to build a shippable version of your game. This will change the file paths to be relative to your exe (RESOURCES_PATH macro), will remove the console, and also will change the aserts to not allow people to debug them. To make sure the changes take effect I recommend deleting the out folder to make a new clean build!
+- This will build the project to build/LveEngine.exe, double click in file explorer to open and run
