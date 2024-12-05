@@ -60,7 +60,7 @@
  cmake -S . -B .\build\
 ```
 
-- If cmake finished successfully, it will create a LveEngine.sln file in the build directory that can be opened with visual studio. In visual studio right click the Shaders project -> build, to build the shaders. Right click the LveEngine project -> set as startup project. Change from debug to release, and then build and start without debugging.
+- If cmake finished successfully, it will create a BrainEngine.sln file in the build directory that can be opened with visual studio. In visual studio right click the Shaders project -> build, to build the shaders. Right click the BrainEngine project -> set as startup project. Change from debug to release, and then build and start without debugging.
 
 #### Building for minGW
 
@@ -74,4 +74,4 @@
  ./mingwBuild.bat
 ```
 
-- This will build the project to build/LveEngine.exe, double click in file explorer to open and run
+- This will build the project to build/BrainEngine.exe, double click in file explorer to open and run
