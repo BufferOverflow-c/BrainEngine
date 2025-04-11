@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/c2/Documents/BrainEngine/BrainEngine/Dependencies/stb_truetype/src/stb_truetype.cpp" "Dependencies/stb_truetype/CMakeFiles/stb_truetype.dir/src/stb_truetype.cpp.o" "gcc" "Dependencies/stb_truetype/CMakeFiles/stb_truetype.dir/src/stb_truetype.cpp.o.d"
+  "/Users/c2/Documents/PersonalProjects/BrainEngine/Dependencies/stb_truetype/src/stb_truetype.cpp" "Dependencies/stb_truetype/CMakeFiles/stb_truetype.dir/src/stb_truetype.cpp.o" "gcc" "Dependencies/stb_truetype/CMakeFiles/stb_truetype.dir/src/stb_truetype.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

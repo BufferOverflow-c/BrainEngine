@@ -1,0 +1,18 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/c2/Documents/PersonalProjects/BrainEngine/build/cmake_install.cmake",
+		"/Users/c2/Documents/PersonalProjects/BrainEngine/build/Dependencies/glad/cmake_install.cmake",
+		"/Users/c2/Documents/PersonalProjects/BrainEngine/build/Dependencies/stb_image/cmake_install.cmake",
+		"/Users/c2/Documents/PersonalProjects/BrainEngine/build/Dependencies/stb_truetype/cmake_install.cmake",
+		"/Users/c2/Documents/PersonalProjects/BrainEngine/build/Dependencies/raudio/cmake_install.cmake",
+		"/Users/c2/Documents/PersonalProjects/BrainEngine/build/Dependencies/glm/cmake_install.cmake",
+		"/Users/c2/Documents/PersonalProjects/BrainEngine/build/Dependencies/glm/glm/cmake_install.cmake",
+		"/Users/c2/Documents/PersonalProjects/BrainEngine/build/Dependencies/imgui-docking/cmake_install.cmake",
+		"/Users/c2/Documents/PersonalProjects/BrainEngine/build/Dependencies/safeSave/cmake_install.cmake",
+		"/Users/c2/Documents/PersonalProjects/BrainEngine/build/Dependencies/profilerLib/cmake_install.cmake",
+		"/Users/c2/Documents/PersonalProjects/BrainEngine/build/Dependencies/gl2d/cmake_install.cmake",
+		"/Users/c2/Documents/PersonalProjects/BrainEngine/build/Dependencies/glui/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

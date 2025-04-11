@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/c2/Documents/BrainEngine/BrainEngine/Dependencies/stb_image/src/stb_image.cpp" "Dependencies/stb_image/CMakeFiles/stb_image.dir/src/stb_image.cpp.o" "gcc" "Dependencies/stb_image/CMakeFiles/stb_image.dir/src/stb_image.cpp.o.d"
+  "/Users/c2/Documents/PersonalProjects/BrainEngine/Dependencies/stb_image/src/stb_image.cpp" "Dependencies/stb_image/CMakeFiles/stb_image.dir/src/stb_image.cpp.o" "gcc" "Dependencies/stb_image/CMakeFiles/stb_image.dir/src/stb_image.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
