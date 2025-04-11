@@ -383,6 +383,8 @@ BrainEngine: CMakeFiles/BrainEngine.dir/src/vulkan/brain_window.cpp.o
 BrainEngine: CMakeFiles/BrainEngine.dir/src/vulkan/system/point_light_system.cpp.o
 BrainEngine: CMakeFiles/BrainEngine.dir/src/vulkan/system/simple_render_system.cpp.o
 BrainEngine: CMakeFiles/BrainEngine.dir/build.make
+BrainEngine: /Users/c2/VulkanSDK/1.3.296.0/macOS/lib/libvulkan.dylib
+BrainEngine: Dependencies/glfw/src/libglfw3.a
 BrainEngine: Dependencies/glm/glm/libglm.a
 BrainEngine: Dependencies/glad/libglad.a
 BrainEngine: Dependencies/stb_image/libstb_image.a
@@ -392,8 +394,7 @@ BrainEngine: Dependencies/raudio/libraudio.a
 BrainEngine: Dependencies/imgui-docking/libimgui.a
 BrainEngine: Dependencies/safeSave/libsafeSave.a
 BrainEngine: Dependencies/glui/libglui.a
-BrainEngine: /Users/c2/VulkanSDK/1.3.296.0/macOS/lib/libvulkan.dylib
-BrainEngine: /opt/local/lib/libglfw.3.3.dylib
+BrainEngine: Dependencies/glfw/src/libglfw3.a
 BrainEngine: Dependencies/gl2d/libgl2d.a
 BrainEngine: Dependencies/glm/glm/libglm.a
 BrainEngine: Dependencies/glad/libglad.a

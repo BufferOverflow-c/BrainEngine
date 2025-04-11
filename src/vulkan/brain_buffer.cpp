@@ -23,16 +23,15 @@ namespace brn {
  *
  * @return VkResult of the buffer mapping call
  */
-VkDeviceSize BrnBuffer::getAlignment(VkDeviceSize instanceSize,
-                                     VkDeviceSize minOffsetAlignment) {
+VkDeviceSize BrnBuffer::getAlignment(VkDeviceSize instanceSize, VkDeviceSize minOffsetAlignment) {
   if (minOffsetAlignment > 0) {
     return (instanceSize + minOffsetAlignment - 1) & ~(minOffsetAlignment - 1);
   }
   return instanceSize;
 }
 
-BrnBuffer::BrnBuffer(BrnDevice &device, VkDeviceSize instanceSize,
-                     uint32_t instanceCount, VkBufferUsageFlags usageFlags,
+BrnBuffer::BrnBuffer(BrnDevice &device, VkDeviceSize instanceSize, uint32_t instanceCount,
+                     VkBufferUsageFlags usageFlags,
                      VkMemoryPropertyFlags memoryPropertyFlags,
                      VkDeviceSize minOffsetAlignment)
     : brnDevice{device}, instanceSize{instanceSize},
@@ -40,8 +39,7 @@ BrnBuffer::BrnBuffer(BrnDevice &device, VkDeviceSize instanceSize,
       memoryPropertyFlags{memoryPropertyFlags} {
   alignmentSize = getAlignment(instanceSize, minOffsetAlignment);
   bufferSize = alignmentSize * instanceCount;
-  device.createBuffer(bufferSize, usageFlags, memoryPropertyFlags, buffer,
-                      memory);
+  device.createBuffer(bufferSize, usageFlags, memoryPropertyFlags, buffer, memory);
 }
 
 BrnBuffer::~BrnBuffer() {
@@ -87,8 +85,7 @@ void BrnBuffer::unmap() {
  * @param offset (Optional) Byte offset from beginning of mapped region
  *
  */
-void BrnBuffer::writeToBuffer(void *data, VkDeviceSize size,
-                              VkDeviceSize offset) {
+void BrnBuffer::writeToBuffer(void *data, VkDeviceSize size, VkDeviceSize offset) {
   assert(mapped && "Cannot copy to unmapped buffer");
 
   if (size == VK_WHOLE_SIZE) {
@@ -148,8 +145,7 @@ VkResult BrnBuffer::invalidate(VkDeviceSize size, VkDeviceSize offset) {
  *
  * @return VkDescriptorBufferInfo of specified offset and range
  */
-VkDescriptorBufferInfo BrnBuffer::descriptorInfo(VkDeviceSize size,
-                                                 VkDeviceSize offset) {
+VkDescriptorBufferInfo BrnBuffer::descriptorInfo(VkDeviceSize size, VkDeviceSize offset) {
   return VkDescriptorBufferInfo{
       buffer,
       offset,

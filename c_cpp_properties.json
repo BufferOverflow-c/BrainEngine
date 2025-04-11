@@ -1,0 +1,30 @@
+{
+  "configurations": [
+    {
+      "name": "Linux",
+      "includePath": [
+        "${workspaceFolder}/include",
+        "${workspaceFolder}/include/app",
+        "${workspaceFolder}/include/gameLayer",
+        "${workspaceFolder}/include/platform",
+        "${workspaceFolder}/include/vulkan",
+        "${workspaceFolder}/Dependencies/glfw/include",
+        "${workspaceFolder}/Dependencies/glm"
+      ],
+      "defines": [],
+      "compilerPath": "/usr/bin/g++",
+      "cStandard": "c11",
+      "cppStandard": "c++17",
+      "intelliSenseMode": "gcc-x64",
+      "browse": {
+        "path": [
+          "${workspaceFolder}/include",
+          "${workspaceFolder}/src",
+          "${workspaceFolder}/Dependencies/glfw/include",
+          "${workspaceFolder}/Dependencies/glm"
+        ]
+      }
+    }
+  ],
+  "version": 4
+}

@@ -39,6 +39,16 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
+  include("/Users/c2/Documents/PersonalProjects/BrainEngine/build/Dependencies/glfw/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/Users/c2/Documents/PersonalProjects/BrainEngine/build/Dependencies/glm/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
   include("/Users/c2/Documents/PersonalProjects/BrainEngine/build/Dependencies/glad/cmake_install.cmake")
 endif()
 
@@ -59,7 +69,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/c2/Documents/PersonalProjects/BrainEngine/build/Dependencies/glm/cmake_install.cmake")
+  include("/Users/c2/Documents/PersonalProjects/BrainEngine/build/Dependencies/gl2d/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
@@ -75,11 +85,6 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
   include("/Users/c2/Documents/PersonalProjects/BrainEngine/build/Dependencies/profilerLib/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("/Users/c2/Documents/PersonalProjects/BrainEngine/build/Dependencies/gl2d/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)

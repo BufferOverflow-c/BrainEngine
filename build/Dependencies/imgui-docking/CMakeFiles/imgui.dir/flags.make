@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/c2/Documents/PersonalProjects/BrainEngine/Dependencies/imgui-docking/imgui -I/Users/c2/Documents/PersonalProjects/BrainEngine/Dependencies/glad/include -isystem /opt/local/include
+CXX_INCLUDES = -I/Users/c2/Documents/PersonalProjects/BrainEngine/Dependencies/imgui-docking/imgui -I/Users/c2/Documents/PersonalProjects/BrainEngine/Dependencies/glfw/include -I/Users/c2/Documents/PersonalProjects/BrainEngine/Dependencies/glad/include
 
 CXX_FLAGSarm64 = -std=gnu++2b -arch arm64
 

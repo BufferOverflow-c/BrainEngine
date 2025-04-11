@@ -29,8 +29,7 @@ namespace std {
 template <> struct hash<brn::BrnModel::Vertex> {
   size_t operator()(brn::BrnModel::Vertex const &vertex) const {
     size_t seed = 0;
-    brn::hashCombine(seed, vertex.position, vertex.color, vertex.normal,
-                     vertex.uv);
+    brn::hashCombine(seed, vertex.position, vertex.color, vertex.normal, vertex.uv);
     return seed;
   }
 };
@@ -78,8 +77,7 @@ void BrnModel::createVertexBuffers(const std::vector<Vertex> &vertices) {
       VK_BUFFER_USAGE_VERTEX_BUFFER_BIT | VK_BUFFER_USAGE_TRANSFER_DST_BIT,
       VK_MEMORY_PROPERTY_DEVICE_LOCAL_BIT);
 
-  brnDevice.copyBuffer(stagingBuffer.getBuffer(), vertexBuffer->getBuffer(),
-                       bufferSize);
+  brnDevice.copyBuffer(stagingBuffer.getBuffer(), vertexBuffer->getBuffer(), bufferSize);
 }
 
 void BrnModel::createIndexBuffers(const std::vector<uint32_t> &indices) {
@@ -99,7 +97,7 @@ void BrnModel::createIndexBuffers(const std::vector<uint32_t> &indices) {
       indexCount,
       VK_BUFFER_USAGE_TRANSFER_SRC_BIT,
       VK_MEMORY_PROPERTY_HOST_VISIBLE_BIT |
-          VK_MEMORY_PROPERTY_HOST_COHERENT_BIT,
+      VK_MEMORY_PROPERTY_HOST_COHERENT_BIT,
   };
 
   stagingBuffer.map();
@@ -127,8 +125,7 @@ void BrnModel::bind(VkCommandBuffer commandBuffer) {
   VkDeviceSize offset[] = {0};
   vkCmdBindVertexBuffers(commandBuffer, 0, 1, buffers, offset);
   if (hasIndexBuffer) {
-    vkCmdBindIndexBuffer(commandBuffer, indexBuffer->getBuffer(), 0,
-                         VK_INDEX_TYPE_UINT32);
+    vkCmdBindIndexBuffer(commandBuffer, indexBuffer->getBuffer(), 0, VK_INDEX_TYPE_UINT32);
   }
 }
 
@@ -145,14 +142,10 @@ std::vector<VkVertexInputAttributeDescription>
 BrnModel::Vertex::getAttributeDescriptions() {
   std::vector<VkVertexInputAttributeDescription> attributeDescriptions{};
 
-  attributeDescriptions.push_back(
-      {0, 0, VK_FORMAT_R32G32B32_SFLOAT, offsetof(Vertex, position)});
-  attributeDescriptions.push_back(
-      {1, 0, VK_FORMAT_R32G32B32_SFLOAT, offsetof(Vertex, color)});
-  attributeDescriptions.push_back(
-      {2, 0, VK_FORMAT_R32G32B32_SFLOAT, offsetof(Vertex, normal)});
-  attributeDescriptions.push_back(
-      {3, 0, VK_FORMAT_R32G32_SFLOAT, offsetof(Vertex, uv)});
+  attributeDescriptions.push_back({0, 0, VK_FORMAT_R32G32B32_SFLOAT, offsetof(Vertex, position)});
+  attributeDescriptions.push_back({1, 0, VK_FORMAT_R32G32B32_SFLOAT, offsetof(Vertex, color)});
+  attributeDescriptions.push_back({2, 0, VK_FORMAT_R32G32B32_SFLOAT, offsetof(Vertex, normal)});
+  attributeDescriptions.push_back({3, 0, VK_FORMAT_R32G32_SFLOAT, offsetof(Vertex, uv)});
 
   return attributeDescriptions;
 }
@@ -163,8 +156,7 @@ void BrnModel::Builder::loadModels(const std::string &filePath) {
   std::vector<tinyobj::material_t> materials;
   std::string warn, err;
 
-  if (!tinyobj::LoadObj(&attrib, &shapes, &materials, &warn, &err,
-                        filePath.c_str())) {
+  if (!tinyobj::LoadObj(&attrib, &shapes, &materials, &warn, &err, filePath.c_str())) {
     throw std::runtime_error(warn + err);
   }
 

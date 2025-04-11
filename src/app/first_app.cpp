@@ -40,8 +40,7 @@ FirstApp::FirstApp() {
 FirstApp::~FirstApp() {}
 
 void FirstApp::run() {
-  std::vector<std::unique_ptr<BrnBuffer>> uboBuffers(
-      BrnSwapChain::MAX_FRAMES_IN_FLIGHT);
+  std::vector<std::unique_ptr<BrnBuffer>> uboBuffers(BrnSwapChain::MAX_FRAMES_IN_FLIGHT);
   for (int i = 0; i < uboBuffers.size(); i++) {
     uboBuffers[i] = std::make_unique<BrnBuffer>(
         brnDevice, sizeof(GlobalUbo), 1, VK_BUFFER_USAGE_UNIFORM_BUFFER_BIT,
@@ -54,8 +53,7 @@ void FirstApp::run() {
                                          VK_SHADER_STAGE_ALL_GRAPHICS)
                              .build();
 
-  std::vector<VkDescriptorSet> globalDescriptorSets(
-      BrnSwapChain::MAX_FRAMES_IN_FLIGHT);
+  std::vector<VkDescriptorSet> globalDescriptorSets(BrnSwapChain::MAX_FRAMES_IN_FLIGHT);
   for (int i = 0; i < globalDescriptorSets.size(); i++) {
     auto bufferInfo = uboBuffers[i]->descriptorInfo();
     BrnDescriptorWriter(*globalSetLayout, *globalPool)
@@ -65,11 +63,13 @@ void FirstApp::run() {
 
   SimpleRenderSystem simpleRenderSystem{
       brnDevice, brnRenderer.getSwapChainRenderPass(),
-      globalSetLayout->getDescriptorSetLayout()};
+      globalSetLayout->getDescriptorSetLayout()
+    };
 
   PointLightSystem pointLightSystem{brnDevice,
                                     brnRenderer.getSwapChainRenderPass(),
-                                    globalSetLayout->getDescriptorSetLayout()};
+                                    globalSetLayout->getDescriptorSetLayout()
+    };
 
   BrnCamera camera{};
   camera.setViewTarget(glm::vec3(-1.f, -2.f, 2.f), glm::vec3(0.f, 0.f, 2.5f));
@@ -85,16 +85,11 @@ void FirstApp::run() {
     glfwPollEvents();
 
     auto newTime = std::chrono::high_resolution_clock::now();
-    float frameTime =
-        std::chrono::duration<float, std::chrono::seconds::period>(newTime -
-                                                                   currentTime)
-            .count();
+    float frameTime = std::chrono::duration<float, std::chrono::seconds::period>(newTime - currentTime).count();
     currentTime = newTime;
 
-    cameraController.moveInPlaneXZ(brnWindow.getGLFWwindow(), frameTime,
-                                   viewerObject);
-    camera.setViewYXZ(viewerObject.transform.translation,
-                      viewerObject.transform.rotation);
+    cameraController.moveInPlaneXZ(brnWindow.getGLFWwindow(), frameTime, viewerObject);
+    camera.setViewYXZ(viewerObject.transform.translation, viewerObject.transform.rotation);
 
     float aspect = brnRenderer.getAspectRatio();
     camera.setPerspectiveProjection(glm::radians(50.f), aspect, 0.1f, 1000.0f);
@@ -131,8 +126,7 @@ void FirstApp::run() {
 }
 
 void FirstApp::loadGameObjects() {
-  std::shared_ptr<BrnModel> brnModel =
-      BrnModel::createModelFromFile(brnDevice, "models/flat_vase.obj");
+  std::shared_ptr<BrnModel> brnModel = BrnModel::createModelFromFile(brnDevice, "models/flat_vase.obj");
   auto flatVase = BrnGameObject::createGameObject();
   flatVase.model = brnModel;
   flatVase.transform.translation = {-0.5f, 0.5f, 0.f};
