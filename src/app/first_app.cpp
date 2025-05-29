@@ -84,6 +84,10 @@ void FirstApp::run() {
   while (!brnWindow.shouldClose()) {
     glfwPollEvents();
 
+    // TODO change this to not be on the camera controller
+    cameraController.exitProgram(brnWindow.getGLFWwindow());
+
+
     auto newTime = std::chrono::high_resolution_clock::now();
     float frameTime = std::chrono::duration<float, std::chrono::seconds::period>(newTime - currentTime).count();
     currentTime = newTime;

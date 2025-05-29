@@ -20,6 +20,7 @@ set(OLD_GLOB
   "/Users/c2/Documents/PersonalProjects/BrainEngine/src/vulkan/brain_pipeline.cpp"
   "/Users/c2/Documents/PersonalProjects/BrainEngine/src/vulkan/brain_renderer.cpp"
   "/Users/c2/Documents/PersonalProjects/BrainEngine/src/vulkan/brain_swap_chain.cpp"
+  "/Users/c2/Documents/PersonalProjects/BrainEngine/src/vulkan/brain_texture.cpp"
   "/Users/c2/Documents/PersonalProjects/BrainEngine/src/vulkan/brain_window.cpp"
   "/Users/c2/Documents/PersonalProjects/BrainEngine/src/vulkan/system/point_light_system.cpp"
   "/Users/c2/Documents/PersonalProjects/BrainEngine/src/vulkan/system/simple_render_system.cpp"

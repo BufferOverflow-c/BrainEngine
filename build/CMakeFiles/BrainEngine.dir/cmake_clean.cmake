@@ -33,6 +33,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/BrainEngine.dir/src/vulkan/brain_renderer.cpp.o.d"
   "CMakeFiles/BrainEngine.dir/src/vulkan/brain_swap_chain.cpp.o"
   "CMakeFiles/BrainEngine.dir/src/vulkan/brain_swap_chain.cpp.o.d"
+  "CMakeFiles/BrainEngine.dir/src/vulkan/brain_texture.cpp.o"
+  "CMakeFiles/BrainEngine.dir/src/vulkan/brain_texture.cpp.o.d"
   "CMakeFiles/BrainEngine.dir/src/vulkan/brain_window.cpp.o"
   "CMakeFiles/BrainEngine.dir/src/vulkan/brain_window.cpp.o.d"
   "CMakeFiles/BrainEngine.dir/src/vulkan/system/point_light_system.cpp.o"

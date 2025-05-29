@@ -72,6 +72,7 @@ public:
                            VkMemoryPropertyFlags properties, VkImage &image,
                            VkDeviceMemory &imageMemory);
 
+    VkPhysicalDevice getPhysicalDevice() { return physicalDevice; }
   VkPhysicalDeviceProperties properties;
 
 private:

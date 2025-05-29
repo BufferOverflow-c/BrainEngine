@@ -387,12 +387,12 @@ CMakeFiles/BrainEngine.dir/all: Dependencies/safeSave/CMakeFiles/safeSave.dir/al
 CMakeFiles/BrainEngine.dir/all: Dependencies/glui/CMakeFiles/glui.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrainEngine.dir/build.make CMakeFiles/BrainEngine.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrainEngine.dir/build.make CMakeFiles/BrainEngine.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/c2/Documents/PersonalProjects/BrainEngine/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20 "Built target BrainEngine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/c2/Documents/PersonalProjects/BrainEngine/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21 "Built target BrainEngine"
 .PHONY : CMakeFiles/BrainEngine.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/BrainEngine.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/c2/Documents/PersonalProjects/BrainEngine/build/CMakeFiles 67
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/c2/Documents/PersonalProjects/BrainEngine/build/CMakeFiles 68
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/BrainEngine.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/c2/Documents/PersonalProjects/BrainEngine/build/CMakeFiles 0
 .PHONY : CMakeFiles/BrainEngine.dir/rule
@@ -404,7 +404,7 @@ BrainEngine: CMakeFiles/BrainEngine.dir/rule
 # codegen rule for target.
 CMakeFiles/BrainEngine.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrainEngine.dir/build.make CMakeFiles/BrainEngine.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/c2/Documents/PersonalProjects/BrainEngine/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20 "Finished codegen for target BrainEngine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/c2/Documents/PersonalProjects/BrainEngine/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21 "Finished codegen for target BrainEngine"
 .PHONY : CMakeFiles/BrainEngine.dir/codegen
 
 # clean rule for target.
@@ -419,7 +419,7 @@ CMakeFiles/BrainEngine.dir/clean:
 CMakeFiles/Shaders.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Shaders.dir/build.make CMakeFiles/Shaders.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Shaders.dir/build.make CMakeFiles/Shaders.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/c2/Documents/PersonalProjects/BrainEngine/build/CMakeFiles --progress-num=21,22,23,24 "Built target Shaders"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/c2/Documents/PersonalProjects/BrainEngine/build/CMakeFiles --progress-num=22,23,24,25 "Built target Shaders"
 .PHONY : CMakeFiles/Shaders.dir/all
 
 # Build rule for subdir invocation for target.
@@ -436,7 +436,7 @@ Shaders: CMakeFiles/Shaders.dir/rule
 # codegen rule for target.
 CMakeFiles/Shaders.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Shaders.dir/build.make CMakeFiles/Shaders.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/c2/Documents/PersonalProjects/BrainEngine/build/CMakeFiles --progress-num=21,22,23,24 "Finished codegen for target Shaders"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/c2/Documents/PersonalProjects/BrainEngine/build/CMakeFiles --progress-num=22,23,24,25 "Finished codegen for target Shaders"
 .PHONY : CMakeFiles/Shaders.dir/codegen
 
 # clean rule for target.
@@ -483,7 +483,7 @@ Dependencies/glfw/CMakeFiles/uninstall.dir/clean:
 Dependencies/glfw/src/CMakeFiles/glfw.dir/all:
 	$(MAKE) $(MAKESILENT) -f Dependencies/glfw/src/CMakeFiles/glfw.dir/build.make Dependencies/glfw/src/CMakeFiles/glfw.dir/depend
 	$(MAKE) $(MAKESILENT) -f Dependencies/glfw/src/CMakeFiles/glfw.dir/build.make Dependencies/glfw/src/CMakeFiles/glfw.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/c2/Documents/PersonalProjects/BrainEngine/build/CMakeFiles --progress-num=30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51 "Built target glfw"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/c2/Documents/PersonalProjects/BrainEngine/build/CMakeFiles --progress-num=31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52 "Built target glfw"
 .PHONY : Dependencies/glfw/src/CMakeFiles/glfw.dir/all
 
 # Build rule for subdir invocation for target.
@@ -500,7 +500,7 @@ glfw: Dependencies/glfw/src/CMakeFiles/glfw.dir/rule
 # codegen rule for target.
 Dependencies/glfw/src/CMakeFiles/glfw.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f Dependencies/glfw/src/CMakeFiles/glfw.dir/build.make Dependencies/glfw/src/CMakeFiles/glfw.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/c2/Documents/PersonalProjects/BrainEngine/build/CMakeFiles --progress-num=30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51 "Finished codegen for target glfw"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/c2/Documents/PersonalProjects/BrainEngine/build/CMakeFiles --progress-num=31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52 "Finished codegen for target glfw"
 .PHONY : Dependencies/glfw/src/CMakeFiles/glfw.dir/codegen
 
 # clean rule for target.
@@ -515,7 +515,7 @@ Dependencies/glfw/src/CMakeFiles/glfw.dir/clean:
 Dependencies/glfw/src/CMakeFiles/update_mappings.dir/all:
 	$(MAKE) $(MAKESILENT) -f Dependencies/glfw/src/CMakeFiles/update_mappings.dir/build.make Dependencies/glfw/src/CMakeFiles/update_mappings.dir/depend
 	$(MAKE) $(MAKESILENT) -f Dependencies/glfw/src/CMakeFiles/update_mappings.dir/build.make Dependencies/glfw/src/CMakeFiles/update_mappings.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/c2/Documents/PersonalProjects/BrainEngine/build/CMakeFiles --progress-num=72 "Built target update_mappings"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/c2/Documents/PersonalProjects/BrainEngine/build/CMakeFiles --progress-num=73 "Built target update_mappings"
 .PHONY : Dependencies/glfw/src/CMakeFiles/update_mappings.dir/all
 
 # Build rule for subdir invocation for target.
@@ -532,7 +532,7 @@ update_mappings: Dependencies/glfw/src/CMakeFiles/update_mappings.dir/rule
 # codegen rule for target.
 Dependencies/glfw/src/CMakeFiles/update_mappings.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f Dependencies/glfw/src/CMakeFiles/update_mappings.dir/build.make Dependencies/glfw/src/CMakeFiles/update_mappings.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/c2/Documents/PersonalProjects/BrainEngine/build/CMakeFiles --progress-num=72 "Finished codegen for target update_mappings"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/c2/Documents/PersonalProjects/BrainEngine/build/CMakeFiles --progress-num=73 "Finished codegen for target update_mappings"
 .PHONY : Dependencies/glfw/src/CMakeFiles/update_mappings.dir/codegen
 
 # clean rule for target.
@@ -547,7 +547,7 @@ Dependencies/glfw/src/CMakeFiles/update_mappings.dir/clean:
 Dependencies/glm/glm/CMakeFiles/glm.dir/all:
 	$(MAKE) $(MAKESILENT) -f Dependencies/glm/glm/CMakeFiles/glm.dir/build.make Dependencies/glm/glm/CMakeFiles/glm.dir/depend
 	$(MAKE) $(MAKESILENT) -f Dependencies/glm/glm/CMakeFiles/glm.dir/build.make Dependencies/glm/glm/CMakeFiles/glm.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/c2/Documents/PersonalProjects/BrainEngine/build/CMakeFiles --progress-num=52,53 "Built target glm"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/c2/Documents/PersonalProjects/BrainEngine/build/CMakeFiles --progress-num=53,54 "Built target glm"
 .PHONY : Dependencies/glm/glm/CMakeFiles/glm.dir/all
 
 # Build rule for subdir invocation for target.
@@ -564,7 +564,7 @@ glm: Dependencies/glm/glm/CMakeFiles/glm.dir/rule
 # codegen rule for target.
 Dependencies/glm/glm/CMakeFiles/glm.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f Dependencies/glm/glm/CMakeFiles/glm.dir/build.make Dependencies/glm/glm/CMakeFiles/glm.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/c2/Documents/PersonalProjects/BrainEngine/build/CMakeFiles --progress-num=52,53 "Finished codegen for target glm"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/c2/Documents/PersonalProjects/BrainEngine/build/CMakeFiles --progress-num=53,54 "Finished codegen for target glm"
 .PHONY : Dependencies/glm/glm/CMakeFiles/glm.dir/codegen
 
 # clean rule for target.
@@ -579,7 +579,7 @@ Dependencies/glm/glm/CMakeFiles/glm.dir/clean:
 Dependencies/glad/CMakeFiles/glad.dir/all:
 	$(MAKE) $(MAKESILENT) -f Dependencies/glad/CMakeFiles/glad.dir/build.make Dependencies/glad/CMakeFiles/glad.dir/depend
 	$(MAKE) $(MAKESILENT) -f Dependencies/glad/CMakeFiles/glad.dir/build.make Dependencies/glad/CMakeFiles/glad.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/c2/Documents/PersonalProjects/BrainEngine/build/CMakeFiles --progress-num=28,29 "Built target glad"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/c2/Documents/PersonalProjects/BrainEngine/build/CMakeFiles --progress-num=29,30 "Built target glad"
 .PHONY : Dependencies/glad/CMakeFiles/glad.dir/all
 
 # Build rule for subdir invocation for target.
@@ -596,7 +596,7 @@ glad: Dependencies/glad/CMakeFiles/glad.dir/rule
 # codegen rule for target.
 Dependencies/glad/CMakeFiles/glad.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f Dependencies/glad/CMakeFiles/glad.dir/build.make Dependencies/glad/CMakeFiles/glad.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/c2/Documents/PersonalProjects/BrainEngine/build/CMakeFiles --progress-num=28,29 "Finished codegen for target glad"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/c2/Documents/PersonalProjects/BrainEngine/build/CMakeFiles --progress-num=29,30 "Finished codegen for target glad"
 .PHONY : Dependencies/glad/CMakeFiles/glad.dir/codegen
 
 # clean rule for target.
@@ -611,7 +611,7 @@ Dependencies/glad/CMakeFiles/glad.dir/clean:
 Dependencies/stb_image/CMakeFiles/stb_image.dir/all:
 	$(MAKE) $(MAKESILENT) -f Dependencies/stb_image/CMakeFiles/stb_image.dir/build.make Dependencies/stb_image/CMakeFiles/stb_image.dir/depend
 	$(MAKE) $(MAKESILENT) -f Dependencies/stb_image/CMakeFiles/stb_image.dir/build.make Dependencies/stb_image/CMakeFiles/stb_image.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/c2/Documents/PersonalProjects/BrainEngine/build/CMakeFiles --progress-num=68,69 "Built target stb_image"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/c2/Documents/PersonalProjects/BrainEngine/build/CMakeFiles --progress-num=69,70 "Built target stb_image"
 .PHONY : Dependencies/stb_image/CMakeFiles/stb_image.dir/all
 
 # Build rule for subdir invocation for target.
@@ -628,7 +628,7 @@ stb_image: Dependencies/stb_image/CMakeFiles/stb_image.dir/rule
 # codegen rule for target.
 Dependencies/stb_image/CMakeFiles/stb_image.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f Dependencies/stb_image/CMakeFiles/stb_image.dir/build.make Dependencies/stb_image/CMakeFiles/stb_image.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/c2/Documents/PersonalProjects/BrainEngine/build/CMakeFiles --progress-num=68,69 "Finished codegen for target stb_image"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/c2/Documents/PersonalProjects/BrainEngine/build/CMakeFiles --progress-num=69,70 "Finished codegen for target stb_image"
 .PHONY : Dependencies/stb_image/CMakeFiles/stb_image.dir/codegen
 
 # clean rule for target.
@@ -643,7 +643,7 @@ Dependencies/stb_image/CMakeFiles/stb_image.dir/clean:
 Dependencies/stb_truetype/CMakeFiles/stb_truetype.dir/all:
 	$(MAKE) $(MAKESILENT) -f Dependencies/stb_truetype/CMakeFiles/stb_truetype.dir/build.make Dependencies/stb_truetype/CMakeFiles/stb_truetype.dir/depend
 	$(MAKE) $(MAKESILENT) -f Dependencies/stb_truetype/CMakeFiles/stb_truetype.dir/build.make Dependencies/stb_truetype/CMakeFiles/stb_truetype.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/c2/Documents/PersonalProjects/BrainEngine/build/CMakeFiles --progress-num=70,71 "Built target stb_truetype"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/c2/Documents/PersonalProjects/BrainEngine/build/CMakeFiles --progress-num=71,72 "Built target stb_truetype"
 .PHONY : Dependencies/stb_truetype/CMakeFiles/stb_truetype.dir/all
 
 # Build rule for subdir invocation for target.
@@ -660,7 +660,7 @@ stb_truetype: Dependencies/stb_truetype/CMakeFiles/stb_truetype.dir/rule
 # codegen rule for target.
 Dependencies/stb_truetype/CMakeFiles/stb_truetype.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f Dependencies/stb_truetype/CMakeFiles/stb_truetype.dir/build.make Dependencies/stb_truetype/CMakeFiles/stb_truetype.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/c2/Documents/PersonalProjects/BrainEngine/build/CMakeFiles --progress-num=70,71 "Finished codegen for target stb_truetype"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/c2/Documents/PersonalProjects/BrainEngine/build/CMakeFiles --progress-num=71,72 "Finished codegen for target stb_truetype"
 .PHONY : Dependencies/stb_truetype/CMakeFiles/stb_truetype.dir/codegen
 
 # clean rule for target.
@@ -675,7 +675,7 @@ Dependencies/stb_truetype/CMakeFiles/stb_truetype.dir/clean:
 Dependencies/raudio/CMakeFiles/raudio.dir/all:
 	$(MAKE) $(MAKESILENT) -f Dependencies/raudio/CMakeFiles/raudio.dir/build.make Dependencies/raudio/CMakeFiles/raudio.dir/depend
 	$(MAKE) $(MAKESILENT) -f Dependencies/raudio/CMakeFiles/raudio.dir/build.make Dependencies/raudio/CMakeFiles/raudio.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/c2/Documents/PersonalProjects/BrainEngine/build/CMakeFiles --progress-num=64,65 "Built target raudio"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/c2/Documents/PersonalProjects/BrainEngine/build/CMakeFiles --progress-num=65,66 "Built target raudio"
 .PHONY : Dependencies/raudio/CMakeFiles/raudio.dir/all
 
 # Build rule for subdir invocation for target.
@@ -692,7 +692,7 @@ raudio: Dependencies/raudio/CMakeFiles/raudio.dir/rule
 # codegen rule for target.
 Dependencies/raudio/CMakeFiles/raudio.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f Dependencies/raudio/CMakeFiles/raudio.dir/build.make Dependencies/raudio/CMakeFiles/raudio.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/c2/Documents/PersonalProjects/BrainEngine/build/CMakeFiles --progress-num=64,65 "Finished codegen for target raudio"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/c2/Documents/PersonalProjects/BrainEngine/build/CMakeFiles --progress-num=65,66 "Finished codegen for target raudio"
 .PHONY : Dependencies/raudio/CMakeFiles/raudio.dir/codegen
 
 # clean rule for target.
@@ -710,7 +710,7 @@ Dependencies/gl2d/CMakeFiles/gl2d.dir/all: Dependencies/stb_image/CMakeFiles/stb
 Dependencies/gl2d/CMakeFiles/gl2d.dir/all: Dependencies/stb_truetype/CMakeFiles/stb_truetype.dir/all
 	$(MAKE) $(MAKESILENT) -f Dependencies/gl2d/CMakeFiles/gl2d.dir/build.make Dependencies/gl2d/CMakeFiles/gl2d.dir/depend
 	$(MAKE) $(MAKESILENT) -f Dependencies/gl2d/CMakeFiles/gl2d.dir/build.make Dependencies/gl2d/CMakeFiles/gl2d.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/c2/Documents/PersonalProjects/BrainEngine/build/CMakeFiles --progress-num=25,26,27 "Built target gl2d"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/c2/Documents/PersonalProjects/BrainEngine/build/CMakeFiles --progress-num=26,27,28 "Built target gl2d"
 .PHONY : Dependencies/gl2d/CMakeFiles/gl2d.dir/all
 
 # Build rule for subdir invocation for target.
@@ -727,7 +727,7 @@ gl2d: Dependencies/gl2d/CMakeFiles/gl2d.dir/rule
 # codegen rule for target.
 Dependencies/gl2d/CMakeFiles/gl2d.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f Dependencies/gl2d/CMakeFiles/gl2d.dir/build.make Dependencies/gl2d/CMakeFiles/gl2d.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/c2/Documents/PersonalProjects/BrainEngine/build/CMakeFiles --progress-num=25,26,27 "Finished codegen for target gl2d"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/c2/Documents/PersonalProjects/BrainEngine/build/CMakeFiles --progress-num=26,27,28 "Finished codegen for target gl2d"
 .PHONY : Dependencies/gl2d/CMakeFiles/gl2d.dir/codegen
 
 # clean rule for target.
@@ -743,7 +743,7 @@ Dependencies/imgui-docking/CMakeFiles/imgui.dir/all: Dependencies/glfw/src/CMake
 Dependencies/imgui-docking/CMakeFiles/imgui.dir/all: Dependencies/glad/CMakeFiles/glad.dir/all
 	$(MAKE) $(MAKESILENT) -f Dependencies/imgui-docking/CMakeFiles/imgui.dir/build.make Dependencies/imgui-docking/CMakeFiles/imgui.dir/depend
 	$(MAKE) $(MAKESILENT) -f Dependencies/imgui-docking/CMakeFiles/imgui.dir/build.make Dependencies/imgui-docking/CMakeFiles/imgui.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/c2/Documents/PersonalProjects/BrainEngine/build/CMakeFiles --progress-num=56,57,58,59,60,61,62,63 "Built target imgui"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/c2/Documents/PersonalProjects/BrainEngine/build/CMakeFiles --progress-num=57,58,59,60,61,62,63,64 "Built target imgui"
 .PHONY : Dependencies/imgui-docking/CMakeFiles/imgui.dir/all
 
 # Build rule for subdir invocation for target.
@@ -760,7 +760,7 @@ imgui: Dependencies/imgui-docking/CMakeFiles/imgui.dir/rule
 # codegen rule for target.
 Dependencies/imgui-docking/CMakeFiles/imgui.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f Dependencies/imgui-docking/CMakeFiles/imgui.dir/build.make Dependencies/imgui-docking/CMakeFiles/imgui.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/c2/Documents/PersonalProjects/BrainEngine/build/CMakeFiles --progress-num=56,57,58,59,60,61,62,63 "Finished codegen for target imgui"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/c2/Documents/PersonalProjects/BrainEngine/build/CMakeFiles --progress-num=57,58,59,60,61,62,63,64 "Finished codegen for target imgui"
 .PHONY : Dependencies/imgui-docking/CMakeFiles/imgui.dir/codegen
 
 # clean rule for target.
@@ -775,7 +775,7 @@ Dependencies/imgui-docking/CMakeFiles/imgui.dir/clean:
 Dependencies/safeSave/CMakeFiles/safeSave.dir/all:
 	$(MAKE) $(MAKESILENT) -f Dependencies/safeSave/CMakeFiles/safeSave.dir/build.make Dependencies/safeSave/CMakeFiles/safeSave.dir/depend
 	$(MAKE) $(MAKESILENT) -f Dependencies/safeSave/CMakeFiles/safeSave.dir/build.make Dependencies/safeSave/CMakeFiles/safeSave.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/c2/Documents/PersonalProjects/BrainEngine/build/CMakeFiles --progress-num=66,67 "Built target safeSave"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/c2/Documents/PersonalProjects/BrainEngine/build/CMakeFiles --progress-num=67,68 "Built target safeSave"
 .PHONY : Dependencies/safeSave/CMakeFiles/safeSave.dir/all
 
 # Build rule for subdir invocation for target.
@@ -792,7 +792,7 @@ safeSave: Dependencies/safeSave/CMakeFiles/safeSave.dir/rule
 # codegen rule for target.
 Dependencies/safeSave/CMakeFiles/safeSave.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f Dependencies/safeSave/CMakeFiles/safeSave.dir/build.make Dependencies/safeSave/CMakeFiles/safeSave.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/c2/Documents/PersonalProjects/BrainEngine/build/CMakeFiles --progress-num=66,67 "Finished codegen for target safeSave"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/c2/Documents/PersonalProjects/BrainEngine/build/CMakeFiles --progress-num=67,68 "Finished codegen for target safeSave"
 .PHONY : Dependencies/safeSave/CMakeFiles/safeSave.dir/codegen
 
 # clean rule for target.
@@ -811,7 +811,7 @@ Dependencies/glui/CMakeFiles/glui.dir/all: Dependencies/stb_truetype/CMakeFiles/
 Dependencies/glui/CMakeFiles/glui.dir/all: Dependencies/gl2d/CMakeFiles/gl2d.dir/all
 	$(MAKE) $(MAKESILENT) -f Dependencies/glui/CMakeFiles/glui.dir/build.make Dependencies/glui/CMakeFiles/glui.dir/depend
 	$(MAKE) $(MAKESILENT) -f Dependencies/glui/CMakeFiles/glui.dir/build.make Dependencies/glui/CMakeFiles/glui.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/c2/Documents/PersonalProjects/BrainEngine/build/CMakeFiles --progress-num=54,55 "Built target glui"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/c2/Documents/PersonalProjects/BrainEngine/build/CMakeFiles --progress-num=55,56 "Built target glui"
 .PHONY : Dependencies/glui/CMakeFiles/glui.dir/all
 
 # Build rule for subdir invocation for target.
@@ -828,7 +828,7 @@ glui: Dependencies/glui/CMakeFiles/glui.dir/rule
 # codegen rule for target.
 Dependencies/glui/CMakeFiles/glui.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f Dependencies/glui/CMakeFiles/glui.dir/build.make Dependencies/glui/CMakeFiles/glui.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/c2/Documents/PersonalProjects/BrainEngine/build/CMakeFiles --progress-num=54,55 "Finished codegen for target glui"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/c2/Documents/PersonalProjects/BrainEngine/build/CMakeFiles --progress-num=55,56 "Finished codegen for target glui"
 .PHONY : Dependencies/glui/CMakeFiles/glui.dir/codegen
 
 # clean rule for target.

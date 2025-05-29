@@ -728,6 +728,30 @@ src/vulkan/brain_swap_chain.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrainEngine.dir/build.make CMakeFiles/BrainEngine.dir/src/vulkan/brain_swap_chain.cpp.s
 .PHONY : src/vulkan/brain_swap_chain.cpp.s
 
+src/vulkan/brain_texture.o: src/vulkan/brain_texture.cpp.o
+.PHONY : src/vulkan/brain_texture.o
+
+# target to build an object file
+src/vulkan/brain_texture.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrainEngine.dir/build.make CMakeFiles/BrainEngine.dir/src/vulkan/brain_texture.cpp.o
+.PHONY : src/vulkan/brain_texture.cpp.o
+
+src/vulkan/brain_texture.i: src/vulkan/brain_texture.cpp.i
+.PHONY : src/vulkan/brain_texture.i
+
+# target to preprocess a source file
+src/vulkan/brain_texture.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrainEngine.dir/build.make CMakeFiles/BrainEngine.dir/src/vulkan/brain_texture.cpp.i
+.PHONY : src/vulkan/brain_texture.cpp.i
+
+src/vulkan/brain_texture.s: src/vulkan/brain_texture.cpp.s
+.PHONY : src/vulkan/brain_texture.s
+
+# target to generate assembly for a file
+src/vulkan/brain_texture.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrainEngine.dir/build.make CMakeFiles/BrainEngine.dir/src/vulkan/brain_texture.cpp.s
+.PHONY : src/vulkan/brain_texture.cpp.s
+
 src/vulkan/brain_window.o: src/vulkan/brain_window.cpp.o
 .PHONY : src/vulkan/brain_window.o
 
@@ -874,6 +898,9 @@ help:
 	@echo "... src/vulkan/brain_swap_chain.o"
 	@echo "... src/vulkan/brain_swap_chain.i"
 	@echo "... src/vulkan/brain_swap_chain.s"
+	@echo "... src/vulkan/brain_texture.o"
+	@echo "... src/vulkan/brain_texture.i"
+	@echo "... src/vulkan/brain_texture.s"
 	@echo "... src/vulkan/brain_window.o"
 	@echo "... src/vulkan/brain_window.i"
 	@echo "... src/vulkan/brain_window.s"
